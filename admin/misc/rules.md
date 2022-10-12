@@ -16,7 +16,7 @@
    <tr>
     <td>Zheyuan Wang</td>
     <td>Team Lead</td>
-    <td>mailto:zhw058@ucsd.edu</td>
+    <td>zhw058@ucsd.edu</td>
   </tr>
   <tr>
     <td>Ruoxuan Li</td>
@@ -69,12 +69,8 @@
       
 <h2>2) What is expected to be on the team</h2>
     <ul style="list-style-type:circle">
-      <li>Hate mushrooms.</li>
-      <li>Cannot eat mushrooms.</li>
-      <li>Cannot be friends with people who like eating mushrooms.</li>
-      <li>Be responsible for yourself and other noshrooms.</li>
+      <li>Be responsible for yourself and other people.</li>
       <li>Be on-time and be respectful to other people’s time.</li>
-      <li>Be respectful to other mushroom haters.</li>
       <li>Be united and help each other.</li>
       <li>Communicate clearly and regularly with people involved in your task.</li>
       <li>Report regular updates in standup.</li>
@@ -82,16 +78,18 @@
       <li>Use slack threads properly.</li>
       <li>Show up for weekly meetings (let us know if you are unable to attend).</li>
       <li>Earnestly contribute in developing the application.</li>
+      <li>Hate mushrooms.</li>
+      <li>Cannot eat mushrooms.</li>
+      <li>Cannot be friends with people who like eating mushrooms.</li>
       </ul>
 <h2>3) How to address situations where group "rules" are not being followed</h2>
     <ul style="list-style-type:circle">
   <li>Kick them out if they eat mushrooms D:<.</li>
   <li>If there’s a conflict, first try solving the problem via communication.</li>
-    <li>Address interpersonal issues directly, speak to the person first, then communicate with the team leads.</li>
-  <li>If the problem persists, raise the issues to the TA.</li>
+  <li>Address interpersonal issues directly, team leads will contact litigant first. If the problem persists, raise the issues to the TA.</li>
   </ul>
 <h2>4) Scheduling Meetings</h2>
-<p>Team will agree, at the end of each class, to set any meetings times and agenda needed before the next class and beyond if possible. Team will understand that it is important to do your best to be present at every meeting and make sure you stay caught up at all contents if you fail to attend any meetings.</p>
+<p>Team will agree it is important to do your best to be present at every meeting and make sure you stay caught up at all contents if you fail to attend any meetings.</p>
   <br>
   <p><strong><em>Here by signing this contract, I agree to abide to the above rules and become a noshroom (mushroom hater).</em></strong></p>
   
