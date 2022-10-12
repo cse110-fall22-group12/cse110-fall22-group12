@@ -29,7 +29,7 @@
     <td>jochou@ucsd.edu</td>
   </tr>
   <tr>
-    <td>Eliot Lee</td>
+    <td>Elliot Lee</td>
     <td>Designer</td>
     <td>eal001@ucsd.edu</td>
   </tr>
