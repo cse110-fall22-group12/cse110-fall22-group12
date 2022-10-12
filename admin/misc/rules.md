@@ -3,7 +3,7 @@
 <h3 align=center> Creation: 2022/10/11</h3>
 <h2>1) Group Identification</h2>
 <p><b>Course:</b> CSE 110</p>
-<p><b>Instructor:</b> Thomas Powell</p>
+<p><b>Instructor:</b> Thomas A Powell</p>
 <p><b>TA:</b> Malcolm</p>
 <p><b>Team Name:</b> Mushroom Haters</p>
 <p><b>Team Members:</b></P>
