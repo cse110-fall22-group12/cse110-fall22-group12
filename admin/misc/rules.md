@@ -86,7 +86,7 @@
     <ul style="list-style-type:circle">
   <li>Kick them out if they eat mushrooms D:<.</li>
   <li>If there’s a conflict, first try solving the problem via communication.</li>
-  <li>Address interpersonal issues directly, team leads will contact litigant first. If the problem persists, raise the issues to the TA.</li>
+  <li>Address interpersonal issues directly. Team leads will contact litigant first, if the problem persists, raise the issues to the TA.</li>
   </ul>
 <h2>4) Scheduling Meetings</h2>
 <p>Team will agree it is important to do your best to be present at every meeting and make sure you stay caught up at all contents if you fail to attend any meetings.</p>
