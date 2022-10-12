@@ -4,7 +4,7 @@
 <h2>1) Group Identification</h2>
 <p><b>Course:</b> CSE 110</p>
 <p><b>Instructor:</b> Thomas A. Powell</p>
-<p><b>TA:</b> Malcolm</p>
+<p><b>TA:</b> Malcolm McSwain</p>
 <p><b>Team Name:</b> Mushroom Haters</p>
 <p><b>Team Members:</b></P>
 <table>
