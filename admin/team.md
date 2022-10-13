@@ -28,83 +28,11 @@
     </tr>
   
     <tr>
-      <td>Zheyuan Wang</td>
-      <td>Leader</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
-    </tr>
-  
-    <tr>
-      <td>Ruoxuan Li</td>
-      <td>Leader</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
-    </tr>
-  
-    <tr>
-      <td>John Chou</td>
-      <td>Planner</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
-    </tr>
-  
-    <tr>
-      <td>Elliot Lee</td>
-      <td>Designed</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
-    </tr>
-  
-    <tr>
-      <td>Deze Lyu</td>
-      <td>Developer</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
-    </tr>
-  
-    <tr>
-      <td>Jimmy Cho</td>
-      <td>Developer</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
-    </tr>
-  
-    <tr>
-      <td>Lucas Lee</td>
-      <td>Developer</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
-    </tr>
-  
-    <tr>
-      <td>Yunyi She</td>
-      <td>Developer</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
-    </tr>
-  
-    <tr>
-      <td>Kristy Chan</td>
-      <td>Developer</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
-    </tr>
-  
-    <tr>
-      <td>Sebastian Pamudji</td>
-      <td>Developer</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
+      <td>Name</td>
+      <td>Role</td>
+      <td>Specialty</td> 
+      <td>Website</td>
+      <td># of Evil Mushrooms Eliminated</td>
     </tr>
   
   </table>
