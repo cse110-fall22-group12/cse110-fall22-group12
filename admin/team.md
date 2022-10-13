@@ -26,7 +26,6 @@
       <th>Website</th>
       <th># of Evil Mushrooms Eliminated</th>
     </tr>
-  
     <tr>
       <td>Name</td>
       <td>Role</td>
@@ -34,7 +33,6 @@
       <td>Website</td>
       <td># of Evil Mushrooms Eliminated</td>
     </tr>
-  
   </table>
   
 </div>
