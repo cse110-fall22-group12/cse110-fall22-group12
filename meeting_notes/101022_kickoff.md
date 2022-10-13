@@ -4,8 +4,19 @@
 **Meeting Format: Hybrid (Zoom + Basement Lab Room B260)**
 
 The goal for this meeting is to bond with team members and assgin tasks that are due 10/16 to group members. If time allows, will brainstorm our project topic. 
+## Attendance
+- [x] Zheyuan Wang
+- [x] Ruoxuan Li
+- [x] John Chou
+- [x] Elliot Lee
+- [x] Deze Lyu
+- [ ] Jimmy Cho
+- [x] Lucas Lee
+- [x] Yunyi She
+- [x] Kristy Chan
+- [x] Sebastian Pamudji
 
-**Completed Tasks**
+## Completed Tasks
 * Assigned meeting note (Winnie She)
 * Set up group github account and share to group member (Zheyuan Wang)
 * Assigned team brand (Everyone)
@@ -15,13 +26,13 @@ The goal for this meeting is to bond with team members and assgin tasks that are
 * Assigned team contract (Zheyuan Wang, Ruoxuan Li)
 * Assigned standup form - bot (Elliot Lee)
 
-**Tasks to be completed**
+## Tasks to be completed
 * Gather on 10.14 after the lecture to record our team video 
 * Continue to brainstorm project ideas
 * Assign a team member to be responsible for team schedule 
 
-**Project Timeline**
+## Project Timeline
 * Week 3: Brainstorming 
 
-**Decisions**
+## Decisions
 * Have not made any major decisions yet
