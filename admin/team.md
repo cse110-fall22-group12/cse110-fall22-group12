@@ -20,18 +20,18 @@
   
   <table>
     <tr>
-      <th>Name</th>
-      <th>Role</th>
-      <th>Specialty</th> 
-      <th>Website</th>
-      <th># of Evil Mushrooms Eliminated</th>
+      <th align=center>Name</th>
+      <th align=center>Role</th>
+      <th align=center>Specialty</th> 
+      <th align=center>Website</th>
+      <th align=center># of Evil Mushrooms Eliminated</th>
     </tr>
       <tr>
-      <td>Zheyuan Wang</td>
-      <td>Leader</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
+      <td align=center>Zheyuan Wang</td>
+      <td align=center>Leader</td>
+      <td align=center>???</td> 
+      <td align=center>???</td>
+      <td align=center>???</td>
     </tr>
     <tr>
       <td>Ruoxuan Li</td>
