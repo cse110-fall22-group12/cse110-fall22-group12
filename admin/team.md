@@ -18,11 +18,13 @@
   <p>Our team has been fighting against evil mushrooms since 1876.</p>
   <p>Proudly, please allow us to introduce ourselves:</p>
   
-  <tr>
-    <th>Name</th>
-    <th>Specialty</th> 
-    <th>Website</th>
-    <th># of Mushrooms Eliminated</th>
-  </tr>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Specialty</th> 
+      <th>Website</th>
+      <th># of Mushrooms Eliminated</th>
+    </tr>
+  </table>
   
 </div>
