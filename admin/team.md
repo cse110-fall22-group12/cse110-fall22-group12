@@ -24,7 +24,7 @@
     <tr>
       <th align=center>Name</th>
       <th align=center>Role</th>
-      <th align=center>Specialty</th> 
+      <th align=center>Overview</th> 
       <th align=center>Website</th>
       <th align=center># of Evil Mushrooms Eliminated</th>
     </tr>
@@ -59,7 +59,7 @@
     <tr>
       <td align=center>Deze Lyu</td>
       <td align=center>Developer</td>
-      <td align=center>Game Development</td> 
+      <td align=center>An indie game developer with ten years of experience.</td> 
       <td align=center><a href="https://kelinlyu.me">kelinlyu.me</a></td>
       <td align=center>1024</td>
     </tr>
