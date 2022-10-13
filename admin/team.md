@@ -10,7 +10,7 @@
   <p>Our mission, therefore, is to identify and eradicate those horrible</p>
   <p>creatures before they do any harm, which protects everybody,</p>
   <p>and most importantly,</p>
-  <p><b font size="+2">you</b>.</p>
+  <p font size="+2"><b>you</b>.</p>
 
   <br></br>
 
