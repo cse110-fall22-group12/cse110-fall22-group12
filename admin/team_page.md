@@ -60,7 +60,7 @@
       <td align=center>Deze Lyu</td>
       <td align=center>Developer</td>
       <td align=center>Just an indie game developer & graphics engineer with ten years of experience.</td> 
-      <td align=center><a href="https://kelinlyu.me">kelinlyu.me</a></td>
+      <td align=center>https://github.com/KelinLyu</td>
       <td align=center>1024</td>
     </tr>
     <tr>
