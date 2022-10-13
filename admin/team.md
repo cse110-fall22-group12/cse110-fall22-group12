@@ -5,8 +5,8 @@
   <h1><b>No</b>shrooms!</h1>
   <p>Evil mushrooms are becoming a significant threat to humanity,</p>
   <p>imposing <b>taste, physical, and emotional damage</b> to innocent people.</p>
-  <p>Our mission, therefore, is to identify and eradicate these sinful</p>
-  <p>mushrooms before they cause any harm, protecting everybody,</p>
+  <p>Our mission, therefore, is to identify and eradicate these horrible</p>
+  <p>creatures before they cause any harm, protecting everybody,</p>
   <p>and most importantly,</p>
   <p><b>you</b>.</p>
 </div>
