@@ -28,83 +28,83 @@
     </tr>
   
     <tr>
-      <th>Zheyuan Wang</th>
-      <th>Leader</th>
-      <th>???</th> 
-      <th>???</th>
-      <th>???</th>
+      <td>Zheyuan Wang</td>
+      <td>Leader</td>
+      <td>???</td> 
+      <td>???</td>
+      <td>???</td>
     </tr>
   
     <tr>
-      <th>Ruoxuan Li</th>
-      <th>Leader</th>
-      <th>???</th> 
-      <th>???</th>
-      <th>???</th>
+      <td>Ruoxuan Li</td>
+      <td>Leader</td>
+      <td>???</td> 
+      <td>???</td>
+      <td>???</td>
     </tr>
   
     <tr>
-      <th>John Chou</th>
-      <th>Planner</th>
-      <th>???</th> 
-      <th>???</th>
-      <th>???</th>
+      <td>John Chou</td>
+      <td>Planner</td>
+      <td>???</td> 
+      <td>???</td>
+      <td>???</td>
     </tr>
   
     <tr>
-      <th>Elliot Lee</th>
-      <th>Designed</th>
-      <th>???</th> 
-      <th>???</th>
-      <th>???</th>
+      <td>Elliot Lee</td>
+      <td>Designed</td>
+      <td>???</td> 
+      <td>???</td>
+      <td>???</td>
     </tr>
   
     <tr>
-      <th>Deze Lyu</th>
-      <th>Developer</th>
-      <th>???</th> 
-      <th>???</th>
-      <th>???</th>
+      <td>Deze Lyu</td>
+      <td>Developer</td>
+      <td>???</td> 
+      <td>???</td>
+      <td>???</td>
     </tr>
   
     <tr>
-      <th>Jimmy Cho</th>
-      <th>Developer</th>
-      <th>???</th> 
-      <th>???</th>
-      <th>???</th>
+      <td>Jimmy Cho</td>
+      <td>Developer</td>
+      <td>???</td> 
+      <td>???</td>
+      <td>???</td>
     </tr>
   
     <tr>
-      <th>Lucas Lee</th>
-      <th>Developer</th>
-      <th>???</th> 
-      <th>???</th>
-      <th>???</th>
+      <td>Lucas Lee</td>
+      <td>Developer</td>
+      <td>???</td> 
+      <td>???</td>
+      <td>???</td>
     </tr>
   
     <tr>
-      <th>Yunyi She</th>
-      <th>Developer</th>
-      <th>???</th> 
-      <th>???</th>
-      <th>???</th>
+      <td>Yunyi She</td>
+      <td>Developer</td>
+      <td>???</td> 
+      <td>???</td>
+      <td>???</td>
     </tr>
   
     <tr>
-      <th>Kristy Chan</th>
-      <th>Developer</th>
-      <th>???</th> 
-      <th>???</th>
-      <th>???</th>
+      <td>Kristy Chan</td>
+      <td>Developer</td>
+      <td>???</td> 
+      <td>???</td>
+      <td>???</td>
     </tr>
   
     <tr>
-      <th>Sebastian Pamudji</th>
-      <th>Developer</th>
-      <th>???</th> 
-      <th>???</th>
-      <th>???</th>
+      <td>Sebastian Pamudji</td>
+      <td>Developer</td>
+      <td>???</td> 
+      <td>???</td>
+      <td>???</td>
     </tr>
   
   </table>
