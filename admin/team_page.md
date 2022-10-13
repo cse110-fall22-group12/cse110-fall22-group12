@@ -31,9 +31,9 @@
     <tr>
       <td align=center>Zheyuan Wang</td>
       <td align=center>Leader</td>
-      <td align=center>???</td> 
+      <td align=center>Enjoy inline speed skating and cycling</td> 
       <td align=center>???</td>
-      <td align=center>???</td>
+      <td align=center>2<sup>n</sup>, n -> ∞</td>
     </tr>
     <tr>
       <td align=center>Ruoxuan Li</td>
