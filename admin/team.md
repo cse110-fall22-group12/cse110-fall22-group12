@@ -59,7 +59,7 @@
     <tr>
       <td align=center>Deze Lyu</td>
       <td align=center>Developer</td>
-      <td align=center>An indie game developer with ten years of experience.</td> 
+      <td align=center>Just an indie game developer with ten years of experience.</td> 
       <td align=center><a href="https://kelinlyu.me">kelinlyu.me</a></td>
       <td align=center>1024</td>
     </tr>
