@@ -26,7 +26,7 @@
       <th align=center>Website</th>
       <th align=center># of Evil Mushrooms Eliminated</th>
     </tr>
-      <tr>
+    <tr>
       <td align=center>Zheyuan Wang</td>
       <td align=center>Leader</td>
       <td align=center>???</td> 
@@ -34,67 +34,67 @@
       <td align=center>???</td>
     </tr>
     <tr>
-      <td>Ruoxuan Li</td>
-      <td>Leader</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
+      <td align=center>Ruoxuan Li</td>
+      <td align=center>Leader</td>
+      <td align=center>???</td> 
+      <td align=center>???</td>
+      <td align=center>???</td>
     </tr>
     <tr>
-      <td>John Chou</td>
-      <td>Planner</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
+      <td align=center>John Chou</td>
+      <td align=center>Planner</td>
+      <td align=center>???</td> 
+      <td align=center>???</td>
+      <td align=center>???</td>
     </tr>
     <tr>
-      <td>Elliot Lee</td>
-      <td>Designed</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
+      <td align=center>Elliot Lee</td>
+      <td align=center>Designed</td>
+      <td align=center>???</td> 
+      <td align=center>???</td>
+      <td align=center>???</td>
     </tr>
     <tr>
-      <td>Deze Lyu</td>
-      <td>Developer</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
+      <td align=center>Deze Lyu</td>
+      <td align=center>Developer</td>
+      <td align=center>Game Development</td> 
+      <td align=center><a href="https://kelinlyu.me">kelinlyu.me</a></td>
+      <td align=center>1024</td>
     </tr>
     <tr>
-      <td>Jimmy Cho</td>
-      <td>Developer</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
+      <td align=center>Jimmy Cho</td>
+      <td align=center>Developer</td>
+      <td align=center>???</td> 
+      <td align=center>???</td>
+      <td align=center>???</td>
     </tr>
     <tr>
-      <td>Lucas Lee</td>
-      <td>Developer</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
+      <td align=center>Lucas Lee</td>
+      <td align=center>Developer</td>
+      <td align=center>???</td> 
+      <td align=center>???</td>
+      <td align=center>???</td>
     </tr>
     <tr>
-      <td>Yunyi She</td>
-      <td>Developer</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
+      <td align=center>Yunyi She</td>
+      <td align=center>Developer</td>
+      <td align=center>???</td> 
+      <td align=center>???</td>
+      <td align=center>???</td>
     </tr>
     <tr>
-      <td>Kristy Chan</td>
-      <td>Developer</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
+      <td align=center>Kristy Chan</td>
+      <td align=center>Developer</td>
+      <td align=center>???</td> 
+      <td align=center>???</td>
+      <td align=center>???</td>
     </tr>
     <tr>
-      <td>Sebastian Pamudji</td>
-      <td>Developer</td>
-      <td>???</td> 
-      <td>???</td>
-      <td>???</td>
+      <td align=center>Sebastian Pamudji</td>
+      <td align=center>Developer</td>
+      <td align=center>???</td> 
+      <td align=center>???</td>
+      <td align=center>???</td>
     </tr>
   </table>
   
