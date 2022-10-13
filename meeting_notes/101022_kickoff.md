@@ -1,7 +1,7 @@
 # Kick-Off Meeting Note #
 **Date: 10.11.2022**\
 **Time: 5:30 pm - 6:30 pm**\
-**Meeting Format: Hybrid (Zoom + Basement Lab Room B260)**
+**Meeting Format: Hybrid (Zoom + EBU3B B260)**
 
 The goal for this meeting is to bond with team members and assgin tasks that are due 10/16 to group members. If time allows, will brainstorm our project topic. 
 ## Attendance
