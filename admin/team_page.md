@@ -92,7 +92,7 @@ Please allow us to proudly introduce ourselves:
     <tr>
       <td align=center>Sebastian Pamudji</td>
       <td align=center>Developer</td>
-      <td align=center>???</td> 
+      <td align=center>I enjoy doing digital art, and tennis during my free time. Interested in becoming a front end developer</td> 
       <td align=center><a href="https://github.com/sswwpp">sswwpp</a></td>
       <td align=center>	&#960;</td>
     </tr>
