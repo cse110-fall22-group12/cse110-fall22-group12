@@ -1,5 +1,5 @@
 # Team Mushroom Haters #
-We protect humanity againse **evil mushrooms**!
+We protect humanity against **evil mushrooms**!
 
 ![Team Brand Logo](/admin/branding/Noshroom-Sebastian.png)
 
