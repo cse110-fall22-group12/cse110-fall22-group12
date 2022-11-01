@@ -51,7 +51,7 @@ __Frustration__
 - We never wrapped a web app to a phone app before
 - Make all the pictures fit the same rounded rectangle is no easy
 - Allow user to upload image and store it into database is new to us
-- Store data in local storage and fetch it later could be hard
+- Store data in local storage and fetch it could be hard
 
 
 
