@@ -1,30 +1,19 @@
 # Noshroom Pitch
 
-## Background
-
-
-
 ## What problem are we trying to solve
-- Simplify all the redundant features that users encounter while using the applications online
-- No involved tutorial is required for the user to understand the functionality of the product
-- Provide a clean local product that enables users to manage their receipes without effort
+- People who love cooking like to record their dairy recipe, and they need a tool for that.
 
 ## Statement of purpose
-The purpose of the project is to create a flexible personal record local application for people who enjoy cooking to create and manage their own receipes, so that the users could manage their receipes easily locally.
+Create a flexible personal dairy recipe record for people who enjoy cooking and wish to create and manage their own receipes.
 - We want to addres the users' need for a more effective management system of receipes.
 - We want to make sure the features of our app directly hit the core need of our user group.
 - We want to create a local personal record for users to play with their receipes.
 - We want to allow the users to navigate easily through different sections/tabs of the APP.
 - We want to make the user experience as smooth as possible.
-## Visual representation (Wireframe) 
-
-
-[insert image here]
-
 
 ## User personas
 ### Persona 1 - Thomaas Poweell, 50
-He is a chief at a French restaurant and he also enjoys cooking a lot at home. He always aim to improve his receipes so quite often he makes experiments about the ingredients use or make modification to the steps. He doesn't really enjoy using technologies that are too complicated. He just prefer simple things that cut to the point.  <br>
+He is a chief at a French restaurant and he also enjoys cooking a lot at home. He always aim to improve his receipes so quite often he makes experiments about the ingredients use or make modification to the steps. He doesn't really enjoy using technologies that are too complicated. He just prefer simple things that cut to the point. 
 
 __Wants & Needs__
 - Modify the receipes that he previously created
@@ -46,19 +35,25 @@ __Wants & Needs__
 
 __Frustration__
 - Don't want to spend much energy in finding her receipes among many others' - she's confident about her own receipes
-- Don't want to navigate through complicated things, just want to manage her own receipes.
+- Keep forgoting about her previous recipe
 
+## System Diagram
+![Project wireframe](images/SystemDiagram.png)
+
+## Visual representation (Wireframe) 
+![Project wireframe](images/designStandard.png)
+![Project wireframe](images/wireframe.png)
 
 ## Risks
 - Try to maximize the number of features of the app within a very limited amount of time
 - Some features require us to have advanced knowledge in certain tools, and learning a new tool takes time
-- The unit-testing process of the project could be involved
-- Ignore people's factors, e.g. people's ability to contribute as expected.
+- We unit-testing process of the project could be involved
+- Ignore people's factors, e.g. people's ability to contribute as expected
 
 ## Rabbit holes
 - We never wrapped a web app to a phone app before
 - Make all the pictures fit the same rounded rectangle is hard
-- Allow user to upload image could be a problem
+- Allow user to upload image and store it into database is new to us
 - Store data in local storage and fetch it later could be hard to do
 - We cut the custom tag function since that is beyoned out ability and cost too much time
 
