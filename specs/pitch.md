@@ -5,7 +5,9 @@
 
 
 ## What problem are we trying to solve
-
+- Simplify all the redundant features that users encounter while using the applications online
+- No involved tutorial is required for the user to understand the functionality of the product
+- Provide a clean local product that enables users to manage their receipes without effort
 
 ## Statement of purpose
 The purpose of the project is to create a flexible personal record local application for people who enjoy cooking to create and manage their own receipes, so that the users could manage their receipes easily locally.
@@ -17,7 +19,7 @@ The purpose of the project is to create a flexible personal record local applica
 ## Visual representation (Wireframe) 
 
 
-
+[insert image here]
 
 
 ## User personas
@@ -45,8 +47,6 @@ __Wants & Needs__
 __Frustration__
 - Don't want to spend much energy in finding her receipes among many others' - she's confident about her own receipes
 - Don't want to navigate through complicated things, just want to manage her own receipes.
-
-
 
 
 ## Risks
