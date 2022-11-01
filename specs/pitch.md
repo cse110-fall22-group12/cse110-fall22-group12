@@ -43,16 +43,15 @@ __Frustration__
 ![Project wireframe](images/wireframe.png)
 
 ## Risks
-- Try to maximize the number of features of the app within a very limited amount of time
-- Some features require us to have advanced knowledge in certain tools, and learning a new tool takes time
-- We unit-testing process of the project could be involved
-- Ignore people's factors, e.g. people's ability to contribute as expected
+- The unit-testing process could spend more time than we expected
+- We want to add one more feature that will tremendously increasing the user experience, but we do not know how long can we build it
+- People's factors, e.g. teammates' ability to contribute
 
 ## Rabbit holes
 - We never wrapped a web app to a phone app before
-- Make all the pictures fit the same rounded rectangle is hard
+- Make all the pictures fit the same rounded rectangle is no easy
 - Allow user to upload image and store it into database is new to us
-- Store data in local storage and fetch it later could be hard to do
+- Store data in local storage and fetch it later could be hard
 - We cut the custom tag function since that is beyoned out ability and cost too much time
 
 
