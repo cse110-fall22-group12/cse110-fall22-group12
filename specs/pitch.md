@@ -44,7 +44,7 @@ __Frustration__
 
 ## Risks
 - The unit-testing process could spend more time than we expected
-- We want to add one more feature that will tremendously increasing the user experience, but we do not know how long can we build it
+- We want to add one custom tag which will tremendously increasing the user experience, but we do not know how long can we build it
 - People's factors, e.g. teammates' ability to contribute
 
 ## Rabbit holes
@@ -52,6 +52,6 @@ __Frustration__
 - Make all the pictures fit the same rounded rectangle is no easy
 - Allow user to upload image and store it into database is new to us
 - Store data in local storage and fetch it later could be hard
-- We cut the custom tag function since that is beyoned out ability and cost too much time
+
 
 
