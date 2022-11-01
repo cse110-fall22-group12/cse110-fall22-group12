@@ -25,7 +25,7 @@ __Frustration__
 
 
 ### Persona 2 - Alice Brooks, 27
-She is a mother of three children. She thinks food outside does not contain the necessary nutritions for the kids so she cooks for her kids all the time. Kids could be picky about food and she finds it difficult to decide what to cook for her kids sometimes.
+She is a mother of three children. She thinks food outside does not contain the necessary nutritions for the kids so she cooks for her kids all the time. Kids could be picky about food and she finds it is hard to memorize all the details for each recipe.
 
 __Wants & Needs__
 - Record all the receipes that she has previously used
