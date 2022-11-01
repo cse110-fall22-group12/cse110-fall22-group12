@@ -5,7 +5,7 @@
 
 ## Statement of purpose
 - Build a local first mobile App as a management system to help users record their dairy recipe
-- Allow the users to Create, Read, Update, Delete all the recipes
+- Allow the users to Create, Read, Update, Delete each single recipe
 
 ## User personas
 ### Persona 1 - Thomas B Powell, 50
