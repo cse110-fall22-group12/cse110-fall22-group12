@@ -10,7 +10,7 @@ Create a flexible personal dairy recipe record for people who enjoy cooking and 
 - We want to make the user experience as smooth as possible
 
 ## User personas
-### Persona 1 - Thomas A Poweell, 50
+### Persona 1 - Thomas A Powell, 50
 He is a chief at a French restaurant and he also enjoys cooking a lot at home. He always aim to improve his receipes so quite often he makes experiments about the ingredients use or make modification to the steps. He doesn't really enjoy using technologies that are too complicated. He just prefer simple things that cut to the point
 
 __Wants & Needs__
