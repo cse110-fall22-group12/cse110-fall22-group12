@@ -6,8 +6,7 @@
 ## Statement of purpose
 Create a flexible personal dairy recipe record for people who enjoy cooking and wish to create and manage their own receipes
 - Build a local first mobile App as a management system to help users record their dairy recipe
-- Allow the users to navigate easily through different sections/tabs of the App
-- Make the user experience as smooth as possible
+- Allow the users to Create, Read, Update, Delete all the recipes
 
 ## User personas
 ### Persona 1 - Thomas B Powell, 50
