@@ -38,7 +38,7 @@ __Frustration__
 
 ## Visual representation (Wireframe) 
 ![Project wireframe](images/designStandard.png)
-![Project wireframe](images/wireframe.png)
+![Project wireframe](images/wireFrame.png)
 
 ## Risks
 - The unit-testing process could spend more time than we expected
