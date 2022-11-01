@@ -4,7 +4,6 @@
 - People who love cooking like to record their dairy recipe, and they need a tool for that
 
 ## Statement of purpose
-Create a flexible personal dairy recipe record for people who enjoy cooking and wish to create and manage their own receipes
 - Build a local first mobile App as a management system to help users record their dairy recipe
 - Allow the users to Create, Read, Update, Delete all the recipes
 
