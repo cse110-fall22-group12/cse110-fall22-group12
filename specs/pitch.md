@@ -1,19 +1,17 @@
 # Noshroom Pitch
 
 ## What problem are we trying to solve
-- People who love cooking like to record their dairy recipe, and they need a tool for that.
+- People who love cooking like to record their dairy recipe, and they need a tool for that
 
 ## Statement of purpose
-Create a flexible personal dairy recipe record for people who enjoy cooking and wish to create and manage their own receipes.
-- We want to addres the users' need for a more effective management system of receipes.
-- We want to make sure the features of our app directly hit the core need of our user group.
-- We want to create a local personal record for users to play with their receipes.
-- We want to allow the users to navigate easily through different sections/tabs of the APP.
-- We want to make the user experience as smooth as possible.
+Create a flexible personal dairy recipe record for people who enjoy cooking and wish to create and manage their own receipes
+- We want to build a local first mobile App as a management system to help users record their dairy recipe
+- We want to allow the users to navigate easily through different sections/tabs of the App
+- We want to make the user experience as smooth as possible
 
 ## User personas
 ### Persona 1 - Thomaas Poweell, 50
-He is a chief at a French restaurant and he also enjoys cooking a lot at home. He always aim to improve his receipes so quite often he makes experiments about the ingredients use or make modification to the steps. He doesn't really enjoy using technologies that are too complicated. He just prefer simple things that cut to the point. 
+He is a chief at a French restaurant and he also enjoys cooking a lot at home. He always aim to improve his receipes so quite often he makes experiments about the ingredients use or make modification to the steps. He doesn't really enjoy using technologies that are too complicated. He just prefer simple things that cut to the point
 
 __Wants & Needs__
 - Modify the receipes that he previously created
@@ -27,15 +25,15 @@ __Frustration__
 
 
 ### Persona 2 - Alice Brooks, 27
-She is a mother of three children. She thinks food outside does not contain the necessary nutritions for the kids so she cooks for her kids all the time. Kids could be picky about food and she finds it difficult to decide what to cook for her kids sometimes.<br>
+She is a mother of three children. She thinks food outside does not contain the necessary nutritions for the kids so she cooks for her kids all the time. Kids could be picky about food and she finds it difficult to decide what to cook for her kids sometimes.
 
 __Wants & Needs__
 - Record all the receipes that she has previously used
 - Choose from different receipe options
 
 __Frustration__
-- Don't want to spend much energy in finding her receipes among many others' - she's confident about her own receipes
-- Keep forgoting about her previous recipe
+- Don't want to spend much energy in finding her receipes among many others'
+- Keep forgoting the details about her previous recipe
 
 ## System Diagram
 ![Project wireframe](images/SystemDiagram.png)
