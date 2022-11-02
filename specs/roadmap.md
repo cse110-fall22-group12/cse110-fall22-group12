@@ -1,7 +1,7 @@
 # Project Roadmap #
 The following chart is the roadmap of how we are planning to develop our project. The tasks from day 1 to day 14 achieves the project's most basic functionalities, while the tasks after day 14 are extra steps for our project to reach perfection.
 
-## General guidline: 
+## General guideline: 
 - Work period could be every week, not day to day
 - HTML part, finish the structure of each element
 - CSS part, only for the add new button, text-font, layout(grid or flex-box), etc. Detailed CSS (colors, shadow) or UI can be done later.
