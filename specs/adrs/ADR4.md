@@ -4,9 +4,9 @@
 
 An app that manages logging a user's Recipes can have many features. We want to have a minimum viable product that can handle our targeted user's needs without overloading on features and the scope of our idea. This is because we have very little time to implement this project. 
 
-What features contribute to the UX of someone who likes to cook?
-How complicated are these features?
-Which features can be exclued for the MVP?
+* What features contribute to the UX of someone who likes to cook?
+* How complicated are these features?
+* Which features can be exclued for the MVP?
 
 ## Considered Options ##
 

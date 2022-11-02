@@ -4,8 +4,8 @@
 
 Our app is a 'local first' type of application. Meaning, we want to store our user inforamtion on the local device with the option of uploading to the internet or somewhere else. 
 
-What kind of applications can we build with this constraint?
-Will time be an issue with any of them?
+* What kind of applications can we build with this constraint?
+* Will time be an issue with any of them?
 
 ## Considered Options ##
 

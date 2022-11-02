@@ -4,9 +4,9 @@
 
 Our targeted users are cooks and people who like to try and iterate on their own recipes. If we are building an app to solve their needs, we are going to need to build software that can exist on their mobile devices.
 
-What are our options for Mobile Development?
-How easy are these frameworks to use?
-How do each of these options contribute to or take away from the UX?
+* What are our options for Mobile Development?
+* How easy are these frameworks to use?
+* How do each of these options contribute to or take away from the UX?
 
 ## Considered Options ##
 
