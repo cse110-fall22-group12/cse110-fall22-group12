@@ -10,7 +10,7 @@ Our app is a 'local first' type of application. Meaning, we want to store our us
 ## Considered Options ##
 
 * big data type app that gives you statistics on daily choices: outfits
-* calendar/diary entry where you log information wrt the date: mood tracker
+* calendar/diary entry where you log information with respect to the date: mood tracker
 * app where you log and detail different things at your own pace: foods eaten
 
 ## Decision Outcome ##
