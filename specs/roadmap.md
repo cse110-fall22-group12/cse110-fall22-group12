@@ -28,6 +28,9 @@ The following chart is the roadmap of how we are planning to develop our project
     </tr>
     <tr>
       <td align=center>Foundations</td>
+      <td align=center>?</td>
+      <td align=center>?</td>
+      <td align=center>?</td>
     </tr>
     <tr>
       <td align=center>Functionalities</td>
