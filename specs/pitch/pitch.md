@@ -33,11 +33,11 @@ __Frustration__
 - Keep forgetting the details about her previous recipes
 
 ## System Diagram
-![Project wireframe](images/systemDiagram.png)
+![Project wireframe](../images/systemDiagram.png)
 
 ## Visual representation (Wireframe) 
-![Project wireframe](images/designStandard.png)
-![Project wireframe](images/wireFrame.png)
+![Project wireframe](../images/designStandard.png)
+![Project wireframe](../images/wireFrame.png)
 
 ## Risks
 - The unit-testing process could spend more time than we expected
