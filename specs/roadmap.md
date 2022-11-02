@@ -10,7 +10,7 @@ The following chart is the roadmap of how we are planning to develop our project
     </tr>
     <tr>
       <td align=center>Day1</td>
-      <td align=center></td>
+      <td align=center>Create 4 HTML pages for the welcome page, homepage, editing page, and the viewing page.</td>
       <td align=center></td>
       <td align=center></td>
       <td align=center></td>
