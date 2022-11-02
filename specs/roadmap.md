@@ -17,7 +17,7 @@ The following chart is the roadmap of how we are planning to develop our project
       <th align=center>Day12</th>
       <th align=center>Day13</th>
       <th align=center>Day14</th>
-      <th align=center>Basic / Advanced</th>
+      <th align=center>|</th>
       <th align=center>Day15</th>
       <th align=center>Day16</th>
       <th align=center>Day17</th>
@@ -42,7 +42,7 @@ The following chart is the roadmap of how we are planning to develop our project
       <!--Day12--> <td align=center></td>
       <!--Day13--> <td align=center></td>
       <!--Day14--> <td align=center></td>
-      <td align=center>/</td>
+      <td align=center>|</td>
       <!--Day15--> <td align=center></td>
       <!--Day16--> <td align=center></td>
       <!--Day17--> <td align=center></td>
@@ -67,7 +67,7 @@ The following chart is the roadmap of how we are planning to develop our project
       <!--Day12--> <td align=center></td>
       <!--Day13--> <td align=center></td>
       <!--Day14--> <td align=center></td>
-      <td align=center>/</td>
+      <td align=center>|</td>
       <!--Day15--> <td align=center></td>
       <!--Day16--> <td align=center></td>
       <!--Day17--> <td align=center></td>
@@ -92,7 +92,7 @@ The following chart is the roadmap of how we are planning to develop our project
       <!--Day12--> <td align=center></td>
       <!--Day13--> <td align=center></td>
       <!--Day14--> <td align=center></td>
-      <td align=center>/</td>
+      <td align=center>|</td>
       <!--Day15--> <td align=center></td>
       <!--Day16--> <td align=center></td>
       <!--Day17--> <td align=center></td>
@@ -117,7 +117,7 @@ The following chart is the roadmap of how we are planning to develop our project
       <!--Day12--> <td align=center></td>
       <!--Day13--> <td align=center></td>
       <!--Day14--> <td align=center></td>
-      <td align=center>/</td>
+      <td align=center>|</td>
       <!--Day15--> <td align=center></td>
       <!--Day16--> <td align=center></td>
       <!--Day17--> <td align=center></td>
