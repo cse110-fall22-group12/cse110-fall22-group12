@@ -2,128 +2,222 @@
 The following chart is the roadmap of how we are planning to develop our project. The tasks from day 1 to day 14 achieves the project's most basic functionalities, while the tasks after day 14 are extra steps for our project to reach perfection.
 <table>
     <tr>
-      <th align=center width="300px">Timeline</th>
-      <th align=center>Day1</th>
-      <th align=center>Day2</th> 
-      <th align=center>Day3</th>
-      <th align=center>Day4</th>
-      <th align=center>Day5</th>
-      <th align=center>Day6</th> 
-      <th align=center>Day7</th>
-      <th align=center>Day8</th>
-      <th align=center>Day9</th>
-      <th align=center>Day10</th>
-      <th align=center>Day11</th>
-      <th align=center>Day12</th>
-      <th align=center>Day13</th>
-      <th align=center>Day14</th>
-      <th align=center>|</th>
-      <th align=center>Day15</th>
-      <th align=center>Day16</th>
-      <th align=center>Day17</th>
-      <th align=center>Day18</th>
-      <th align=center>Day19</th>
-      <th align=center>Day20</th>
-      <th align=center>Day21</th>
+      <th align=center>Timeline \ Tasks</th>
+      <th align=center>Foundations</th>
+      <th align=center>Functionalities</th>
+      <th align=center>UI Implementations</th>
+      <th align=center>Testing</th>
     </tr>
     <tr>
-      <td align=center>Foundations</td>
-      <!--Day1--> <td align=center>Create 4 blank HTML pages for the welcome page, homepage, editing page, and the viewing page.</td>
-      <!--Day2--> <td align=center></td>
-      <!--Day3--> <td align=center></td>
-      <!--Day4--> <td align=center></td>
-      <!--Day5--> <td align=center></td>
-      <!--Day6--> <td align=center></td>
-      <!--Day7--> <td align=center></td>
-      <!--Day8--> <td align=center></td>
-      <!--Day9--> <td align=center></td>
-      <!--Day10--> <td align=center></td>
-      <!--Day11--> <td align=center></td>
-      <!--Day12--> <td align=center></td>
-      <!--Day13--> <td align=center></td>
-      <!--Day14--> <td align=center></td>
-      <td align=center>|</td>
-      <!--Day15--> <td align=center></td>
-      <!--Day16--> <td align=center></td>
-      <!--Day17--> <td align=center></td>
-      <!--Day18--> <td align=center></td>
-      <!--Day19--> <td align=center></td>
-      <!--Day20--> <td align=center></td>
-      <!--Day21--> <td align=center></td>
+      <td align=center>Day1</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
     </tr>
     <tr>
-      <td align=center>Functionalities</td>
-      <!--Day1--> <td align=center></td>
-      <!--Day2--> <td align=center></td>
-      <!--Day3--> <td align=center></td>
-      <!--Day4--> <td align=center></td>
-      <!--Day5--> <td align=center></td>
-      <!--Day6--> <td align=center></td>
-      <!--Day7--> <td align=center></td>
-      <!--Day8--> <td align=center></td>
-      <!--Day9--> <td align=center></td>
-      <!--Day10--> <td align=center></td>
-      <!--Day11--> <td align=center></td>
-      <!--Day12--> <td align=center></td>
-      <!--Day13--> <td align=center></td>
-      <!--Day14--> <td align=center></td>
-      <td align=center>|</td>
-      <!--Day15--> <td align=center></td>
-      <!--Day16--> <td align=center></td>
-      <!--Day17--> <td align=center></td>
-      <!--Day18--> <td align=center></td>
-      <!--Day19--> <td align=center></td>
-      <!--Day20--> <td align=center></td>
-      <!--Day21--> <td align=center></td>
+      <td align=center>Day2</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
     </tr>
     <tr>
-      <td align=center>UI Implementations</td>
-      <!--Day1--> <td align=center></td>
-      <!--Day2--> <td align=center></td>
-      <!--Day3--> <td align=center></td>
-      <!--Day4--> <td align=center></td>
-      <!--Day5--> <td align=center></td>
-      <!--Day6--> <td align=center></td>
-      <!--Day7--> <td align=center></td>
-      <!--Day8--> <td align=center></td>
-      <!--Day9--> <td align=center></td>
-      <!--Day10--> <td align=center></td>
-      <!--Day11--> <td align=center></td>
-      <!--Day12--> <td align=center></td>
-      <!--Day13--> <td align=center></td>
-      <!--Day14--> <td align=center></td>
-      <td align=center>|</td>
-      <!--Day15--> <td align=center></td>
-      <!--Day16--> <td align=center></td>
-      <!--Day17--> <td align=center></td>
-      <!--Day18--> <td align=center></td>
-      <!--Day19--> <td align=center></td>
-      <!--Day20--> <td align=center></td>
-      <!--Day21--> <td align=center></td>
+      <td align=center>Day3</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
     </tr>
     <tr>
-      <td align=center>Testing</td>
-      <!--Day1--> <td align=center></td>
-      <!--Day2--> <td align=center></td>
-      <!--Day3--> <td align=center></td>
-      <!--Day4--> <td align=center></td>
-      <!--Day5--> <td align=center></td>
-      <!--Day6--> <td align=center></td>
-      <!--Day7--> <td align=center></td>
-      <!--Day8--> <td align=center></td>
-      <!--Day9--> <td align=center></td>
-      <!--Day10--> <td align=center></td>
-      <!--Day11--> <td align=center></td>
-      <!--Day12--> <td align=center></td>
-      <!--Day13--> <td align=center></td>
-      <!--Day14--> <td align=center></td>
-      <td align=center>|</td>
-      <!--Day15--> <td align=center></td>
-      <!--Day16--> <td align=center></td>
-      <!--Day17--> <td align=center></td>
-      <!--Day18--> <td align=center></td>
-      <!--Day19--> <td align=center></td>
-      <!--Day20--> <td align=center></td>
-      <!--Day21--> <td align=center></td>
+      <td align=center>Day4</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day5</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day6</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day7</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day8</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day9</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day10</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day11</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day12</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day13</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day14</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+      <td align=center>Day15</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day16</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day17</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day18</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day19</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day20</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day21</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day22</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day23</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day24</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day25</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day26</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day27</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day28</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day29</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+    </tr>
+    <tr>
+      <td align=center>Day30</td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
+      <td align=center></td>
     </tr>
 </table>
