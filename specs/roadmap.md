@@ -17,17 +17,17 @@ The following chart is the roadmap of how we are planning to develop our project
     </tr>
     <tr>
       <td align=center>Day2</td>
-      <td align=center>Implement the basic data structure of a recipe element.</td>
-      <td align=center>Add simple buttons that connect the HTML pages as designed.</td>
-      <td align=center>Perfect the welcome page with animated logo and other information.</td>
+      <td align=center>Implement the basic data structure (schema of json file) of a recipe element.</td>
+      <td align=center>Add simple buttons that connect the HTML pages as designed (anchor tag).</td>
+      <td align=center>Perfect the welcome page with animated logo and other information [This step can be considered later, put a static picture first].</td>
       <td align=center></td>
     </tr>
     <tr>
       <td align=center>Day3</td>
       <td align=center>Create a grid or a list on the homepage.</td>
       <td align=center>Achieve reading and writing of some hard-coded data.</td>
-      <td align=center>Replace the simple buttons with buttons with images.</td>
-      <td align=center>Test the transition between the HTML pages.</td>
+      <td align=center>Replace the simple buttons with buttons with images [All UI or CSS related stuff, can be done later].</td>
+      <td align=center>Test the transition between the HTML pages [All UI or CSS related stuff, can be done later].</td>
     </tr>
     <tr>
       <td align=center>Day4</td>
@@ -39,36 +39,36 @@ The following chart is the roadmap of how we are planning to develop our project
     <tr>
       <td align=center>Day5</td>
       <td align=center></td>
-      <td align=center>Implement the transition from the welcome page to the homepage.</td>
-      <td align=center>Perfect the homepage's design.</td>
+      <td align=center>Implement the transition from the welcome page to the homepage [All UI or CSS related stuff, can be done later].</td>
+      <td align=center>Perfect the homepage's design [All UI or CSS related stuff, can be done later].</td>
       <td align=center></td>
     </tr>
     <tr>
       <td align=center>Day6</td>
-      <td align=center>Create a foundation for the viewing page to view the hard-coded data.</td>
+      <td align=center>Create a foundation (add.html) for the viewing page to view the hard-coded data.</td>
       <td align=center></td>
       <td align=center></td>
-      <td align=center>Test the transition from the welcome page to the homepage.</td>
+      <td align=center>Test the transition from the welcome page to the homepage [All UI or CSS related stuff, can be done later].</td>
     </tr>
     <tr>
       <td align=center>Day7</td>
       <td align=center></td>
-      <td align=center>Connect the grid or list element to the viewing page.</td>
-      <td align=center>Perfect the viewing page's design.</td>
+      <td align=center>Connect the grid or list element to the viewing page [Javascript code should consider later].</td>
+      <td align=center>Perfect the viewing page's design [All UI or CSS related stuff, can be done later].</td>
       <td align=center></td>
     </tr>
     <tr>
       <td align=center>Day8</td>
-      <td align=center>Create a foundation for the editing page.</td>
+      <td align=center>Create a foundation for the editing page (edit.html).</td>
       <td align=center></td>
       <td align=center></td>
-      <td align=center>Test the transition between the homepage and the viewing page.</td>
+      <td align=center>Test the transition between the homepage and the viewing page [All UI or CSS related stuff, can be done later].</td>
     </tr>
     <tr>
       <td align=center>Day9</td>
       <td align=center></td>
-      <td align=center>Replace the hard-coded data with user-inputed data.</td>
-      <td align=center>Perfect the editing page's design.</td>
+      <td align=center>Replace the hard-coded data with user-inputed data [Javascript code should consider later].</td>
+      <td align=center>Perfect the editing page's design [All UI or CSS related stuff, can be done later].</td>
       <td align=center></td>
     </tr>
     <tr>
