@@ -2,7 +2,7 @@
 The following chart is the roadmap of how we are planning to develop our project. The tasks from day 1 to day 14 achieves the project's most basic functionalities, while the tasks after day 14 are extra steps for our project to reach perfection.
 <table>
     <tr>
-      <th align=center width=100>Timeline</th>
+      <th align=center width=150>Timeline</th>
       <th align=center>Day1</th>
       <th align=center>Day2</th> 
       <th align=center>Day3</th>
