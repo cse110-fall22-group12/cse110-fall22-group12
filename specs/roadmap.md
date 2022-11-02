@@ -6,7 +6,7 @@ The following chart is the roadmap of how we are planning to develop our project
       <th align=center>Foundations</th>
       <th align=center>Functionalities</th>
       <th align=center>UI Implementations</th>
-      <th align=center>Testing</th>
+      <th align=center>Unit Testing</th>
     </tr>
     <tr>
       <td align=center>Day1</td>
@@ -107,6 +107,11 @@ The following chart is the roadmap of how we are planning to develop our project
       <td align=center></td>
     </tr>
     <tr>
+      <td align=center>-</td>
+      <td align=center>-</td>
+      <td align=center>-</td>
+      <td align=center>-</td>
+      <td align=center>-</td>
     </tr>
     <tr>
       <td align=center>Day15</td>
