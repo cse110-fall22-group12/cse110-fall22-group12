@@ -29,7 +29,7 @@ An app that manages logging a user's Recipes can have many features. We want to 
 * tagging the recipes with user made custom tags
 * searching through foods by name/tag
 
-### Features taht we should not have ###
+### Features that we should not have ###
 
 * Multiple text boxes/entries for an ingredient section
 
