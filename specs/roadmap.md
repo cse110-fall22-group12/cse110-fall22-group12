@@ -1,5 +1,5 @@
 # Project Roadmap #
-Note: the tasks from day 1 to day 14 achieves the project's basic functionalities. The tasks after day 14 are extra steps for our project to reach perfection.
+The following chart is the roadmap of how we are planning to develop our project. The tasks from day 1 to day 14 achieves the project's most basic functionalities, while the tasks after day 14 are extra steps for our project to reach perfection.
 <table>
     <tr>
       <th align=center>Task Category \ Timeline</th>
