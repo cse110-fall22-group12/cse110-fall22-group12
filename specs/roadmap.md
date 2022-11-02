@@ -28,7 +28,7 @@ The following chart is the roadmap of how we are planning to develop our project
     </tr>
     <tr>
       <td align=center>Foundations</td>
-      <td align=center>?</td>
+      <!--This is a comment. Comments are not displayed in the browser--> <td align=center>?</td>
       <td align=center>?</td>
       <td align=center>?</td>
     </tr>
