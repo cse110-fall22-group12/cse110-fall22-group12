@@ -24,65 +24,65 @@ The following chart is the roadmap of how we are planning to develop our project
     </tr>
     <tr>
       <td align=center>Day3</td>
-      <td align=center></td>
-      <td align=center>Achieve reading and writing of some hard-coded basic data structure.</td>
+      <td align=center>Create a grid or a list on the homepage.</td>
+      <td align=center>Achieve reading and writing of some hard-coded data.</td>
       <td align=center>Replace the simple buttons with buttons with images.</td>
       <td align=center>Test the transition between the HTML pages.</td>
     </tr>
     <tr>
       <td align=center>Day4</td>
       <td align=center></td>
+      <td align=center>Display the hard-coded data on the grid or list on the homepage.</td>
       <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Test the reading and writing of the hard-coded data.</td>
     </tr>
     <tr>
       <td align=center>Day5</td>
       <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Implement the transition from the welcome page to the homepage.</td>
+      <td align=center>Perfect the homepage's design.</td>
       <td align=center></td>
     </tr>
     <tr>
       <td align=center>Day6</td>
+      <td align=center>Create a foundation for the viewing page to view the hard-coded data.</td>
       <td align=center></td>
       <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Test the transition from the welcome page to the homepage.</td>
     </tr>
     <tr>
       <td align=center>Day7</td>
       <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Connect the grid or list element to the viewing page.</td>
+      <td align=center>Perfect the viewing page's design.</td>
       <td align=center></td>
     </tr>
     <tr>
       <td align=center>Day8</td>
+      <td align=center>Create a foundation for the editing page.</td>
       <td align=center></td>
       <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Test the transition between the homepage and the viewing page.</td>
     </tr>
     <tr>
       <td align=center>Day9</td>
       <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Replace the hard-coded data with user-inputed data.</td>
+      <td align=center>Perfect the editing page's design.</td>
       <td align=center></td>
     </tr>
     <tr>
       <td align=center>Day10</td>
       <td align=center></td>
+      <td align=center>Connect the homepage with the editing page.</td>
       <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Test the editing functionalities.</td>
     </tr>
     <tr>
       <td align=center>Day11</td>
       <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Create necessary connections between all the pages.</td>
+      <td align=center>Perfect the transition effects.</td>
       <td align=center></td>
     </tr>
     <tr>
@@ -90,21 +90,21 @@ The following chart is the roadmap of how we are planning to develop our project
       <td align=center></td>
       <td align=center></td>
       <td align=center></td>
-      <td align=center></td>
+      <td align=center>Test the creating, editing, and deleting functionalities.</td>
     </tr>
     <tr>
       <td align=center>Day13</td>
+      <td align=center>Make small adjustments based on the testing feedback.</td>
+      <td align=center>Make small adjustments based on the testing feedback.</td>
       <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Test the project's visual and user-experience aspects.</td>
     </tr>
     <tr>
       <td align=center>Day14</td>
       <td align=center></td>
       <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Make small adjustments based on the testing feedback.</td>
+      <td align=center>Test the project as a whole.</td>
     </tr>
     <tr>
       <td align=center>-</td>
