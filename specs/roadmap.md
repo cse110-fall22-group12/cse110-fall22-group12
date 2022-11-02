@@ -17,17 +17,17 @@ The following chart is the roadmap of how we are planning to develop our project
     </tr>
     <tr>
       <td align=center>Day2</td>
-      <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Implement the basic data structure of a recipe element.</td>
+      <td align=center>Add simple buttons that connect the HTML pages as designed.</td>
+      <td align=center>Perfect the welcome page with animated logo and other information.</td>
       <td align=center></td>
     </tr>
     <tr>
       <td align=center>Day3</td>
       <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Achieve reading and writing of some hard-coded basic data structure.</td>
+      <td align=center>Replace the simple buttons with buttons with images.</td>
+      <td align=center>Test the transition between the HTML pages.</td>
     </tr>
     <tr>
       <td align=center>Day4</td>
