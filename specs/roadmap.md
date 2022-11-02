@@ -29,6 +29,27 @@ The following chart is the roadmap of how we are planning to develop our project
     <tr>
       <td align=center>Foundations</td>
       <!--Day1--> <td align=center></td>
+      <!--Day2--> <td align=center></td>
+      <!--Day3--> <td align=center></td>
+      <!--Day4--> <td align=center></td>
+      <!--Day5--> <td align=center></td>
+      <!--Day6--> <td align=center></td>
+      <!--Day7--> <td align=center></td>
+      <!--Day8--> <td align=center></td>
+      <!--Day9--> <td align=center></td>
+      <!--Day10--> <td align=center></td>
+      <!--Day11--> <td align=center></td>
+      <!--Day12--> <td align=center></td>
+      <!--Day13--> <td align=center></td>
+      <!--Day14--> <td align=center></td>
+      <td align=center>|</td>
+      <!--Day15--> <td align=center></td>
+      <!--Day16--> <td align=center></td>
+      <!--Day17--> <td align=center></td>
+      <!--Day18--> <td align=center></td>
+      <!--Day19--> <td align=center></td>
+      <!--Day20--> <td align=center></td>
+      <!--Day21--> <td align=center></td>
     </tr>
     <tr>
       <td align=center>Functionalities</td>
