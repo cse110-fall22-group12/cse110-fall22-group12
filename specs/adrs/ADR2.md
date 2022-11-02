@@ -2,9 +2,9 @@
 
 ## Context and Problem Statement
 
-What is the focus of our CRUD app?
-What are some ideas that we want to focus on?
-What kind of app are we interested in making?
+* What is the focus of our CRUD app?
+* What are some ideas that we want to focus on?
+* What kind of app are we interested in making?
 
 ## Considered Options
 
