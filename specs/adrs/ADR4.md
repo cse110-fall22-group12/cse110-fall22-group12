@@ -25,9 +25,9 @@ An app that manages logging a user's Recipes can have many features. We want to 
 * Image of the food
 * Rating of the food
 * Multiple images per food.
-* sorting the recipes (by name/date/rating)
-* tagging the recipes with user made custom tags
-* searching through foods by name/tag
+* Sorting the recipes (by name/date/rating)
+* Tagging the recipes with user made custom tags
+* Searching through foods by name/tag
 
 ### Features that we should not have ###
 
