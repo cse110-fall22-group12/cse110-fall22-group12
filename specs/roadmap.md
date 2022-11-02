@@ -115,43 +115,43 @@ The following chart is the roadmap of how we are planning to develop our project
     </tr>
     <tr>
       <td align=center>Day15</td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Adjust the data structure to store tags and their colors.</td>
+      <td align=center>Add textfields and labels in the editing page, homepage, and the viewing page.</td>
       <td align=center></td>
       <td align=center></td>
     </tr>
     <tr>
       <td align=center>Day16</td>
       <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Fill the data structure with user-inputed tags.</td>
+      <td align=center>Perfect the design of the textfields and labels.</td>
       <td align=center></td>
     </tr>
     <tr>
       <td align=center>Day17</td>
       <td align=center></td>
       <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Assign different colors for the tags.</td>
+      <td align=center>Test the functionalities of creating and editing tags.</td>
     </tr>
     <tr>
       <td align=center>Day18</td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Develop a searching algorithm.</td>
+      <td align=center>Add a simple search bar with a simple textfield.</td>
       <td align=center></td>
       <td align=center></td>
     </tr>
     <tr>
       <td align=center>Day19</td>
       <td align=center></td>
-      <td align=center></td>
-      <td align=center></td>
+      <td align=center>Connect the search bar with the searching algorthm.</td>
+      <td align=center>Perfect the design of the search bar.</td>
       <td align=center></td>
     </tr>
     <tr>
       <td align=center>Day20</td>
       <td align=center></td>
-      <td align=center></td>
+      <td align=center>Modify the homepage based on search results.</td>
       <td align=center></td>
       <td align=center></td>
     </tr>
@@ -160,7 +160,7 @@ The following chart is the roadmap of how we are planning to develop our project
       <td align=center></td>
       <td align=center></td>
       <td align=center></td>
-      <td align=center></td>
+      <td align=center>Test the searching functionality.</td>
     </tr>
     <tr>
       <td align=center>Day22</td>
