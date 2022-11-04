@@ -1,12 +1,12 @@
-# Decide on the Feature-Set of our Application #
+# Decide on the feature-set of our application #
 
 ## Problem ##
 
 An app that manages logging a user's Recipes can have many features. We want to have a minimum viable product that can handle our targeted user's needs without overloading on features and the scope of our idea. This is because we have very little time to implement this project. 
 
-* What features contribute to the UX of someone who likes to cook?
+* What features contribute to the user experience of someone who likes to cook?
 * How complicated are these features?
-* Which features can be exclued for the MVP?
+* Which features can be exclued for the minimum viable product?
 
 ## Considered Options ##
 

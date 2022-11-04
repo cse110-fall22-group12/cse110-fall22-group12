@@ -1,4 +1,4 @@
-# Decide on a Diary Type of App #
+# Decide on a diary type of app #
 
 ## Context and Problem Statement ##
 
