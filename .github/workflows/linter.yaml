@@ -1,0 +1,14 @@
+# This is a basic workflow to get started with CI using eslint
+
+name: CI - Linter
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install npm
+        run: npm install
+      - name: Run ESlint
+        run: npx eslint --config ./pipeline/.eslintrc.yml ./source/js 
