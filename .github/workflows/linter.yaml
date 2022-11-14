@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install npm
-        run: npm install
+        run: npm install --save-dev eslint eslint-config-google
       - name: Run ESlint
         run: npx eslint --config ./pipeline/.eslintrc.yml ./source/js 
