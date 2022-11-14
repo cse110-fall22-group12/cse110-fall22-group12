@@ -1,6 +1,3 @@
-function foo() {
-    console.log("hello world")
-}
 /**
  * Logs hello world to the console
  *
