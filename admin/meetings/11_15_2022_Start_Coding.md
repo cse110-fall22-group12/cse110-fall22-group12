@@ -31,7 +31,7 @@ __Need to be finalized by next Tuesday[11/22/2022]__
 * Need to record sprint video 1
 
 ## Project Timeline
-* Week 8: Start coding the home page, edit page and viewpage
+* Week 8: Start coding the home page, edit/add page and viewpage
 
 ## Decisions
 * We agreed that we are going to split the sprint video into smaller parts and record them separately
