@@ -1,0 +1,10 @@
+@import "constants.css";
+* {
+    background-color: var(--secondary-color);
+    color: var(--body-text-color);
+    border-radius: 1rem;
+}
+
+card {
+    padding: 3rem;
+}
