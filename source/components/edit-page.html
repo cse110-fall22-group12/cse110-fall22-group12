@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html>
 	<head>
+
+		<!-- empty icon -->
 		<link rel="icon" href="data:,">
 		
-		<!-- specify the CSS files required  -->
+		<!-- the styles  -->
 		<link rel="stylesheet" href="../style/constants.css">
 		<link rel="stylesheet" href="../style/global.css">
 		<link rel="stylesheet" href="../style/edit-page-buttons.css">
 		
-		<!-- the following is required for loading the font we are using  -->
+		<!-- the font  -->
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+		<!-- link the script  -->
+		<script src="../js/edit-page.js"></script>
+
 	</head>
 
 	<body>
+
+		<!-- top bar -->
 		<header>
-			
-			<!-- you can copy paste this nav section to your pages-->
 			<nav>
-				<!-- <a href=""><img src="../assets/edit-button.svg" alt="test"></img></a> -->
-				<img id="edit-page-back-button" src="../assets/back-button.svg" alt="back"></img>
-				<img id="edit-page-save-button" src="../assets/add-button.svg" alt="add"></img>
+				<!-- buttons -->
+				<img id="edit-page-back-button" src="../assets/back-button.svg" alt="back" onclick="edit_page_back_event_handler()"></img>
+				<img id="edit-page-save-button" src="../assets/add-button.svg" alt="add" onclick="edit_page_save_event_handler()"></img>
 			</nav>
-
-			
-
-
-
-
-            
 		</header>
+
+		<!-- main edit page -->
+		<div>
+			<div height="100px">
+				<p> 1 </p>
+				<br>
+			</div>
+			<div height="100px">
+				<p> 2 </p>
+				<br>
+			</div>
+			<div height="100px">
+				<p> 3 </p>
+				<br>
+			</div>
+			<div height="100px">
+				<p> 4 </p>
+				<br>
+			</div>
+			<div height="100px">
+				<p> 5 </p>
+				<br>
+			</div>
+		</div>
+		
 	</body>
 </html>
