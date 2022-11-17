@@ -1,0 +1,55 @@
+@import "constants.css";
+@import "global.css";
+
+body {
+    background-color: var(--secondary-color);
+}
+
+.outerframe {
+    position: relative;
+    width: 900px;
+    height: 886px;
+    left: relative;
+    top: 134px;
+    overflow-y: scroll;
+    margin: auto;
+    
+}
+
+.dish-name {
+    position: center;
+    margin-top: 41px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.ingredients {
+    padding-top: 50px;
+
+}
+
+.steps {
+    padding-top: 40px;
+}
+
+.notes {
+    padding-top: 40px;
+    
+}
+
+p {
+    padding-top:20px;
+    font-weight:normal;
+}
+
+h3 {
+     text-decoration: underline;     
+     font-weight:600;
+
+}
+
+h2 {
+    font-weight:600;
+
+}
+
