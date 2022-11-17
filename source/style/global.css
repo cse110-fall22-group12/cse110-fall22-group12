@@ -3,8 +3,8 @@
 /* initialize the whole site with no margins, border etc. */
 * {
     box-sizing:     border-box;
-    margin: 0;
-    border: 0;
+    margin:         0;
+    border:         0;
 }
 /* When write CSS, write layout first, then other properties */
 body {
@@ -25,25 +25,11 @@ nav {
     height:             138px;
     width:              100%;
     position:           fixed;
+    
     /* z-index:            1; */
     padding-left:       60px;
     padding-right:      60px;
     color:              var(--primary-color);
-}
-
-/* style the link containing the image buttons */
-nav a {
-    display: flex;
-    margin: 0 15px;
-}
-
-/* this is the container to hold the buttons on the right side (in case there are multiple)*/
-#button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-    width: 17.5rem;
 }
 
 /* Media query for tablets and larger phones*/
@@ -53,15 +39,6 @@ nav a {
         padding-right: 20px;
         height: 90px;
         font-size: 20px;
-    }
-    
-    #button-container {
-        width: 12rem;
-    }
-    
-    nav a img {
-        width: 50px;
-        height: 50px;
     }
 }
 
