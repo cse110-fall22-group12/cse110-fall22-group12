@@ -14,7 +14,7 @@ window.onload = construct_edit_page;
  *
  */
 function edit_page_back_event_handler() {
-  window.alert('Test: returning to the previous page...');
+  console.log('returning to the previous page...');
 }
 
 /**
@@ -22,6 +22,10 @@ function edit_page_back_event_handler() {
  * or overwrite the existing one.
  *
  */
- function edit_page_save_event_handler() {
-  window.alert('Test: saving the element...');
+function edit_page_save_event_handler() {
+  console.log('saving the following data');
+  console.log(document.getElementById('edit-page-input-name').value);
+  console.log(document.getElementById('edit-page-input-ingredients').value);
+  console.log(document.getElementById('edit-page-input-steps').value);
+  console.log(document.getElementById('edit-page-input-notes').value);
 }
