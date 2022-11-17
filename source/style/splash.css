@@ -1,0 +1,22 @@
+@import "constants.css";
+
+body {
+    background-color: var(--theme-color);
+}
+
+#splash-logo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#center-image {
+    position: absolute;
+    text-align: center;
+    top: 560px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px; 
+
+}
