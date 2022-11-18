@@ -1,33 +1,33 @@
 class RecipeCell extends HTMLElement {
-    constructor() {
-        super();
-        const shadow = this.attachShadow({mode: 'open'});
-        const span = document.createElement('span');
-        span.className = 'recipe-name';
-                
-        const card = document.createElement('card');
-        card.appendChild(span);
+  constructor() {
+    super();
+    const shadow = this.attachShadow({mode: 'open'});
+    const span = document.createElement('span');
+    span.className = 'recipe-name';
 
-        const anchor = document.createElement('a');
-        anchor.className = 'recipe-cell'
-        anchor.setAttribute('href', '../components/view.html');
-        anchor.appendChild(card);
+    const card = document.createElement('card');
+    card.appendChild(span);
 
-        const link = document.createElement('link');
-        link.setAttribute('rel', 'stylesheet');
-        link.setAttribute('href', '../style/home.css');
+    const anchor = document.createElement('a');
+    anchor.className = 'recipe-cell';
+    anchor.setAttribute('href', '../components/view.html');
+    anchor.appendChild(card);
 
-        shadow.appendChild(link);
-        shadow.appendChild(anchor);
-    }
+    const link = document.createElement('link');
+    link.setAttribute('rel', 'stylesheet');
+    link.setAttribute('href', '../style/home.css');
 
-    set recipe_name(recipe_name) {
-        if (!recipe_name) return;
+    shadow.appendChild(link);
+    shadow.appendChild(anchor);
+  }
 
-        const span = this.shadowRoot.querySelector('span');
+  set recipe_name(recipe_name) {
+    if (!recipe_name) return;
 
-        span.innerHTML = recipe_name;
-    }
+    const span = this.shadowRoot.querySelector('span');
+
+    span.innerHTML = recipe_name;
+  }
 }
 
 customElements.define('recipe-cell', RecipeCell);

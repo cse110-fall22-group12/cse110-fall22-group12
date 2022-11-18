@@ -7,6 +7,7 @@ extends:
 overrides: []
 parserOptions:
   ecmaVersion: latest
+  sourceType: module
 rules: 
   require-jsdoc: warn
   no-unused-vars: warn
