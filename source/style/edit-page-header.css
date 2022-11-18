@@ -2,10 +2,10 @@
 
 /* for the headers on the edit page */
 #edit-page-header {
-    margin-top:         30px;
-    margin-bottom:      30px;
-    padding-left:       20px;
-    font-family:        var(--primary-font);
-    font-size:          var(--h2-font-size);
-    font-weight:        medium;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-family: var(--primary-font);
+  font-size: var(--h2-font-size);
+  font-weight: 600;
 }

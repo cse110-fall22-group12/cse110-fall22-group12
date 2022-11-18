@@ -2,37 +2,38 @@
 
 /* the back button of the edit page */
 #edit-page-back-button {
-    height:         60%;
-    margin-left:    0px;
+  /* height: 60%; */
+  block-size: 100px;
+  /* margin-left:    0px; */
 }
 
 /* the save button of the edit page */
 #edit-page-save-button {
-    height:         60%;
-    margin-right:   0px;
+  /* height: 60%; */
+  block-size: 100px;
+  /* margin-right:   0px; */
 }
 
-/* if necessary, specify the following for different screen sizes
+/* if necessary, specify the following for different screen sizes */
 
 @media only screen and (max-width: 768px) {
-    #edit-page-back-button {
-        height:         50%;
-        margin-left:    10px;
-    }
-    #edit-page-save-button {
-        height:         50%;
-        margin-right:   10px;
-    }
+  #edit-page-back-button {
+    block-size: 64px;
+    margin-left: 10px;
+  }
+  #edit-page-save-button {
+    block-size: 64px;
+    margin-right: 10px;
+  }
 }
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
     #edit-page-back-button {
-        height:         50%;
+        block-size: 64px;
         margin-left:    10px;
     }
     #edit-page-save-button {
-        height:         50%;
+        block-size: 64px;
         margin-right:   10px;
     }
-}
-*/
+} */
