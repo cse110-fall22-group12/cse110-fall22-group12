@@ -1,4 +1,13 @@
+/**
+ * Recipe card component that will be used to represent each of the users
+ * recipes on the home page. Each time one is created, the name needs to be set.
+ * Otherwise, the card will remain blank.
+ */
 class RecipeCell extends HTMLElement {
+  /**
+   * The constructor for defining how this component will be represented on
+   * the page
+   */
   constructor() {
     super();
     const shadow = this.attachShadow({mode: 'open'});
@@ -21,12 +30,19 @@ class RecipeCell extends HTMLElement {
     shadow.appendChild(anchor);
   }
 
-  set recipe_name(recipe_name) {
-    if (!recipe_name) return;
+  /**
+   * Override the set operator here to add a span object to the shadow dom, when
+   * a name is set for our recipe.
+   *
+   * @param {String} recipeName should be a string representing the name of the
+   *    recipe & should hbe less than a certain length as defined by other pages
+   * */
+  set recipeName(recipeName) {
+    if (!recipeName) return;
 
     const span = this.shadowRoot.querySelector('span');
 
-    span.innerHTML = recipe_name;
+    span.innerHTML = recipeName;
   }
 }
 
