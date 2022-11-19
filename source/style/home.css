@@ -19,7 +19,7 @@
 }
 
 
-.recipe_list {
+.recipe-list {
     height: 100vh;
     margin-top: var(--desktop-list-margin-top);
 }
@@ -30,7 +30,7 @@ main {
     align-items: center;
 }
 
-.recipe_cell {
+.recipe-cell {
     text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ card {
     border-radius: 20px;
 }
 
-.recipe_name {
+.recipe-name {
     display: flex;
     
     text-align: center;
@@ -67,10 +67,10 @@ card {
 
 /* Media query for tablets and larger phones*/
 @media only screen and (max-width: 768px) {
-    .recipe_list {
+    .recipe-list {
         margin-top: var(--mobile-list-margin-top);
     }
-    .recipe_name {
+    .recipe-name {
         font-size: 36px;
     }
     card {
@@ -80,7 +80,7 @@ card {
 
 /* Media query for very small mobile devices */
 @media only screen and (max-width: 480px) {
-    .recipe_name {
+    .recipe-name {
         font-size: 24px;
     }
     card {
