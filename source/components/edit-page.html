@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- empty icon -->
+		<link rel="icon" href="data:,">
+		
+		<!-- the styles  -->
+		<link rel="stylesheet" href="../style/constants.css">
+		<link rel="stylesheet" href="../style/global.css">
+		<link rel="stylesheet" href="../style/edit-page-buttons.css">
+		<link rel="stylesheet" href="../style/edit-page-container.css">
+		<link rel="stylesheet" href="../style/edit-page-inputs.css">
+		<link rel="stylesheet" href="../style/edit-page-header.css">
+
+		<!-- the font  -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+		<!-- link the script  -->
+		<script src="../js/edit-page.js"></script>
+
+	</head>
+
+	<body>
+
+		<!-- top bar -->
+		<header>
+			<nav>
+				<!-- buttons -->
+				<img id="edit-page-back-button" src="../assets/back-button.svg" alt="back"></img>
+				<img id="edit-page-save-button" src="../assets/add-button.svg" alt="add"></img>
+			</nav>
+		</header>
+
+		<!-- main edit page -->
+		<div id="edit-page-alignment">
+			<div id="edit-page-container">
+				<input type="text" id="edit-page-input-name" placeholder="Recipe Name">
+				<h2 id="edit-page-header">Ingredients</h2>
+				<textarea id="edit-page-input-ingredients" placeholder="Enter ingredients here"></textarea>
+				<h2 id="edit-page-header">Steps</h2>
+				<textarea id="edit-page-input-steps" placeholder="Enter steps here"></textarea>
+				<h2 id="edit-page-header">Notes</h2>
+				<textarea id="edit-page-input-notes" placeholder="Enter notes here"></textarea>
+			</div>
+		</div>
+		
+	</body>
+</html>

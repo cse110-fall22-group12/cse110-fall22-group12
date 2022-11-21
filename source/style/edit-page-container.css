@@ -1,0 +1,29 @@
+@import "constants.css";
+
+/* the main container of the edit page */
+#edit-page-container {
+  padding-top: 168px; /* more than the height of the top bar (138px) */
+  padding-left: 60px; /* the padding of the top bar */
+  padding-right: 60px; /* the padding of the top bar */
+  width: 100%;
+  max-width: 900px;
+}
+
+#edit-page-alignment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* for devices with smaller screens */
+@media only screen and (max-width: 768px) {
+  #edit-page-container {
+    padding-top: 120px; /* more than the height of the top bar  (90px) */
+    padding-left: 20px; /* the padding of the top bar */
+    padding-right: 20px; /* the padding of the top bar */
+  }
+  #edit-page-alignment {
+    padding-left: 20px; /* the padding of the top bar */
+    padding-right: 20px; /* the padding of the top bar */
+  }
+}
