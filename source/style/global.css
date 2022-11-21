@@ -12,24 +12,29 @@ body {
 }
 
 nav {
-  /* layout */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  /* other properties */
-  /* margin:             0; */
-  font-size: var(--nav-font-size);
-  background: var(--theme-color);
-  height: 138px;
-  width: 100%;
-  position: fixed;
+    /* layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* other properties */
+    /* margin:             0; */
+    font-size:          var(--nav-font-size);
+    background:         var(--theme-color);
+    height:             138px;
+    width:              100%;
+    position:           fixed;
+	/* z-index:            1;
+    padding-left:       60px;
+    padding-right:      60px;
+    color:              var(--primary-color);  */
+}
 
   /* z-index:            1; */
-  padding-left: 60px;
+  /* padding-left: 60px;
   padding-right: 60px;
-  color: var(--primary-color);
-}
+  color: var(--primary-color); */
+/* } */
 
 /* Media query for tablets and larger phones*/
 @media only screen and (max-width: 768px) {
