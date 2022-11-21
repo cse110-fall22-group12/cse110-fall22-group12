@@ -24,10 +24,10 @@ nav {
     height:             138px;
     width:              100%;
     position:           fixed;
-	/* z-index:            1;
+	z-index:            1;
     padding-left:       60px;
     padding-right:      60px;
-    color:              var(--primary-color);  */
+    color:              var(--primary-color);
 }
 
   /* z-index:            1; */
