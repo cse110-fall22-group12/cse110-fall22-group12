@@ -5,20 +5,50 @@
  */
 window.onload = function () {
   // initialize thepage here:
+  if (get_selected_data_id() != new_data_index) {
+
+    const data = get_selected_data();
+
+    document.getElementById('edit-page-input-name').value = data.name;
+    document.getElementById("edit-page-input-ingredients").value = data.ingredients;
+    document.getElementById("edit-page-input-steps").value = data.preparation;
+    document.getElementById("edit-page-input-notes").value = data.notes;
+
+  }
+
   console.log('constructing the edit page...');
   // return:
   const back = document.getElementById('edit-page-back-button');
   back.addEventListener('click', function () {
-    console.log('returning to the previous page...');
+    if (get_selected_data_id() != new_data_index) {
+      window.location.href = "view.html";
+    }else{
+      window.location.href = "home.html";
+    }
   });
   // save:
   const save = document.getElementById('edit-page-save-button');
   save.addEventListener('click', function () {
-    console.log('saving the following data');
-    console.log(document.getElementById('edit-page-input-name').value);
-    console.log(document.getElementById('edit-page-input-ingredients').value);
-    console.log(document.getElementById('edit-page-input-steps').value);
-    console.log(document.getElementById('edit-page-input-notes').value);
+    if (get_selected_data_id() != new_data_index) {
+      const data = get_selected_data();
+      data.name = document.getElementById('edit-page-input-name').value.trim();
+      data.ingredients = document.getElementById('edit-page-input-ingredients').value;
+      data.preparation = document.getElementById('edit-page-input-steps').value;
+      data.notes = document.getElementById('edit-page-input-notes').value;
+      
+      overwrite_selected_data(data);
+
+    }else{
+      create_new_data(
+        document.getElementById('edit-page-input-name').value.trim(),
+        [],
+        false,
+        document.getElementById("edit-page-input-ingredients").value,
+        document.getElementById("edit-page-input-steps").value,
+        document.getElementById("edit-page-input-notes").value
+      );
+    }
+    window.location.href = "home.html";
   });
 };
 

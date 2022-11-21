@@ -10,34 +10,52 @@ const DEV = true;
  * specific set if we are doing development and/or manual testing.
  *  */
 function init() {
-  if (DEV) addSampleDataToLocalStorage();
+
+  if (is_launched_for_the_first_time()) {
+    create_new_data(
+      "mushroom killer",
+      ["tag", "another tag", "the last tag"],
+      true,
+      "some ingredients",
+      "some preparation",
+      "some notes"
+    );
+    create_new_data(
+      "mushroom terminator",
+      ["tag"],
+      true,
+      "some ingredients",
+      "some preparation",
+      "some notes"
+    );
+    create_new_data(
+      "mushroom slayer",
+      ["another tag", "the last tag"],
+      false,
+      "some ingredients",
+      "some preparation",
+      "some notes"
+    );
+  }
 
   const list = document.getElementsByClassName('recipe-list')[0];
 
-  for (const key in localStorage) {
-    // skip the keys that exist in local storage by default
-    if (key == 'next_id' || key == 'key' || key == 'getItem' ||
-        key == 'setItem' || key == 'removeItem' || key == 'clear' ||
-        key == 'length') {
-      continue;
-    }
+  const data_array = read_data_array('',false);
+  for (let i = 0; i < data_array.length; i += 1) {
+    let data = data_array[i];
 
     // add our local storage keys as 'recipe cells' to the home page
     const recipeCell = document.createElement('recipe-cell');
-    recipeCell.recipeName = JSON.parse(localStorage.getItem(key))['name'];
+    recipeCell.recipeData = data;
     list.appendChild(recipeCell);
   }
-}
 
-/**
- * Initializes or edits the first 5 key value pairs of localstorage [0:4] as
- * certain predefined Objects. This helps us develop withjout having to paste
- * data into the localstorage
- *  */
-function addSampleDataToLocalStorage() {
-  // localStorage.clear();
-  for (const key of Object.keys(sampleData)) {
-    const str = JSON.stringify(sampleData[key]);
-    localStorage.setItem(key, str);
-  }
+  document.getElementById("button-container").addEventListener('click', function(event) {
+
+    select_data_by_id(new_data_index);
+
+    window.location.href = "edit-page.html";
+
+  });
+
 }

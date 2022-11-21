@@ -10,7 +10,10 @@
 		
 		<!-- the following is required for loading the font we are using  -->
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	</head>
+        
+        <script src="../module/data.js"></script>
+        <script src="../js/view.js"></script>
+    </head>
 
 	<body>
       
@@ -23,8 +26,8 @@
 				<div class = "button-container" id="button-container">
 					<!-- put the {url} you want to go after the user click the anchor tag -->
 					<!-- should be another internal page -->
-					<a href="https://ucsd.edu/"><img src="../assets/add-button.svg" alt="test"></img></a>
-					<a href="https://www.ucdavis.edu/"><img src="../assets/delete-button.svg"></img></a>
+					<a id="view-page-add-button"><img src="../assets/add-button.svg" alt="test"></img></a>
+					<a id="view-page-delete-button"><img src="../assets/delete-button.svg"></img></a>
 				</div>
 			</nav>
 		</header>
@@ -33,12 +36,11 @@
 		<main>
             <div class="outerframe">
                 <div class="dish-name">
-                    <h2>Pasta Carbonara</h2>
-                
+                    <h2 id="recipe-name">Pasta Carbonara</h2>
                 </div>
                 <div class="ingredients">
                     <h3>Ingredients</h3>
-                    <p>Lorem ipsum dolor sit amet, 
+                    <p id="recipe-ingredients">Lorem ipsum dolor sit amet, 
                         consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -47,7 +49,7 @@
                 </div>
                 <div class="steps">
                     <h3>Steps</h3>
-                    <p>Lorem ipsum dolor sit amet, 
+                    <p id="recipe-preparation">Lorem ipsum dolor sit amet, 
                         consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -55,7 +57,7 @@
                 </div>
                 <div class="notes">
                     <h3>Notes</h3>
-                    <p>Lorem ipsum dolor sit amet, 
+                    <p id="recipe-notes">Lorem ipsum dolor sit amet, 
                         consectetur adipiscing elit, 
                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.

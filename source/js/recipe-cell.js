@@ -19,7 +19,7 @@ class RecipeCell extends HTMLElement {
 
     const anchor = document.createElement('a');
     anchor.className = 'recipe-cell';
-    anchor.setAttribute('href', '../components/view.html');
+    //anchor.setAttribute('href', '../components/view.html');
     anchor.appendChild(card);
 
     const link = document.createElement('link');
@@ -44,6 +44,25 @@ class RecipeCell extends HTMLElement {
 
     span.innerHTML = recipeName;
   }
+
+
+  set recipeData(data) {
+    if (!data.name) {
+      return;
+    }
+    
+    const span = this.shadowRoot.querySelector('span');
+    span.innerHTML = data.name;
+
+    const card = this.shadowRoot.querySelector('card');
+    card.index = data.id;
+
+    card.addEventListener('click', function(event) {
+      select_data_by_id(event.currentTarget.index);
+      window.location.href = "view.html";
+    });
+  }
+
 }
 
 customElements.define('recipe-cell', RecipeCell);
