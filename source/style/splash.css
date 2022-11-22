@@ -4,19 +4,21 @@ body {
     background-color: var(--theme-color);
 }
 
-#splash-logo {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* for web viewing */
+.splash-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    margin-top: 12vw;
+    margin-bottom: 5px
 }
-
-#center-image {
-    position: absolute;
+.center-text {
+    display: block;
+    justify-content: center;
     text-align: center;
-    top: 560px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Montserrat', sans-serif;
-    font-size: 17px; 
-
+    font-size: 15px; 
 }
