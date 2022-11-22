@@ -1,4 +1,4 @@
-/*let show_count = document.getElementById('count');
+/* let show_count = document.getElementById('count');
 let count = 2;
 
 setInterval(() => {
@@ -10,3 +10,4 @@ setInterval(() => {
     }
 },1000)
 */
+
