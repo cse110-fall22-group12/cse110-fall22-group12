@@ -63,9 +63,9 @@ function construct_header(edit) {
       window.location.href = 'view.html';
     } else {
       const name = document.getElementById('edit-name').value.trim();
-      const ingredients = document.getElementById('edit-ingredients').value.trim();
-      const steps = document.getElementById('edit-steps').value.trim();
-      const notes = document.getElementById('edit-notes').value.trim();
+      const ingredients = document.getElementById('edit-ingredients').value;
+      const steps = document.getElementById('edit-steps').value;
+      const notes = document.getElementById('edit-notes').value;
       create_new_data(name, [], false, ingredients, steps, notes);
       window.location.href = 'home.html';
     }
