@@ -229,10 +229,10 @@ function overwrite_selected_data(new_data) {
   if (get_data(data_array_key) === null) {
     return;
   }
-  let raw_data_array = JSON.parse(get_data(data_array_key));
-  let data_array = [];
+  const raw_data_array = JSON.parse(get_data(data_array_key));
+  const data_array = [];
   for (let i = 0; i < raw_data_array.length; i += 1) {
-    let data = raw_data_array[i];
+    const data = raw_data_array[i];
     if (data.id == get_selected_data_id()) {
       data_array.push(new_data);
     } else {
@@ -250,10 +250,10 @@ function delete_selected_data() {
   if (get_data(data_array_key) === null) {
     return;
   }
-  let raw_data_array = JSON.parse(get_data(data_array_key));
-  let data_array = [];
+  const raw_data_array = JSON.parse(get_data(data_array_key));
+  const data_array = [];
   for (let i = 0; i < raw_data_array.length; i += 1) {
-    let data = raw_data_array[i];
+    const data = raw_data_array[i];
     if (data.id != get_selected_data_id()) {
       data_array.push(data);
     }
