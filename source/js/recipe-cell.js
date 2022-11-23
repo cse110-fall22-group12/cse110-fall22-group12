@@ -18,8 +18,7 @@ class RecipeCell extends HTMLElement {
     card.appendChild(span);
 
     const anchor = document.createElement('a');
-    anchor.className = 'recipe-cell';
-    //anchor.setAttribute('href', '../components/view.html');
+    anchor.className = 'recipe-cell-link';
     anchor.appendChild(card);
 
     const link = document.createElement('link');
@@ -34,18 +33,9 @@ class RecipeCell extends HTMLElement {
    * Override the set operator here to add a span object to the shadow dom, when
    * a name is set for our recipe.
    *
-   * @param {String} recipeName should be a string representing the name of the
+   * @param {String} recipeData should be a string representing the name of the
    *    recipe & should hbe less than a certain length as defined by other pages
    * */
-  set recipeName(recipeName) {
-    if (!recipeName) return;
-
-    const span = this.shadowRoot.querySelector('span');
-
-    span.innerHTML = recipeName;
-  }
-
-
   set recipeData(data) {
     if (!data.name) {
       return;
@@ -62,7 +52,6 @@ class RecipeCell extends HTMLElement {
       window.location.href = 'view.html';
     });
   }
-
 }
 
 customElements.define('recipe-cell', RecipeCell);

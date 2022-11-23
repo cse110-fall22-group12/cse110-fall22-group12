@@ -11,9 +11,9 @@
 		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap">
 	<link rel="stylesheet" href="../style/home.css">
 	<!-- insert other style and script files below  -->
+	<script src="../js/data.js"></script> 
   	<script type="module" src="../js/home.js"></script>
   	<script type="module" src="../js/recipe-cell.js"></script>
-	<!-- ???  -->
 </head>
 
 <body>
@@ -24,15 +24,20 @@
 			My Recipe
 			<div id="button-container">
 				<!-- add the buttons on the right side -->
-				<a href="./edit-page.html">
+				<a href="./edit.html">
 					<img src="../assets/add-button.svg" alt="button">
 				</a>
 			</div>
 		</nav>
 	</header>
-	<div id="stage">
-		<div class="recipe-list"></div>
-	</div>
+	<main>
+		<div id="stage">
+			<div class="recipe-list">
+				<!-- Recipe Cards Added here -->
+			</div>
+		</div>
+	</main>
+	
 </body>
 
 </html>
