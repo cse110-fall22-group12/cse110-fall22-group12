@@ -204,7 +204,7 @@ function get_selected_data_id() {
 /**
  * This function returns the selected data object.
  * @global
- * @return {data object} The selected data object.
+ * @return {data} The selected data object.
  */
 function get_selected_data() {
   if (get_data(data_array_key) === null) {
@@ -223,7 +223,7 @@ function get_selected_data() {
 /**
  * This function overwrites the selected data object with a new one.
  * @global
- * @param {data object}     new_data        The new data.
+ * @param {data}     new_data        The new data.
  */
 function overwrite_selected_data(new_data) {
   if (get_data(data_array_key) === null) {
