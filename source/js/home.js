@@ -1,4 +1,3 @@
-import './data';
 window.addEventListener('DOMContentLoaded', init);
 
 /* Turn this off for deployment, but keep on for testing */
