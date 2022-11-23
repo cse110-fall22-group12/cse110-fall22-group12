@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+
 /* global
     get_selected_data_id,
     new_data_index,
