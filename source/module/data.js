@@ -56,6 +56,31 @@ const template_data = {
 };
 
 /**
+ * This function is a wrapper for the getItem function of the localStorage.
+ * 
+ * @global
+ * 
+ * @param {string}    key   The key of the item.
+ * 
+ * @return {any} The data returned by calling the getItem function of the localStorage.
+ */
+function get_data(key) {
+  return window.localStorage.getItem(key);
+}
+
+/**
+ * This function is a wrapper for the setItem function of the localStorage.
+ * 
+ * @global
+ * 
+ * @param {string}    key     The key of the item.
+ * @param {any}       data    The item to save.
+ */
+ function set_data(key, data) {
+  window.localStorage.setItem(key, data);
+}
+
+/**
  * This function checks whether the program is launched for the first time.
  * Calling this function marks that the program has been launched previously.
  *
@@ -64,8 +89,8 @@ const template_data = {
  * @return {boolean} A boolean indicating whether the program is launched for the first time.
  */
 function is_launched_for_the_first_time() {
-  if (window.localStorage.getItem(data_array_key) === null) {
-    window.localStorage.setItem(data_array_key, JSON.stringify([]));
+  if (get_data(data_array_key) === null) {
+    set_data(data_array_key, JSON.stringify([]));
     return true;
   }
   return false;
@@ -93,12 +118,12 @@ function create_new_data(
   notes
 ) {
   let new_data = JSON.parse(JSON.stringify(template_data));
-  if (window.localStorage.getItem(id_generator_key) === null) {
-    window.localStorage.setItem(id_generator_key, 1);
+  if (get_data(id_generator_key) === null) {
+    set_data(id_generator_key, 1);
     new_data.id = 0;
   } else {
-    new_data.id = parseInt(window.localStorage.getItem(id_generator_key));
-    window.localStorage.setItem(id_generator_key, new_data.id + 1);
+    new_data.id = parseInt(get_data(id_generator_key));
+    set_data(id_generator_key, new_data.id + 1);
   }
   new_data.name = name;
   new_data.tags = tags;
@@ -106,12 +131,12 @@ function create_new_data(
   new_data.ingredients = ingredients;
   new_data.preparation = preparation;
   new_data.notes = notes;
-  if (window.localStorage.getItem(data_array_key) === null) {
-    window.localStorage.setItem(data_array_key, JSON.stringify([new_data]));
+  if (get_data(data_array_key) === null) {
+    set_data(data_array_key, JSON.stringify([new_data]));
   } else {
-    let data_array = JSON.parse(window.localStorage.getItem(data_array_key));
+    let data_array = JSON.parse(get_data(data_array_key));
     data_array.push(new_data);
-    window.localStorage.setItem(data_array_key, JSON.stringify(data_array));
+    set_data(data_array_key, JSON.stringify(data_array));
   }
   select_data_by_id(new_data.id);
 }
@@ -128,10 +153,10 @@ function create_new_data(
  * @return {array} The array of data stored in local storage.
  */
 function read_data_array(search_keywords, show_favorited_only) {
-  if (window.localStorage.getItem(data_array_key) === null) {
+  if (get_data(data_array_key) === null) {
     return [];
   }
-  let raw_data_array = JSON.parse(window.localStorage.getItem(data_array_key));
+  let raw_data_array = JSON.parse(get_data(data_array_key));
   let search_array = search_keywords.trim().split("#");
   for (let i = 0; i < search_array.length; i += 1) {
     search_array[i] = search_array[i].trim();
@@ -187,7 +212,7 @@ function read_data_array(search_keywords, show_favorited_only) {
  * @param {number}      id      The id of the data object to select.
  */
 function select_data_by_id(id) {
-  window.localStorage.setItem(selected_data_id_key, parseInt(id));
+  set_data(selected_data_id_key, parseInt(id));
 }
 
 /**
@@ -201,10 +226,10 @@ function select_data_by_id(id) {
  * @return {number} The id of the selected data or -1 if it does not exist.
  */
 function get_selected_data_id() {
-  if (window.localStorage.getItem(selected_data_id_key) === null) {
+  if (get_data(selected_data_id_key) === null) {
     return -1;
   }
-  return window.localStorage.getItem(selected_data_id_key);
+  return get_data(selected_data_id_key);
 }
 
 /**
@@ -218,10 +243,10 @@ function get_selected_data_id() {
  * @return {data object} The selected data object.
  */
 function get_selected_data() {
-  if (window.localStorage.getItem(data_array_key) === null) {
+  if (get_data(data_array_key) === null) {
     return JSON.parse(JSON.stringify(template_data));
   }
-  let raw_data_array = JSON.parse(window.localStorage.getItem(data_array_key));
+  let raw_data_array = JSON.parse(get_data(data_array_key));
   for (let i = 0; i < raw_data_array.length; i += 1) {
     let data = raw_data_array[i];
     if (data.id == get_selected_data_id()) {
@@ -242,10 +267,10 @@ function get_selected_data() {
  * @param {data object}     new_data        The data that overwrites the selected data.
  */
 function overwrite_selected_data(new_data) {
-  if (window.localStorage.getItem(data_array_key) === null) {
+  if (get_data(data_array_key) === null) {
     return;
   }
-  let raw_data_array = JSON.parse(window.localStorage.getItem(data_array_key));
+  let raw_data_array = JSON.parse(get_data(data_array_key));
   let data_array = [];
   for (let i = 0; i < raw_data_array.length; i += 1) {
     let data = raw_data_array[i];
@@ -255,7 +280,7 @@ function overwrite_selected_data(new_data) {
       data_array.push(data);
     }
   }
-  window.localStorage.setItem(data_array_key, JSON.stringify(data_array));
+  set_data(data_array_key, JSON.stringify(data_array));
 }
 
 /**
@@ -267,10 +292,10 @@ function overwrite_selected_data(new_data) {
  * @global
  */
 function delete_selected_data() {
-  if (window.localStorage.getItem(data_array_key) === null) {
+  if (get_data(data_array_key) === null) {
     return;
   }
-  let raw_data_array = JSON.parse(window.localStorage.getItem(data_array_key));
+  let raw_data_array = JSON.parse(get_data(data_array_key));
   let data_array = [];
   for (let i = 0; i < raw_data_array.length; i += 1) {
     let data = raw_data_array[i];
@@ -278,5 +303,5 @@ function delete_selected_data() {
       data_array.push(data);
     }
   }
-  window.localStorage.setItem(data_array_key, JSON.stringify(data_array));
+  set_data(data_array_key, JSON.stringify(data_array));
 }
