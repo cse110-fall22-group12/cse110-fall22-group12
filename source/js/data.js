@@ -1,6 +1,4 @@
-/**
- * Developed by Deze Lyu, Nov 10, 2022.
- */
+/* eslint-disable no-unused-vars */
 
 /**
  * This global integer variable is something you should select
