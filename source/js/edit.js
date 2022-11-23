@@ -62,14 +62,11 @@ function construct_header(edit) {
       overwrite_selected_data(data);
       window.location.href = 'view.html';
     } else {
-      create_new_data(
-        document.getElementById('edit-name').value.trim(), 
-        [], 
-        false,
-        document.getElementById('edit-ingredients').value,
-        document.getElementById('edit-steps').value,
-        document.getElementById('edit-notes').value,
-      );
+      const name = document.getElementById('edit-name').value.trim();
+      const ingredients = document.getElementById('edit-ingredients').value.trim();
+      const steps = document.getElementById('edit-steps').value.trim();
+      const notes = document.getElementById('edit-notes').value.trim();
+      create_new_data(name, [], false, ingredients, steps, notes);
       window.location.href = 'home.html';
     }
   });
