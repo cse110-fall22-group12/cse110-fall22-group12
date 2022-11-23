@@ -57,5 +57,4 @@ function init() {
     window.location.href = "edit-page.html";
 
   });
-
 }
