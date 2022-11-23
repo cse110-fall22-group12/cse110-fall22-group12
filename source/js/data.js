@@ -15,7 +15,7 @@ const new_data_index = -1;
  * of the array of all the data the program stores.
  * @global
  */
-const data_array_key = "noshroom_data_array";
+const data_array_key = 'noshroom_data_array';
 
 /**
  * This global string variable defines the name of the key
@@ -23,7 +23,7 @@ const data_array_key = "noshroom_data_array";
  * unique id for a new data when creating it.
  * @global
  */
-const id_generator_key = "noshroom_id_generator";
+const id_generator_key = 'noshroom_id_generator';
 
 /**
  * This global string variable defines the name of the key
@@ -31,7 +31,7 @@ const id_generator_key = "noshroom_id_generator";
  * or deleting.
  * @global
  */
-const selected_data_id_key = "selected_data_id";
+const selected_data_id_key = 'selected_data_id';
 
 /**
  * This global data object is the template the program use
@@ -40,12 +40,12 @@ const selected_data_id_key = "selected_data_id";
  */
 const template_data = {
   id: -1,
-  name: "",
+  name: '',
   tags: [],
   favorited: false,
-  ingredients: "",
-  steps: "",
-  notes: "",
+  ingredients: '',
+  steps: '',
+  notes: '',
 };
 
 /**
@@ -131,7 +131,7 @@ function read_data_array(search_keywords, show_favorited_only) {
     return [];
   }
   let raw_data_array = JSON.parse(get_data(data_array_key));
-  let search_array = search_keywords.trim().split("#");
+  let search_array = search_keywords.trim().split('#');
   for (let i = 0; i < search_array.length; i += 1) {
     search_array[i] = search_array[i].trim();
   }
