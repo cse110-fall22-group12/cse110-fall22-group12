@@ -1,4 +1,6 @@
-/* eslint-disable camelcase */
+/* eslint-disable 
+    camelcase,
+*/
 
 /* global
     get_selected_data_id,

@@ -1,4 +1,7 @@
-/* eslint-disable camelcase, no-unused-vars */
+/* eslint-disable 
+    camelcase, 
+    no-unused-vars 
+*/
 
 /**
  * This global integer variable is something you should select
