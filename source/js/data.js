@@ -1,6 +1,6 @@
-/* eslint-disable 
-    camelcase, 
-    no-unused-vars 
+/* eslint-disable
+    camelcase,
+    no-unused-vars
 */
 
 /**
@@ -16,7 +16,7 @@
   * @global
   */
  const data_array_key = 'noshroom_data_array';
- 
+
  /**
   * This global string variable defines the name of the key
   * of an integer that is incremented by 1 to generate the
@@ -24,7 +24,7 @@
   * @global
   */
  const id_generator_key = 'noshroom_id_generator';
- 
+
  /**
   * This global string variable defines the name of the key
   * of the id of the selected data we are viewing, editing,
@@ -32,7 +32,7 @@
   * @global
   */
  const selected_data_id_key = 'selected_data_id';
- 
+
  /**
   * This global data object is the template the program use
   * to create a new data object through copying it.
@@ -47,7 +47,7 @@
    steps:        '',
    notes:        '',
  };
- 
+
  /**
   * This function is a wrapper for the getItem function of the localStorage.
   * @global
@@ -57,7 +57,7 @@
  function get_data(key) {
    return window.localStorage.getItem(key);
  }
- 
+
  /**
   * This function is a wrapper for the setItem function of the localStorage.
   * @global
@@ -67,7 +67,7 @@
   function set_data(key, data) {
    window.localStorage.setItem(key, data);
  }
- 
+
  /**
   * This function checks whether the program is launched for the first time.
   * Calling this function marks that the program has been launched previously.
@@ -81,7 +81,7 @@
    }
    return false;
  }
- 
+
  /**
   * This function creates a new data object and write directly to the local storage.
   * After calling this function, the new data will automatically be selected.
@@ -124,7 +124,7 @@
    }
    select_data_by_id(new_data.id);
  }
- 
+
  /**
   * This function reads the array of data from the local storage.
   * You can provide the following parameters to narrow the results.
@@ -182,7 +182,7 @@
    }
    return data_array;
  }
- 
+
  /**
   * This function selects a data by its id so that we can perform
   * operations to read, edit, and delete it. Selecting another
@@ -193,7 +193,7 @@
  function select_data_by_id(id) {
    set_data(selected_data_id_key, parseInt(id));
  }
- 
+
  /**
   * This function returns the id of the selected data selected
   * after calling the function select_data_by_id.
@@ -207,7 +207,7 @@
    }
    return get_data(selected_data_id_key);
  }
- 
+
  /**
   * This function returns the selected data object.
   * @global
@@ -226,7 +226,7 @@
    }
    return JSON.parse(JSON.stringify(template_data));
  }
- 
+
  /**
   * This function overwrites the selected data object with a new one.
   * @global
@@ -248,7 +248,7 @@
    }
    set_data(data_array_key, JSON.stringify(data_array));
  }
- 
+
  /**
   * This function deletes the selected data object.
   * @global
