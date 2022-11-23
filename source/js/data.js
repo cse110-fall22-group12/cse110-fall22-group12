@@ -52,7 +52,7 @@ const template_data = {
  * This function is a wrapper for the getItem function of the localStorage.
  * @global
  * @param {string}    key   The key of the item.
- * @return {any} The data returned by calling the getItem function of the localStorage.
+ * @return {any} The data returned by calling the getItem function.
  */
 function get_data(key) {
   return window.localStorage.getItem(key);
@@ -83,18 +83,18 @@ function is_launched_for_the_first_time() {
 }
 
 /**
- * This function creates a new data object and write directly to the local storage.
+ * This function creates a new data object and write to the local storage.
  * After calling this function, the new data will automatically be selected.
  * @global
  * @param {string}      name            The name of the new data object.
- * @param {array}       tags            The array of tags of the new data object.
- * @param {boolean}     favorited       The boolean indicating whether the data is favorited.
+ * @param {array}       tags            The array of tags of the data object.
+ * @param {boolean}     favorited       The boolean indicating favorited.
  * @param {string}      ingredients     The ingredients of the new data object.
  * @param {string}      steps           The steps of the new data object.
  * @param {string}      notes           The notes of the new data object.
  */
 function create_new_data(name, tags, favorited, ingredients, steps, notes) {
-  let new_data = JSON.parse(JSON.stringify(template_data));
+  const new_data = JSON.parse(JSON.stringify(template_data));
   if (get_data(id_generator_key) === null) {
     set_data(id_generator_key, 1);
     new_data.id = 0;
@@ -130,14 +130,14 @@ function read_data_array(search_keywords, show_favorited_only) {
   if (get_data(data_array_key) === null) {
     return [];
   }
-  let raw_data_array = JSON.parse(get_data(data_array_key));
-  let search_array = search_keywords.trim().split('#');
+  const raw_data_array = JSON.parse(get_data(data_array_key));
+  const search_array = search_keywords.trim().split('#');
   for (let i = 0; i < search_array.length; i += 1) {
     search_array[i] = search_array[i].trim();
   }
-  let data_array = [];
+  const data_array = [];
   for (let i = 0; i < raw_data_array.length; i += 1) {
-    let data = raw_data_array[i];
+    const data = raw_data_array[i];
     if (search_array.length > 0) {
       if (search_array[0]) {
         if (!data.name.toLowerCase().includes(search_array[0].toLowerCase())) {
@@ -210,9 +210,9 @@ function get_selected_data() {
   if (get_data(data_array_key) === null) {
     return JSON.parse(JSON.stringify(template_data));
   }
-  let raw_data_array = JSON.parse(get_data(data_array_key));
+  const raw_data_array = JSON.parse(get_data(data_array_key));
   for (let i = 0; i < raw_data_array.length; i += 1) {
-    let data = raw_data_array[i];
+    const data = raw_data_array[i];
     if (data.id == get_selected_data_id()) {
       return data;
     }
