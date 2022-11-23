@@ -9,64 +9,64 @@
 		<link rel="stylesheet" href="../style/viewpage.css">
 		
 		<!-- the following is required for loading the font we are using  -->
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+		        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap">        
         
+        <!-- insert other style and script files below  -->
         <script src="../module/data.js"></script>
         <script src="../js/view.js"></script>
     </head>
 
 	<body>
-      
 		<header>
-			<!-- you can copy paste this nav section to your pages-->
 			<nav>
-				<!-- button or header can go -->
-				<h1>My Recipes</h1>
-				<!-- <a href=""><img src="../assets/edit-button.svg" alt="test"></img></a> -->
-				<div class = "button-container" id="button-container">
-					<!-- put the {url} you want to go after the user click the anchor tag -->
-					<!-- should be another internal page -->
-					<a id="view-page-add-button"><img src="../assets/add-button.svg" alt="test"></img></a>
-					<a id="view-page-delete-button"><img src="../assets/delete-button.svg"></img></a>
+				<!-- add the buttons on the left side -->
+                <div class="left-button-container">
+                    <img id="view-page-home-button" src="../assets/home-button.svg">
+                </div>
+				<div class="right-button-container">
+					<!-- add the buttons on the right side -->
+                    <img id="view-page-edit-button" src="../assets/edit-button.svg" alt="test">
+                    <img id="view-page-delete-button" src="../assets/delete-button.svg">
 				</div>
 			</nav>
 		</header>
-
 		
 		<main>
+            <!-- main view page -->
+            <!-- We might not need outerframe anymore since foundation code has been changed? -->
             <div class="outerframe">
                 <div class="dish-name">
-                    <h2 id="recipe-name">Pasta Carbonara</h2>
+                    <h2 id="recipe-name"></h2>
                 </div>
                 <div class="ingredients">
                     <h3>Ingredients</h3>
-                    <p id="recipe-ingredients">Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
+                    <p id="recipe-ingredients"></p>
                         
                 </div>
                 <div class="steps">
                     <h3>Steps</h3>
-                    <p id="recipe-preparation">Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
+                    <p id="recipe-preparation"></p>
                 </div>
                 <div class="notes">
                     <h3>Notes</h3>
-                    <p id="recipe-notes">Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
+                    <p id="recipe-notes"></p>
                 </div>
             </div>
 
-		</main>
-        
-	</body>
+            <!-- delete pop-up box -->
+            <div id="delete-button-box" class="delete-box">
+                <form class = "delete-box-content">
+                    <div class = "delete-container">
+                        <p class="delete-text">Are you sure you want to delete?</p>
+                        <div class="delete-choose">
+                            <button type="button" id="yes-delete-button" class="yes-delete-button">Yes, Delete</button>
+                            <button type="button" id="no-delete-button" class="no-delete-button">No, Go Back</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
 
+		</main>
+	</body>
 </html>

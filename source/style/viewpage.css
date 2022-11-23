@@ -1,6 +1,14 @@
 @import "constants.css";
 @import "global.css";
 
+/* Margin between two buttons should be 60px, but should double check with NEW constants.css page
+    or check with other teams? */
+.right-button-container {
+    right: 0;
+    position: relative;
+    float: right;
+}
+
 body {
     background-color: var(--secondary-color);
 }
@@ -20,7 +28,8 @@ body {
     position: center;
     margin-top: 41px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 48px;
+    line-height: 59px;
 }
 
 .ingredients {
@@ -37,19 +46,95 @@ body {
     
 }
 
+/* taken from figma design, might need to change/check with constants.css page */
 p {
     padding-top:20px;
     font-weight:normal;
+    font-size: 30px;
+    line-height: 37px;
 }
 
+/* taken from figma design, might need to change/check with constants.css page */
 h3 {
-     text-decoration: underline;     
-     font-weight:600;
+    text-decoration: underline;     
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
 
 }
 
+/* taken from figma design, might need to change/check with constants.css page */
 h2 {
-    font-weight:600;
-
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
 }
 
+/* Delete pop-up box */
+.delete-box {
+    /* display is changed in js file when clicked */
+    display: none;
+    
+    /* position of the box on the screen*/
+    position: fixed;
+    z-index: 1; 
+    left: 25%;
+    top: 25%;
+    width: 50%; 
+    height: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+
+
+.delete-box-content {
+    background-color: white;
+    margin: 5% auto 15% auto; 
+    border: 5px solid #C30202;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 70%; 
+}
+
+.delete-container {
+    padding: 16px;
+    text-align: center;
+}
+
+/* font-size taken from figma design */
+.delete-text {
+    margin: 10% auto 10% auto;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+/* display of the yes or no buttons*/
+.delete-choose {
+    display: flex;
+    justify-content: center;
+}
+
+.yes-delete-button, .no-delete-button { 
+    opacity: 0.9;
+    width: 50%;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 7%;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    color: white;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.no-delete-button {
+    background-color: #D3BFBF;
+}
+
+.yes-delete-button {
+    background-color: #EF7F7F;
+}
