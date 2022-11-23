@@ -40,7 +40,7 @@ class RecipeCell extends HTMLElement {
     if (!data.name) {
       return;
     }
-    
+
     const span = this.shadowRoot.querySelector('span');
     span.innerHTML = data.name;
 
