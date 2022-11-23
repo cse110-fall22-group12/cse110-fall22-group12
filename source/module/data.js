@@ -16,7 +16,7 @@ const new_data_index = -1;
  *
  * @global
  */
-const data_array_key = "noshroom_data_array";
+const data_array_key = 'noshroom_data_array';
 
 /**
  * This global string variable defines the name of the key
@@ -25,7 +25,7 @@ const data_array_key = "noshroom_data_array";
  *
  * @global
  */
-const id_generator_key = "noshroom_id_generator";
+const id_generator_key = 'noshroom_id_generator';
 
 /**
  * This global string variable defines the name of the key
@@ -34,7 +34,7 @@ const id_generator_key = "noshroom_id_generator";
  *
  * @global
  */
-const selected_data_id_key = "selected_data_id";
+const selected_data_id_key = 'selected_data_id';
 
 /**
  * This global data object is the template the program use
@@ -46,13 +46,13 @@ const selected_data_id_key = "selected_data_id";
  * @global
  */
 const template_data = {
-  id: -1,
-  name: "",
-  tags: [],
-  favorited: false,
-  ingredients: "",
-  preparation: "",
-  notes: "",
+  id:           -1,
+  name:         '',
+  tags:         [],
+  favorited:    false,
+  ingredients:  '',
+  steps:        '',
+  notes:        '',
 };
 
 /**
@@ -106,7 +106,7 @@ function is_launched_for_the_first_time() {
  * @param {array}       tags            The array of tags of the new data object.
  * @param {boolean}     favorited       The boolean indicating whether the data is favorited.
  * @param {string}      ingredients     The ingredients of the new data object.
- * @param {string}      preparation     The preparation of the new data object.
+ * @param {string}      steps           The steps of the new data object.
  * @param {string}      notes           The notes of the new data object.
  */
 function create_new_data(
@@ -114,7 +114,7 @@ function create_new_data(
   tags,
   favorited,
   ingredients,
-  preparation,
+  steps,
   notes
 ) {
   let new_data = JSON.parse(JSON.stringify(template_data));
@@ -129,7 +129,7 @@ function create_new_data(
   new_data.tags = tags;
   new_data.favorited = favorited;
   new_data.ingredients = ingredients;
-  new_data.preparation = preparation;
+  new_data.steps = steps;
   new_data.notes = notes;
   if (get_data(data_array_key) === null) {
     set_data(data_array_key, JSON.stringify([new_data]));
@@ -157,7 +157,7 @@ function read_data_array(search_keywords, show_favorited_only) {
     return [];
   }
   let raw_data_array = JSON.parse(get_data(data_array_key));
-  let search_array = search_keywords.trim().split("#");
+  let search_array = search_keywords.trim().split('#');
   for (let i = 0; i < search_array.length; i += 1) {
     search_array[i] = search_array[i].trim();
   }

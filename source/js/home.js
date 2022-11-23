@@ -13,28 +13,28 @@ function init() {
 
   if (is_launched_for_the_first_time()) {
     create_new_data(
-      "mushroom killer",
-      ["tag", "another tag", "the last tag"],
+      'mushroom killer',
+      ['tag', 'another tag', 'the last tag'],
       true,
-      "some ingredients",
-      "some preparation",
-      "some notes"
+      'some ingredients',
+      'some preparation',
+      'some notes'
     );
     create_new_data(
-      "mushroom terminator",
-      ["tag"],
+      'mushroom terminator',
+      ['tag'],
       true,
-      "some ingredients",
-      "some preparation",
-      "some notes"
+      'some ingredients',
+      'some preparation',
+      'some notes'
     );
     create_new_data(
-      "mushroom slayer",
-      ["another tag", "the last tag"],
+      'mushroom slayer',
+      ['another tag', 'the last tag'],
       false,
-      "some ingredients",
-      "some preparation",
-      "some notes"
+      'some ingredients',
+      'some preparation',
+      'some notes'
     );
   }
 
@@ -50,11 +50,11 @@ function init() {
     list.appendChild(recipeCell);
   }
 
-  document.getElementById("button-container").addEventListener('click', function(event) {
+  document.getElementById('button-container').addEventListener('click', function(event) {
 
     select_data_by_id(new_data_index);
 
-    window.location.href = "edit-page.html";
+    window.location.href = 'edit.html';
 
   });
 }

@@ -59,7 +59,7 @@ class RecipeCell extends HTMLElement {
 
     card.addEventListener('click', function(event) {
       select_data_by_id(event.currentTarget.index);
-      window.location.href = "view.html";
+      window.location.href = 'view.html';
     });
   }
 
