@@ -206,13 +206,6 @@ function get_selected_data_id() {
  * @global
  * @return {data object} The selected data object.
  */
-/**
- * This function returns the id of the selected data selected
- * after calling the function select_data_by_id.
- * If nothing has been selected, this function returns -1.
- * @global
- * @return {number} The id of the selected data or -1 if it does not exist.
- */
 function get_selected_data() {
   if (get_data(data_array_key) === null) {
     return JSON.parse(JSON.stringify(template_data));
