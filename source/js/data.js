@@ -72,7 +72,7 @@ function set_data(key, data) {
  * This function checks whether the program is launched for the first time.
  * Calling this function marks that the program has been launched previously.
  * @global
- * @return {boolean} A boolean indicating whether the program is launched for the first time.
+ * @return {boolean} First launch indicator.
  */
 function is_launched_for_the_first_time() {
   if (get_data(data_array_key) === null) {
@@ -122,8 +122,8 @@ function create_new_data(name, tags, favorited, ingredients, steps, notes) {
  * This function reads the array of data from the local storage.
  * You can provide the following parameters to narrow the results.
  * @global
- * @param {string}      search_keywords         The string that the user is searching, which can be empty.
- * @param {boolean}     show_favorited_only     The boolean indicating whether to show only the favorited data.
+ * @param {string}      search_keywords       Very straightforward.
+ * @param {boolean}     show_favorited_only   Very straightforward.
  * @return {array} The array of data stored in local storage.
  */
 function read_data_array(search_keywords, show_favorited_only) {
@@ -223,7 +223,7 @@ function get_selected_data() {
 /**
  * This function overwrites the selected data object with a new one.
  * @global
- * @param {data object}     new_data        The data that overwrites the selected data.
+ * @param {data object}     new_data        The new data.
  */
 function overwrite_selected_data(new_data) {
   if (get_data(data_array_key) === null) {
