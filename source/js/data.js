@@ -111,7 +111,7 @@ function create_new_data(name, tags, favorited, ingredients, steps, notes) {
   if (get_data(data_array_key) === null) {
     set_data(data_array_key, JSON.stringify([new_data]));
   } else {
-    let data_array = JSON.parse(get_data(data_array_key));
+    const data_array = JSON.parse(get_data(data_array_key));
     data_array.push(new_data);
     set_data(data_array_key, JSON.stringify(data_array));
   }
@@ -205,6 +205,13 @@ function get_selected_data_id() {
  * This function returns the selected data object.
  * @global
  * @return {data object} The selected data object.
+ */
+/**
+ * This function returns the id of the selected data selected
+ * after calling the function select_data_by_id.
+ * If nothing has been selected, this function returns -1.
+ * @global
+ * @return {number} The id of the selected data or -1 if it does not exist.
  */
 function get_selected_data() {
   if (get_data(data_array_key) === null) {
