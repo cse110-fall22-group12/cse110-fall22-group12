@@ -1,4 +1,5 @@
 import sampleData from '../assets/sample-data.js';
+import * as data_manager from 'data.js';
 window.addEventListener('DOMContentLoaded', init);
 
 /* Turn this off for deployment, but keep on for testing */
@@ -11,7 +12,7 @@ const DEV = true;
  *  */
 function init() {
 
-  if (is_launched_for_the_first_time()) {
+  if (data_manager.is_launched_for_the_first_time()) {
     create_new_data(
       'mushroom killer',
       ['tag', 'another tag', 'the last tag'],
@@ -52,7 +53,7 @@ function init() {
 
   document.getElementById('button-container').addEventListener('click', function(event) {
 
-    select_data_by_id(new_data_index);
+    data_manager.select_data_by_id(new_data_index);
 
     window.location.href = 'edit.html';
 
