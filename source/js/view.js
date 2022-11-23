@@ -1,5 +1,5 @@
 function construct_view_page() {
-  let data = get_selected_data();
+  const data = get_selected_data();
   document.getElementById('recipe-name').innerHTML = data.name;
   document.getElementById('recipe-ingredients').innerHTML = data.ingredients;
   document.getElementById('recipe-preparation').innerHTML = data.steps;
@@ -14,7 +14,7 @@ function construct_view_page() {
   });
 
   document.getElementById('view-page-delete-button').addEventListener('click', function(event) {
-    let deleteElement = document.getElementById('delete-button-box');
+    const deleteElement = document.getElementById('delete-button-box');
     deleteElement.style.display = 'block';
   });
 
@@ -22,9 +22,9 @@ function construct_view_page() {
     delete_selected_data();
     window.location.href = 'home.html';
   });
-  
+
   document.getElementById('no-delete-button').addEventListener('click', function(event) {
-    let deleteElement = document.getElementById('delete-button-box');
+    const deleteElement = document.getElementById('delete-button-box');
     deleteElement.style.display = 'none';
   });
 }
