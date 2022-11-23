@@ -1,4 +1,4 @@
-/*global
+/* global
     get_selected_data_id,
     new_data_index,
     get_selected_data,
@@ -9,7 +9,6 @@ window.addEventListener('DOMContentLoaded', init);
 
 /**
  * Starts the program and initialize the edit page.
- *
  * @global
  */
 function init() {
@@ -20,9 +19,7 @@ function init() {
 
 /**
  * Constructs the edit page.
- * 
  * @global
- *
  * @param {boolean}   edit  Whether the user is editing or adding a new recipe.
  */
 function construct_body(edit) {
@@ -37,9 +34,7 @@ function construct_body(edit) {
 
 /**
  * Constructs the header.
- *
  * @global
- *
  * @param {boolean}   edit  Whether the user is editing or adding a new recipe.
  */
 function construct_header(edit) {
@@ -49,7 +44,7 @@ function construct_header(edit) {
     // jump back to the correct page:
     if (get_selected_data_id() != new_data_index) {
       window.location.href = 'view.html';
-    }else{
+    } else {
       window.location.href = 'home.html';
     }
   });
@@ -66,7 +61,7 @@ function construct_header(edit) {
       data.notes = document.getElementById('edit-notes').value;
       overwrite_selected_data(data);
       window.location.href = 'view.html';
-    }else{
+    } else {
       create_new_data(
         document.getElementById('edit-name').value.trim(), [], false,
         document.getElementById('edit-ingredients').value,

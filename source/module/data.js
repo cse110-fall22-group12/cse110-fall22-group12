@@ -5,7 +5,6 @@
 /**
  * This global integer variable is something you should select
  * when you create a new data from the homepage.
- *
  * @global
  */
 const new_data_index = -1;
@@ -13,7 +12,6 @@ const new_data_index = -1;
 /**
  * This global string variable defines the name of the key
  * of the array of all the data the program stores.
- *
  * @global
  */
 const data_array_key = 'noshroom_data_array';
@@ -22,7 +20,6 @@ const data_array_key = 'noshroom_data_array';
  * This global string variable defines the name of the key
  * of an integer that is incremented by 1 to generate the
  * unique id for a new data when creating it.
- *
  * @global
  */
 const id_generator_key = 'noshroom_id_generator';
@@ -31,7 +28,6 @@ const id_generator_key = 'noshroom_id_generator';
  * This global string variable defines the name of the key
  * of the id of the selected data we are viewing, editing,
  * or deleting.
- *
  * @global
  */
 const selected_data_id_key = 'selected_data_id';
@@ -39,10 +35,6 @@ const selected_data_id_key = 'selected_data_id';
 /**
  * This global data object is the template the program use
  * to create a new data object through copying it.
- *
- * It is extremely important that you should avoid modifying
- * the id of any stored data.
- *
  * @global
  */
 const template_data = {
@@ -57,11 +49,8 @@ const template_data = {
 
 /**
  * This function is a wrapper for the getItem function of the localStorage.
- * 
  * @global
- * 
  * @param {string}    key   The key of the item.
- * 
  * @return {any} The data returned by calling the getItem function of the localStorage.
  */
 function get_data(key) {
@@ -70,9 +59,7 @@ function get_data(key) {
 
 /**
  * This function is a wrapper for the setItem function of the localStorage.
- * 
  * @global
- * 
  * @param {string}    key     The key of the item.
  * @param {any}       data    The item to save.
  */
@@ -83,9 +70,7 @@ function get_data(key) {
 /**
  * This function checks whether the program is launched for the first time.
  * Calling this function marks that the program has been launched previously.
- *
  * @global
- *
  * @return {boolean} A boolean indicating whether the program is launched for the first time.
  */
 function is_launched_for_the_first_time() {
@@ -99,9 +84,7 @@ function is_launched_for_the_first_time() {
 /**
  * This function creates a new data object and write directly to the local storage.
  * After calling this function, the new data will automatically be selected.
- *
  * @global
- *
  * @param {string}      name            The name of the new data object.
  * @param {array}       tags            The array of tags of the new data object.
  * @param {boolean}     favorited       The boolean indicating whether the data is favorited.
@@ -144,12 +127,9 @@ function create_new_data(
 /**
  * This function reads the array of data from the local storage.
  * You can provide the following parameters to narrow the results.
- *
  * @global
- *
  * @param {string}      search_keywords         The string that the user is searching, which can be empty.
  * @param {boolean}     show_favorited_only     The boolean indicating whether to show only the favorited data.
- *
  * @return {array} The array of data stored in local storage.
  */
 function read_data_array(search_keywords, show_favorited_only) {
@@ -206,9 +186,7 @@ function read_data_array(search_keywords, show_favorited_only) {
  * This function selects a data by its id so that we can perform
  * operations to read, edit, and delete it. Selecting another
  * data overwrites the previous one.
- *
  * @global
- *
  * @param {number}      id      The id of the data object to select.
  */
 function select_data_by_id(id) {
@@ -218,11 +196,8 @@ function select_data_by_id(id) {
 /**
  * This function returns the id of the selected data selected
  * after calling the function select_data_by_id.
- *
  * If nothing has been selected, this function returns -1.
- *
  * @global
- *
  * @return {number} The id of the selected data or -1 if it does not exist.
  */
 function get_selected_data_id() {
@@ -234,12 +209,7 @@ function get_selected_data_id() {
 
 /**
  * This function returns the selected data object.
- *
- * It is extremely important that you call the create_new_data function or
- * the select_data_by_id function first before calling this function.
- *
  * @global
- *
  * @return {data object} The selected data object.
  */
 function get_selected_data() {
@@ -258,12 +228,7 @@ function get_selected_data() {
 
 /**
  * This function overwrites the selected data object with a new one.
- *
- * It is extremely important that you call the create_new_data function or
- * the select_data_by_id function first before calling this function.
- *
  * @global
- *
  * @param {data object}     new_data        The data that overwrites the selected data.
  */
 function overwrite_selected_data(new_data) {
@@ -285,10 +250,6 @@ function overwrite_selected_data(new_data) {
 
 /**
  * This function deletes the selected data object.
- *
- * It is extremely important that you call the create_new_data function or
- * the select_data_by_id function first before calling this function.
- *
  * @global
  */
 function delete_selected_data() {
