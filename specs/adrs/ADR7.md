@@ -1,4 +1,4 @@
-# Build a common foundation shared by all development team#
+# Build a common foundation shared by all development team
 
 ## Problem ##
 We have multiple development teams working on different component on the project, but our codes lack consistency.
