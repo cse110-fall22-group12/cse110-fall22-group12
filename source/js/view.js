@@ -50,7 +50,7 @@ function init() {
   // when delete pop-up box's yes button is clicked, transit to home page
   document.getElementById('yes-delete-button').addEventListener('click',
       function(event) {
-        // delete_selected_data();
+        delete_selected_data();
         window.location.href = 'home.html';
       });
   // when delete pop-up box's no button is clicked, stay at the edit page
