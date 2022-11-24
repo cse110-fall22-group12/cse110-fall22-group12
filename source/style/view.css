@@ -12,6 +12,7 @@ body {
     text-align: center;
     line-height: 59px;
 }
+
 /*define dish-name style*/
 .dish-name h1 {
     font-size: var(--h1-font-size);
