@@ -1,3 +1,10 @@
+/* global
+    is_launched_for_the_first_time,
+    select_data_by_id,
+    create_new_data,
+    new_data_index,
+    read_data_array
+*/
 window.addEventListener('DOMContentLoaded', init);
 
 /* Turn this off for deployment, but keep on for testing */
@@ -48,9 +55,10 @@ function init() {
     list.appendChild(recipeCell);
   }
 
-  document.getElementById('button-container').addEventListener('click', function(event) {
-    select_data_by_id(new_data_index);
+  document.getElementById('button-container').addEventListener('click',
+      function(event) {
+        select_data_by_id(new_data_index);
 
-    window.location.href = 'edit.html';
-  });
+        window.location.href = 'edit.html';
+      });
 }

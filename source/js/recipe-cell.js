@@ -1,3 +1,7 @@
+/* global
+    select_data_by_id
+*/
+
 /**
  * Recipe card component that will be used to represent each of the users
  * recipes on the home page. Each time one is created, the name needs to be set.
@@ -33,7 +37,7 @@ class RecipeCell extends HTMLElement {
    * Override the set operator here to add a span object to the shadow dom, when
    * a name is set for our recipe.
    *
-   * @param {String} recipeData should be a string representing the name of the
+   * @param {String} data should be a string representing the name of the
    *    recipe & should hbe less than a certain length as defined by other pages
    * */
   set recipeData(data) {
