@@ -1,6 +1,7 @@
 /* global
 
     get_selected_data,
+    delete_selected_data,
 
 */
 /**
