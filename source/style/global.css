@@ -37,8 +37,9 @@ nav {
 /* the stage settings */
 #stage {
   margin: auto;
-  width: var(--stage-width);
   padding-top: var(--top-bar-height);
+  padding-left: var(--stage-side-margin);
+  padding-right: var(--stage-side-margin);
 }
 
 /* the button settings */
@@ -66,8 +67,9 @@ nav img {
   /* the stage settings */
   #stage {
     margin: auto;
-    width: var(--stage-width-mobile);
     padding-top: var(--top-bar-height-mobile);
+    padding-left: var(--stage-side-margin-mobile);
+    padding-right: var(--stage-side-margin-mobile);
   }
 
   /* the button settings */
