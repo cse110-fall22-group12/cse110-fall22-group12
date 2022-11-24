@@ -20,8 +20,9 @@
 
 
 .recipe-list {
-    height: 100vh;
-    margin-top: var(--desktop-list-margin-top);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 main {
@@ -30,8 +31,14 @@ main {
     align-items: center;
 }
 
-.recipe-cell {
+/* class applied to an anchor tag */
+.recipe-cell-link { 
     text-decoration: none;
+}
+
+
+recipe-cell {
+    margin-top: 40px ;
 }
 
 card {
@@ -63,27 +70,4 @@ card {
     line-height: 59px;
     
     color: #000000;
-}
-
-/* Media query for tablets and larger phones*/
-@media only screen and (max-width: 768px) {
-    .recipe-list {
-        margin-top: var(--mobile-list-margin-top);
-    }
-    .recipe-name {
-        font-size: 36px;
-    }
-    card {
-        height:  var(--tablet-cell-height);
-    }
-}
-
-/* Media query for very small mobile devices */
-@media only screen and (max-width: 480px) {
-    .recipe-name {
-        font-size: 24px;
-    }
-    card {
-        height: var(--mobile-cell-height);
-    }
 }

@@ -1,3 +1,7 @@
+/* global
+    select_data_by_id
+*/
+
 /**
  * Recipe card component that will be used to represent each of the users
  * recipes on the home page. Each time one is created, the name needs to be set.
@@ -18,8 +22,7 @@ class RecipeCell extends HTMLElement {
     card.appendChild(span);
 
     const anchor = document.createElement('a');
-    anchor.className = 'recipe-cell';
-    anchor.setAttribute('href', '../components/view.html');
+    anchor.className = 'recipe-cell-link';
     anchor.appendChild(card);
 
     const link = document.createElement('link');
@@ -34,15 +37,24 @@ class RecipeCell extends HTMLElement {
    * Override the set operator here to add a span object to the shadow dom, when
    * a name is set for our recipe.
    *
-   * @param {String} recipeName should be a string representing the name of the
+   * @param {String} data should be a string representing the name of the
    *    recipe & should hbe less than a certain length as defined by other pages
    * */
-  set recipeName(recipeName) {
-    if (!recipeName) return;
+  set recipeData(data) {
+    if (!data.name) {
+      return;
+    }
 
     const span = this.shadowRoot.querySelector('span');
+    span.innerHTML = data.name;
 
-    span.innerHTML = recipeName;
+    const card = this.shadowRoot.querySelector('card');
+    card.index = data.id;
+
+    card.addEventListener('click', function(event) {
+      select_data_by_id(event.currentTarget.index);
+      window.location.href = 'view.html';
+    });
   }
 }
 

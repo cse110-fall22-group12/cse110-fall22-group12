@@ -11,3 +11,4 @@ parserOptions:
 rules: 
   require-jsdoc: warn
   no-unused-vars: warn
+  camelcase: off
