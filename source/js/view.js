@@ -1,16 +1,38 @@
+/* global
+
+    get_selected_data,
+
+*/
 /**
  * set up all the functilnalities for home button, edit button and
  * delete button.
  */
-function construct_view_page() {
-  // const data = get_selected_data();
-  // document.getElementById('recipe-name').innerHTML = data.name;
-  // document.getElementById('recipe-ingredients').innerHTML = data.ingredients;
-  // document.getElementById('recipe-preparation').innerHTML = data.steps;
-  // document.getElementById('recipe-notes').innerHTML = data.notes;
 
+window.addEventListener('DOMContentLoaded', init);
+/**
+ * set up all the functilnalities for home button, edit button and
+ * delete button.
+ */
+function construct_body() {
+  const data = get_selected_data();
+  document.getElementsByClassName('dish-name')[0]
+      .querySelector('h1').innerHTML = data.name;
+  document.getElementsByClassName('block')[0]
+      .querySelector('p').innerHTML = data.ingredients;
+  document.getElementsByClassName('block')[1]
+      .querySelector('p').innerHTML = data.steps;
+  document.getElementsByClassName('block')[2]
+      .querySelector('p').innerHTML = data.notes;
+}
+/**
+ * set up all the functilnalities for home button, edit button and
+ * delete button.
+ */
+function init() {
+  construct_body();
   // when home button is clicked,  transit to home page
-  document.getElementById('view-page-home-button').addEventListener('click',
+  const home = document.getElementById('view-page-home-button');
+  home.addEventListener('click',
       function(event) {
         window.location.href = 'home.html';
       });
@@ -39,5 +61,4 @@ function construct_view_page() {
       });
 }
 
-// display the changes on view page
-window.onload = construct_view_page;
+
