@@ -1,6 +1,6 @@
 # This is a basic workflow to get started with CI using Jest
 
-name: CI - Linter
+name: CI - Unit Tests
 on: [push, pull_request]
 
 jobs:
