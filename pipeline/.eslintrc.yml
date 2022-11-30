@@ -12,3 +12,5 @@ rules:
   require-jsdoc: warn
   no-unused-vars: warn
   camelcase: off
+  max-len: warn
+  no-undef: off

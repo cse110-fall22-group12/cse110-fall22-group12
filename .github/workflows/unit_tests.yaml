@@ -1,0 +1,14 @@
+# This is a basic workflow to get started with CI using Jest
+
+name: CI - Unit Tests
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install npm
+        run: npm install --save-dev eslint eslint-config-google
+      - name: Run Jest
+        run: npm run test
