@@ -1,0 +1,24 @@
+# Source: https://github.com/marketplace/actions/deploy-to-github-pages
+      
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: 
+      - main
+      - cd-github-pages
+      - team-dev
+permissions:
+  contents: write
+  pages: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    concurrency: ci-${{github.ref}}
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1 # downloads repository
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: source

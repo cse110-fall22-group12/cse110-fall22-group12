@@ -5,7 +5,6 @@
     color: var(--body-text-color);
     border-radius: 1rem;
 } */
-
 :root {
     --desktop-cell-height: 182px;
     --tablet-cell-height: 140px;
