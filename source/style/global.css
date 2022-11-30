@@ -1,4 +1,4 @@
-@import 'constants.css';
+@import "constants.css";
 
 /* please do not modify unless broken */
 /* the site settings */
@@ -55,7 +55,6 @@ nav img {
 /* the settings for mobile devices */
 /* the screen adapts when the max-width changes to 768px (could be modified) */
 @media only screen and (max-width: 1000px) {
-
   /* the top bar settings */
   nav {
     height: var(--top-bar-height-mobile);

@@ -51,7 +51,7 @@ class RecipeCell extends HTMLElement {
     const card = this.shadowRoot.querySelector('card');
     card.index = data.id;
 
-    card.addEventListener('click', function(event) {
+    card.addEventListener('click', function (event) {
       select_data_by_id(event.currentTarget.index);
       window.location.href = 'view.html';
     });

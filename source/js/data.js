@@ -145,11 +145,7 @@ function read_data_array(search_keywords, show_favorited_only) {
         }
       }
       let all_tags_found = true;
-      for (
-        let search_index = 1;
-        search_index < search_array.length;
-        search_index += 1
-      ) {
+      for (let search_index = 1; search_index < search_array.length; search_index += 1) {
         let current_tag_found = false;
         if (search_array[search_index]) {
           for (const tag_index in data.tags) {
