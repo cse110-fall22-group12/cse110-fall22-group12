@@ -1,0 +1,73 @@
+@import "constants.css";
+/* * {
+    background-color: var(--secondary-color);
+    color: var(--body-text-color);
+    border-radius: 1rem;
+} */
+:root {
+    --desktop-cell-height: 182px;
+    --tablet-cell-height: 140px;
+    --mobile-cell-height: 120px;
+
+    --desktop-list-margin-top: 150px;
+    --mobile-list-margin-top: 100px;
+
+    --max-cell-width: 900px;
+    --cell-left-margin: 0px;
+    --cell-top-margin: 60px;
+    --card-margins: 1rem;
+}
+
+
+.recipe-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* class applied to an anchor tag */
+.recipe-cell-link { 
+    text-decoration: none;
+}
+
+
+recipe-cell {
+    margin-top: 40px ;
+}
+
+card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+    /* This line adjusts the scaling of the cards as the view gets thinner */
+    width: min(var(--max-cell-width), 90vw);
+    height: var(--desktop-cell-height);
+    margin-top: var(--card-margins);
+    margin-bottom: var(--card-margins);
+    padding: 1rem;
+
+    background: #F8EAE0;
+    border: 5px solid #FF7A00;
+    border-radius: 20px;
+}
+
+.recipe-name {
+    display: flex;
+    
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    
+    color: #000000;
+}

@@ -1,0 +1,84 @@
+@import 'constants.css';
+
+/* please do not modify unless broken */
+/* the site settings */
+* {
+  margin: 0;
+  border: 0;
+  font-family: var(--primary-font);
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* the scrollbar setting for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* the top bar settings */
+nav {
+  caret-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: var(--top-bar-height);
+  padding-left: var(--top-bar-side-margin);
+  padding-right: var(--top-bar-side-margin);
+  background: var(--theme-color);
+  color: var(--primary-color);
+  font-size: var(--top-bar-font-size);
+  font-weight: bold;
+}
+
+/* the stage settings */
+#stage {
+  margin: auto;
+  padding-top: var(--top-bar-height);
+  padding-left: var(--stage-side-margin);
+  padding-right: var(--stage-side-margin);
+}
+
+/* the button settings */
+nav div {
+  height: var(--button-size);
+}
+
+nav img {
+  margin-left: var(--button-margin);
+  block-size: var(--button-size);
+}
+
+/* the settings for mobile devices */
+/* the screen adapts when the max-width changes to 768px (could be modified) */
+@media only screen and (max-width: 1000px) {
+
+  /* the top bar settings */
+  nav {
+    height: var(--top-bar-height-mobile);
+    font-size: var(--top-bar-font-size-mobile);
+    padding-left: var(--top-bar-side-margin-mobile);
+    padding-right: var(--top-bar-side-margin-mobile);
+  }
+
+  /* the stage settings */
+  #stage {
+    margin: auto;
+    padding-top: var(--top-bar-height-mobile);
+    padding-left: var(--stage-side-margin-mobile);
+    padding-right: var(--stage-side-margin-mobile);
+  }
+
+  /* the button settings */
+  nav div {
+    height: var(--button-size-mobile);
+  }
+
+  nav img {
+    margin-left: var(--button-margin-mobile);
+    block-size: var(--button-size-mobile);
+  }
+}
