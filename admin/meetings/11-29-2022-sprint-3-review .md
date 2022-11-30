@@ -6,16 +6,16 @@
 The goal of the meeting is to see what has been accomplished, go over work accomplishment and not to criticize or correct the agile process. Process review and improvement is the main purpose of the retrospective activity. 
 
 ## Attendance ##
-[x] Zheyuan Wang
-[x] Ruoxuan Li
-[x] John Chou
-[x] Elliot Lee
-[x] Deze Lyu
-[x] Jimmy Cho
-[x] Lucas Lee
-[x] Yunyi She 
-[x] Kristy Chan
-[x] Sebastian Pamudji
+-  [x] Zheyuan Wang
+-  [x] Ruoxuan Li
+-  [x] John Chou
+-  [x] Elliot Lee
+-  [x] Deze Lyu
+-  [x] Jimmy Cho
+-  [x] Lucas Lee
+-  [x] Yunyi She 
+-  [x] Kristy Chan
+-  [x] Sebastian Pamudji
 
 ## Completed Tasks ##
 - Reviewed the sprint board - most things just needs to be reviewed
