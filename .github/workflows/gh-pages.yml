@@ -5,8 +5,8 @@ on:
   push:
     branches: 
       - main
-      - edit-page-dev
       - cd-github-pages
+      - team-dev
 permissions:
   contents: write
   pages: write
@@ -22,4 +22,3 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: source/components
-          
