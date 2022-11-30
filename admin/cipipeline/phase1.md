@@ -11,6 +11,8 @@ We have also provided a `package.json` and `package-lock.json` at the root of th
 
 Aside from automatic checks, we also have human checks. For every push onto the team-dev branch, we have a reviewer look over that commit which is assigned through github projects and issues. We have also disabled direct pushes onto the main branch, where a pull request is needed and reviewed by a separate person before that is merged. The people responsible for this is also usually also on the linked issue/github project sprintboard. Both of these human checks check for code quality and logic, to see if we following prinsciples of software engineering such as documenting our code, modular code structure, and single responsibility principle. 
 
+On every pull request, Codacy will check the `CSSLint` which includes enforce gradient prefix, prohibit !important, and prohibit syntax errors.
+
 In short, we currently run 3 jobs through github actions, linting, testing, and deployment to gh-pages, which are triggered on every push to any branch, with the exception of deployment which is only triggered when pushing to main or team-dev. This is accompanied by human checks through pull requests to main and pushes to team-dev branch.
 
 A diagram of the current pipeline can also be found below
