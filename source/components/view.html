@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<!-- insert the browser tab name of your page -->
+	<title>Page Name</title>
+	<link rel="icon" href="data:,">
+	<link rel="stylesheet" href="../style/constants.css">
+	<link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/view.css">
+	<script src="../js/data.js"></script> 
+    <script src="../js/view.js"></script>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap">
+	<!-- insert other style and script files below  -->
+</head>
+
+<body>
+	<header>
+		<nav>
+			<!-- if your page has a title, uncomment the following line -->
+			<!-- Title -->
+
+			<div>
+				<!-- add the buttons on the left side -->
+				<img id="view-page-home-button" src="../assets/home-button.svg" alt="home"/>
+			</div>
+			<div>
+				<!-- add the buttons on the right side -->
+				<img id="view-page-edit-button" src="../assets/edit-button.svg" alt="edit"/>
+				<img id="view-page-delete-button" src="../assets/delete-button.svg" alt="delete"/>
+			</div>
+		</nav>
+	</header>
+	<div id="stage">
+		<!--contain the selected dish name--> 
+        <div class="dish-name">
+            <h1>Pasta Carbonara</h1>
+        </div>
+        <!-- set different block areas to hold text contents -->
+        <!-- contain ingredients, steps, and notes -->
+        <div class="block">
+            <h2>Ingredients</h2>
+            <p id="recipe-ingredients">tomato,meat</p>      
+        </div>
+        <div class="block">
+            <h2>Steps</h2>
+            <p id="recipe-preparation">What is a Paragraph? A paragraph is a group of sentences that convey an idea. Each sentence works together as part of a unit to create an overall thought or impression. A paragraph is the smallest unit or cluster of
+                 sentences in which one idea can be developed adequately.</p>
+        </div>
+        <div class="block">
+            <h2>Notes</h2>
+            <p id="recipe-notes">What is a Paragraph? A paragraph is a group of sentences that convey 
+                an idea. Each sentence works together as part of a unit to create an overall thought or impression. A paragraph is the smallest 
+                unit or cluster of sentences in which one idea can be developed adequately.</p>
+        </div>
+	</div>
+	<!-- delete pop-up box -->
+	<div id="delete-button-box" class="delete-box">
+	<form class = "delete-box-content">
+		<div class = "delete-container">
+			<p class="delete-text">Are you sure you want to delete?</p>
+			<div class="delete-choose">
+				<button type="button" id="yes-delete-button" class="yes-delete-button">Yes, Delete</button>
+				<button type="button" id="no-delete-button" class="no-delete-button">No, Go Back</button>
+			</div>
+		</div>
+	</form>
+</div>
+</body>
+
+</html>
