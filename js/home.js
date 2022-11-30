@@ -14,7 +14,7 @@ const DEV = true;
  * Initialization function that adds recipe cards from local storage to the html
  * document. This function also has the ability to initialize our recipes to a
  * specific set if we are doing development and/or manual testing.
- *  */
+ */
 function init() {
   if (is_launched_for_the_first_time() && DEV) {
     create_new_data(
@@ -55,10 +55,9 @@ function init() {
     list.appendChild(recipeCell);
   }
 
-  document.getElementById('button-container').addEventListener('click',
-      function(event) {
-        select_data_by_id(new_data_index);
-
-        window.location.href = 'edit.html';
-      });
+  const button = document.getElementById('button-container');
+  button.addEventListener('click', function(event) {
+    select_data_by_id(new_data_index);
+    window.location.href = 'edit.html';
+  });
 }
