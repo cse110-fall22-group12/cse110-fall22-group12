@@ -8,7 +8,7 @@ on:
       - edit-page-dev
       - cd-github-pages
 permissions:
-  contents: read
+  contents: write
   pages: write
 jobs:
   deploy:
