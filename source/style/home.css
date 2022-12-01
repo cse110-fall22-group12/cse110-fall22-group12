@@ -17,6 +17,10 @@
     --card-margins: 1rem;
 }
 
+.home-button {
+    cursor: pointer;
+}
+
 .recipe-list {
     display: flex;
     flex-direction: column;
@@ -53,6 +57,10 @@ card {
     background: #F8EAE0;
     border: 5px solid #FF7A00;
     border-radius: 20px;
+}
+
+card:hover {
+    cursor: pointer;
 }
 
 .recipe-name {

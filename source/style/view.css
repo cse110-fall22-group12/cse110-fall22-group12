@@ -43,6 +43,11 @@ h2 {
     line-height: 44px;
 }
 
+/* make the button looks clickable when user put cursor on */
+.view-button {
+    cursor: pointer;
+}
+
 /* Delete pop-up box */
 .view-delete-box {
     /* display is changed in js file when clicked */

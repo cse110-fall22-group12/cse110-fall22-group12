@@ -35,6 +35,11 @@
   font-size:          var(--user-input-font-size);
 }
 
+/* cursor will become pointer when user hover over the buttons */
+.edit-button {
+  cursor: pointer;
+}
+
 /* edit box */
 .edit-box {
   /* display is changed in js file when clicked */
@@ -54,7 +59,6 @@
   border-radius: 20px;
   overflow: hidden;
 }
-
 
 .edit-box-content {
   background-color: white;
