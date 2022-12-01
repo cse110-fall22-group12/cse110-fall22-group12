@@ -1,65 +1,92 @@
 <!DOCTYPE html>
 <html>
-	
-<head>
-	<!-- insert the browser tab name of your page -->
-	<title>View Page</title>
-	<link rel="icon" href="data:,">
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap">
-	<link rel="stylesheet" href="../style/constants.css">
-	<link rel="stylesheet" href="../style/global.css">
-    <link rel="stylesheet" href="../style/view.css">
-	<script src="../js/data.js"></script> 
+  <head>
+    <!-- insert the browser tab name of your page -->
+    <title>View Page</title>
+    <link rel="icon" href="data:," />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    />
+    <link rel="stylesheet" href="../style/constants.css" />
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/alert-box.css" />
+    <link rel="stylesheet" href="../style/view.css" />
+    <script src="../js/data.js"></script>
     <script src="../js/view.js"></script>
-</head>
-
-<body>
-	<header>
-		<nav>
-			<div>
-				<!-- add the buttons on the left side -->
-				<img id="view-page-home-button" class="view-button" src="../assets/home-button.svg" alt="home"/>
-			</div>
-			<div>
-				<!-- add the buttons on the right side -->
-				<img id="view-page-edit-button" class="view-button" src="../assets/edit-button.svg" alt="edit"/>
-				<img id="view-page-delete-button" class="view-button" src="../assets/delete-button.svg" alt="delete"/>
-			</div>
-		</nav>
-	</header>
-	<div id="stage">
-		<!--contain the selected dish name--> 
-        <div class="recipe-name">
-            <h1></h1>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <!-- add the buttons on the left side -->
+          <img
+            id="view-page-home-button"
+            class="view-button"
+            src="../assets/home-button.svg"
+            alt="home"
+          />
         </div>
-        <!-- set different block areas to hold text contents -->
-        <!-- contain ingredients, steps, and notes -->
-        <div class="block">
-            <h2>Ingredients</h2>
-            <p id="recipe-ingredients"></p>      
+        <div>
+          <!-- add the buttons on the right side -->
+          <img
+            id="view-page-edit-button"
+            class="view-button"
+            src="../assets/edit-button.svg"
+            alt="edit"
+          />
+          <img
+            id="view-page-delete-button"
+            class="view-button"
+            src="../assets/delete-button.svg"
+            alt="delete"
+          />
         </div>
-        <div class="block">
-            <h2>Steps</h2>
-            <p id="recipe-preparation"></p>
+      </nav>
+    </header>
+    <div id="stage">
+      <!--contain the selected dish name-->
+      <div class="recipe-name">
+        <h1></h1>
+      </div>
+      <!-- set different block areas to hold text contents -->
+      <!-- contain ingredients, steps, and notes -->
+      <div class="block">
+        <h2>Ingredients</h2>
+        <p id="recipe-ingredients"></p>
+      </div>
+      <div class="block">
+        <h2>Steps</h2>
+        <p id="recipe-preparation"></p>
+      </div>
+      <div class="block">
+        <h2>Notes</h2>
+        <p id="recipe-notes"></p>
+      </div>
+    </div>
+    <!-- delete pop-up box -->
+    <div id="view-delete-button-box" class="view-delete-box">
+      <form class="view-delete-box-content">
+        <div class="view-delete-container">
+          <p class="view-delete-text">Are you sure you want to delete?</p>
+          <div class="view-delete-choose">
+            <button
+              type="button"
+              id="view-yes-delete-button"
+              class="view-yes-delete-button"
+            >
+              Yes, Delete
+            </button>
+            <button
+              type="button"
+              id="view-no-delete-button"
+              class="view-no-delete-button"
+            >
+              No, Go Back
+            </button>
+          </div>
         </div>
-        <div class="block">
-            <h2>Notes</h2>
-            <p id="recipe-notes"></p>
-        </div>
-	</div>
-	<!-- delete pop-up box -->
-	<div id="view-delete-button-box" class="view-delete-box">
-		<form class="view-delete-box-content">
-			<div class="view-delete-container">
-				<p class="view-delete-text">Are you sure you want to delete?</p>
-				<div class="view-delete-choose">
-					<button type="button" id="view-yes-delete-button" class="view-yes-delete-button">Yes, Delete</button>
-					<button type="button" id="view-no-delete-button" class="view-no-delete-button">No, Go Back</button>
-				</div>
-			</div>
-		</form>
-	</div>
-</body>
-
+      </form>
+    </div>
+  </body>
 </html>

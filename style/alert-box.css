@@ -1,0 +1,11 @@
+/* 
+ * I moved all the alert-box related CSS code
+ * to this file because the alert-box should
+ * be implemented similar to the top bar we
+ * did last time. However, I am not modyfing
+ * anything because we are running out of time.
+ *
+ *                                    ---- Lyu
+ */
+@import "constants.css";
+
