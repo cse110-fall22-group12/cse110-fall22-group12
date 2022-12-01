@@ -18,28 +18,20 @@ function construct_body() {
   //get the selected food recipe 
   const data = get_selected_data();
 
-  //get the name of the selected food recipe
+  //display the name of the selected food recipe
   const name = document.getElementsByClassName('recipe-name')[0];
-
-  //display the selected recipe's name to view page
   name.querySelector('h1').innerHTML = data.name;
 
-  //get the name of the selected food ingredients
+  //display the name of the selected food ingredients
   const ingredient = document.getElementsByClassName('block')[0];
-
-  //display the selected recipe's food ingredients to view page
   ingredient.querySelector('p').innerHTML = data.ingredients;
 
-  //get the name of the selected recipe's steps
+  //display the name of the selected recipe's steps
   const step = document.getElementsByClassName('block')[1];
-
-  //display the selected recipe's steps to view page
   step.querySelector('p').innerHTML = data.steps;
 
-  //get the name of the selected recipe's notes
+  //display the name of the selected recipe's notes
   const note = document.getElementsByClassName('block')[2];
-  
-  //display the selected recipe's notes to view page
   note.querySelector('p').innerHTML = data.notes;
 }
 
