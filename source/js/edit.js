@@ -39,11 +39,9 @@ function construct_body(edit) {
  * @param {boolean}   edit  Whether the user is editing or adding a new recipe.
  */
 function construct_header(edit) {
-
   // initialize the back button:
   const back = document.getElementById('edit-back');
   back.addEventListener('click', function() {
-  
     // jump back to the correct page:
     if (get_selected_data_id() != NEW_DATA_INDEX) {
       window.location.href = 'view.html';
@@ -51,16 +49,13 @@ function construct_header(edit) {
       window.location.href = 'home.html';
     }
   });
-  
   // initialize the save button:
   const save = document.getElementById('edit-save');
   save.addEventListener('click', function() {
-  
     // check if name is blank, if so alert user and don't save
     if (document.getElementById('edit-name').value === '') {
       const editElement = document.getElementById('edit-button-box');
       editElement.style.display = 'block';
-      
       // create overwrite or create new:
     } else if (get_selected_data_id() != new_data_index) {
       const data = get_selected_data();
