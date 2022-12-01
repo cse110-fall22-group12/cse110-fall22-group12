@@ -4,18 +4,24 @@
 */
 
 /**
+ * This is a global boolean variable signifying dev mode
+ * Turn this off for deployment, but keep on for testing & development
+ * */
+const DEV_MODE = true;
+
+/**
  * This global integer variable is something you should select
  * when you create a new data from the homepage.
  * @global
  */
-const new_data_index = -1;
+const NEW_DATA_INDEX = -1;
 
 /**
  * This global string variable defines the name of the key
  * of the array of all the data the program stores.
  * @global
  */
-const data_array_key = 'noshroom_data_array';
+const DATA_ARRAY_KEY = 'noshroom_data_array';
 
 /**
  * This global string variable defines the name of the key
@@ -23,7 +29,7 @@ const data_array_key = 'noshroom_data_array';
  * unique id for a new data when creating it.
  * @global
  */
-const id_generator_key = 'noshroom_id_generator';
+const ID_GENERATOR_KEY = 'noshroom_id_generator';
 
 /**
  * This global string variable defines the name of the key
@@ -31,7 +37,7 @@ const id_generator_key = 'noshroom_id_generator';
  * or deleting.
  * @global
  */
-const selected_data_id_key = 'selected_data_id';
+const SELECTED_DATA_ID_KEY = 'selected_data_id';
 
 /**
  * This global data object is the template the program use
@@ -75,8 +81,8 @@ function set_data(key, data) {
  * @return {boolean} First launch indicator.
  */
 function is_launched_for_the_first_time() {
-  if (get_data(data_array_key) === null) {
-    set_data(data_array_key, JSON.stringify([]));
+  if (get_data(DATA_ARRAY_KEY) === null) {
+    set_data(DATA_ARRAY_KEY, JSON.stringify([]));
     return true;
   }
   return false;
@@ -95,12 +101,12 @@ function is_launched_for_the_first_time() {
  */
 function create_new_data(name, tags, favorited, ingredients, steps, notes) {
   const new_data = JSON.parse(JSON.stringify(template_data));
-  if (get_data(id_generator_key) === null) {
-    set_data(id_generator_key, 1);
+  if (get_data(ID_GENERATOR_KEY) === null) {
+    set_data(ID_GENERATOR_KEY, 1);
     new_data.id = 0;
   } else {
-    new_data.id = parseInt(get_data(id_generator_key));
-    set_data(id_generator_key, new_data.id + 1);
+    new_data.id = parseInt(get_data(ID_GENERATOR_KEY));
+    set_data(ID_GENERATOR_KEY, new_data.id + 1);
   }
   new_data.name = name;
   new_data.tags = tags;
@@ -108,12 +114,12 @@ function create_new_data(name, tags, favorited, ingredients, steps, notes) {
   new_data.ingredients = ingredients;
   new_data.steps = steps;
   new_data.notes = notes;
-  if (get_data(data_array_key) === null) {
-    set_data(data_array_key, JSON.stringify([new_data]));
+  if (get_data(DATA_ARRAY_KEY) === null) {
+    set_data(DATA_ARRAY_KEY, JSON.stringify([new_data]));
   } else {
-    const data_array = JSON.parse(get_data(data_array_key));
+    const data_array = JSON.parse(get_data(DATA_ARRAY_KEY));
     data_array.push(new_data);
-    set_data(data_array_key, JSON.stringify(data_array));
+    set_data(DATA_ARRAY_KEY, JSON.stringify(data_array));
   }
   select_data_by_id(new_data.id);
 }
@@ -127,10 +133,10 @@ function create_new_data(name, tags, favorited, ingredients, steps, notes) {
  * @return {array} The array of data stored in local storage.
  */
 function read_data_array(search_keywords, show_favorited_only) {
-  if (get_data(data_array_key) === null) {
+  if (get_data(DATA_ARRAY_KEY) === null) {
     return [];
   }
-  const raw_data_array = JSON.parse(get_data(data_array_key));
+  const raw_data_array = JSON.parse(get_data(DATA_ARRAY_KEY));
   const search_array = search_keywords.trim().split('#');
   for (let i = 0; i < search_array.length; i += 1) {
     search_array[i] = search_array[i].trim();
@@ -184,7 +190,7 @@ function read_data_array(search_keywords, show_favorited_only) {
  * @param {number}      id      The id of the data object to select.
  */
 function select_data_by_id(id) {
-  set_data(selected_data_id_key, parseInt(id));
+  set_data(SELECTED_DATA_ID_KEY, parseInt(id));
 }
 
 /**
@@ -195,10 +201,10 @@ function select_data_by_id(id) {
  * @return {number} The id of the selected data or -1 if it does not exist.
  */
 function get_selected_data_id() {
-  if (get_data(selected_data_id_key) === null) {
+  if (get_data(SELECTED_DATA_ID_KEY) === null) {
     return -1;
   }
-  return get_data(selected_data_id_key);
+  return get_data(SELECTED_DATA_ID_KEY);
 }
 
 /**
@@ -207,10 +213,10 @@ function get_selected_data_id() {
  * @return {data} The selected data object.
  */
 function get_selected_data() {
-  if (get_data(data_array_key) === null) {
+  if (get_data(DATA_ARRAY_KEY) === null) {
     return JSON.parse(JSON.stringify(template_data));
   }
-  const raw_data_array = JSON.parse(get_data(data_array_key));
+  const raw_data_array = JSON.parse(get_data(DATA_ARRAY_KEY));
   for (let i = 0; i < raw_data_array.length; i += 1) {
     const data = raw_data_array[i];
     if (data.id == get_selected_data_id()) {
@@ -226,10 +232,10 @@ function get_selected_data() {
  * @param {data}     new_data        The new data.
  */
 function overwrite_selected_data(new_data) {
-  if (get_data(data_array_key) === null) {
+  if (get_data(DATA_ARRAY_KEY) === null) {
     return;
   }
-  const raw_data_array = JSON.parse(get_data(data_array_key));
+  const raw_data_array = JSON.parse(get_data(DATA_ARRAY_KEY));
   const data_array = [];
   for (let i = 0; i < raw_data_array.length; i += 1) {
     const data = raw_data_array[i];
@@ -239,7 +245,7 @@ function overwrite_selected_data(new_data) {
       data_array.push(data);
     }
   }
-  set_data(data_array_key, JSON.stringify(data_array));
+  set_data(DATA_ARRAY_KEY, JSON.stringify(data_array));
 }
 
 /**
@@ -247,10 +253,10 @@ function overwrite_selected_data(new_data) {
  * @global
  */
 function delete_selected_data() {
-  if (get_data(data_array_key) === null) {
+  if (get_data(DATA_ARRAY_KEY) === null) {
     return;
   }
-  const raw_data_array = JSON.parse(get_data(data_array_key));
+  const raw_data_array = JSON.parse(get_data(DATA_ARRAY_KEY));
   const data_array = [];
   for (let i = 0; i < raw_data_array.length; i += 1) {
     const data = raw_data_array[i];
@@ -258,5 +264,5 @@ function delete_selected_data() {
       data_array.push(data);
     }
   }
-  set_data(data_array_key, JSON.stringify(data_array));
+  set_data(DATA_ARRAY_KEY, JSON.stringify(data_array));
 }

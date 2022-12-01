@@ -7,14 +7,14 @@ body {
 }
 
 /* define dish-name style*/
-.dish-name {
+.recipe-name {
     margin-top: 41px;
     text-align: center;
     line-height: 59px;
 }
 
 /*define dish-name style*/
-.dish-name h1 {
+.recipe-name h1 {
     font-size: var(--h1-font-size);
     font-weight: 800px;
     font-weight:600;
@@ -25,7 +25,6 @@ body {
     padding-top: 20px;
 
 }
-
 
 /* define paragraph style, updated based on constant.css */
 p {
@@ -42,75 +41,4 @@ h2 {
     font-size: var(--h2-font-size);
     font-weight:600;
     line-height: 44px;
-
-}
-
-/* Delete pop-up box */
-.delete-box {
-    /* display is changed in js file when clicked */
-    /* comment this line to see effect */
-    display: none; 
-    
-    /* position of the box on the screen*/
-    position: fixed;
-    z-index: 1; 
-    left: 25%;
-    top: 25%;
-    width: 50%; 
-    height: 50%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-radius: 20px;
-}
-
-
-.delete-box-content {
-    background-color: white;
-    margin: 5% auto 15% auto; 
-    border: 5px solid #C30202;
-    border-radius: 20px;
-    box-sizing: border-box;
-    width: 70%; 
-}
-
-.delete-container {
-    padding: 16px;
-    text-align: center;
-}
-
-/* font-size taken from figma design */
-.delete-text {
-    margin: 10% auto 10% auto;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 27px;
-}
-
-/* display of the yes or no buttons*/
-.delete-choose {
-    display: flex;
-    justify-content: center;
-}
-
-.yes-delete-button, .no-delete-button { 
-    opacity: 0.9;
-    width: 50%;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 7%;
-    font-family: var(--primary-font);
-    font-weight: 700;
-    color: white;
-}
-
-button:hover {
-    opacity: 1;
-}
-
-.no-delete-button {
-    background-color: #D3BFBF;
-}
-
-.yes-delete-button {
-    background-color: #EF7F7F;
 }
