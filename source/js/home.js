@@ -17,7 +17,6 @@ function init() {
   add_sample_data(DEV_MODE);
 
   const list = document.getElementsByClassName('recipe-list')[0];
-
   const data_array = read_data_array('', false);
 
   for (let i = 0; i < data_array.length; i += 1) {

@@ -1,5 +1,5 @@
 const { expect } = require('@jest/globals');
-const {
+let {
     add_sample_data, append_recipe_as_child, init
 } = require('../source/js/home.js'); 
 

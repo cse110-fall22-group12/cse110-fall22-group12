@@ -55,7 +55,7 @@ const template_data = {
 /**
  * This function is a wrapper for the getItem function of the localStorage.
  * @global
- * @param {string}    key   The key of the item.
+ * @param {string} key The key of the item.
  * @return {any} The data returned by calling the getItem function.
  */
 function get_data(key) {
@@ -65,8 +65,8 @@ function get_data(key) {
 /**
  * This function is a wrapper for the setItem function of the localStorage.
  * @global
- * @param {string}    key     The key of the item.
- * @param {any}       data    The item to save.
+ * @param {string} key The key of the item.
+ * @param {any} data The item to save.
  */
 function set_data(key, data) {
   window.localStorage.setItem(key, data);
@@ -90,10 +90,18 @@ function is_launched_for_the_first_time() {
  * This function creates a new data object and write to the local storage.
  * After calling this function, the new data will automatically be selected.
  * @global
- * @param {string}      name            The name of the new data object.
- * @param {string}      ingredients     The ingredients of the new data object.
- * @param {string}      steps           The steps of the new data object.
- * @param {string}      notes           The notes of the new data object.
+ * @param {string} name The name of the new data object.
+ * @param {string} ingredients The ingredients of the new data object.
+ * @param {string} steps The steps of the new data object.
+ * @param {string} notes The notes of the new data object.
+ * @return {object} the created recipe data object in the form:
+ * {
+ *    id: 0,
+ *    ingredients: "some ingredients",
+ *    name: "mushroom killer",
+ *    notes: "some notes",
+ *    steps: "some preparation"
+ * }
  */
 function create_new_data(name, ingredients, steps, notes) {
   const new_data = JSON.parse(JSON.stringify(template_data));
@@ -118,6 +126,7 @@ function create_new_data(name, ingredients, steps, notes) {
   }
   // 'select' the most recent added data so that we can view it in another page
   select_data_by_id(new_data.id);
+  return new_data;
 }
 
 /**
@@ -139,6 +148,7 @@ function read_data_array() {
   }
   // read the full recipe data string and parse it into json
   const data_array = JSON.parse(get_data(DATA_ARRAY_KEY));
+  // we can add in the tag/search term refining loop here in a future iteration
   return data_array;
 }
 
@@ -147,7 +157,7 @@ function read_data_array() {
  * get our selected recipe and perform view, edit, delete operations on it.
  * Selecting another data overwrites the previous one.
  * @global
- * @param {number}      id      The id of the data object to select.
+ * @param {number} id The id of the data object to select.
  */
 function select_data_by_id(id) {
   set_data(SELECTED_DATA_ID_KEY, parseInt(id));
@@ -164,7 +174,7 @@ function get_selected_data_id() {
   if (get_data(SELECTED_DATA_ID_KEY) === null) {
     return -1;
   }
-  return get_data(SELECTED_DATA_ID_KEY);
+  return Number(get_data(SELECTED_DATA_ID_KEY));
 }
 
 /**
@@ -241,5 +251,5 @@ module.exports = {
   get_data, set_data, is_launched_for_the_first_time, 
   create_new_data, read_data_array, select_data_by_id, get_selected_data_id, 
   get_selected_data, overwrite_selected_data, delete_selected_data, 
-  DATA_ARRAY_KEY
+  DATA_ARRAY_KEY, ID_GENERATOR_KEY
 };
