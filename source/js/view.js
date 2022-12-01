@@ -31,7 +31,7 @@ function construct_body() {
  */
 function init() {
   construct_body();
-  var showing_alert_box = false;
+  let showing_alert_box = false;
   // when home button is clicked,  transit to home page
   const home = document.getElementById('view-page-home-button');
   home.addEventListener('click', function(event) {
