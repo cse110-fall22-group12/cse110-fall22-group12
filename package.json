@@ -14,7 +14,8 @@
     },
     "jest": {
         "preset": "jest-puppeteer",
-        "verbose": true
+        "verbose": true,
+        "testEnvironment": "jsdom"
     },
     "peerDependencies":  {
         "jest": "^27.5.1",
