@@ -3,42 +3,41 @@
 
 /* set background color */
 body {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 /* define dish-name style*/
 .recipe-name {
-    margin-top: 41px;
-    text-align: center;
-    line-height: 59px;
+  margin-top: 41px;
+  text-align: center;
+  line-height: 59px;
 }
 
 /*define dish-name style*/
 .recipe-name h1 {
-    font-size: var(--h1-font-size);
-    font-weight: 800px;
-    font-weight:600;
+  font-size: var(--h1-font-size);
+  font-weight: 800px;
+  font-weight:600;
 }
 
 /*define padding for each block*/
 .block{
-    padding-top: 20px;
+  padding-top: 20px;
 
 }
 
 /* define paragraph style, updated based on constant.css */
 p {
-   
-    font-weight:normal;
-    font-size: var(--user-input-font-size);
-    line-height: 37px;
-    overflow-wrap: break-word; 
+  font-weight:normal;
+  font-size: var(--user-input-font-size);
+  line-height: 37px;
+  overflow-wrap: break-word; 
 }
 
 /* define subsection title style, updated based on constant.css */
 h2 {
-    text-decoration: underline;     
-    font-size: var(--h2-font-size);
-    font-weight:600;
-    line-height: 44px;
+  text-decoration: underline;     
+  font-size: var(--h2-font-size);
+  font-weight:600;
+  line-height: 44px;
 }
