@@ -39,7 +39,7 @@ function construct_body(edit) {
  * @param {boolean}   edit  Whether the user is editing or adding a new recipe.
  */
 function construct_header(edit) {
-  var showing_alert_box = false;
+  let showing_alert_box = false;
   const back = document.getElementById('edit-back');
   const save = document.getElementById('edit-save');
   // initialize the back button:
