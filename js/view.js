@@ -31,32 +31,45 @@ function construct_body() {
  */
 function init() {
   construct_body();
+  var showing_alert_box = false;
   // when home button is clicked,  transit to home page
   const home = document.getElementById('view-page-home-button');
   home.addEventListener('click', function(event) {
+    if (showing_alert_box) {
+      return;
+    }
     window.location.href = 'home.html';
   });
   // when edit button is clicked, transit to edit page
   const edit = document.getElementById('view-page-edit-button');
   edit.addEventListener('click', function(event) {
+    if (showing_alert_box) {
+      return;
+    }
     window.location.href = 'edit.html';
   });
   // when delete button is clicked, the warning box pop out
   const view = document.getElementById('view-page-delete-button');
   view.addEventListener('click', function(event) {
+    if (showing_alert_box) {
+      return;
+    }
     const deleteElement = document.getElementById('view-delete-button-box');
     deleteElement.style.display = 'block';
+    showing_alert_box = true;
   });
   // when delete pop-up box's yes button is clicked, transit to home page
   const yes_button = document.getElementById('view-yes-delete-button');
   yes_button.addEventListener('click', function(event) {
     delete_selected_data();
     window.location.href = 'home.html';
+    showing_alert_box = false;
   });
   // when delete pop-up box's no button is clicked, stay at the edit page
   const no_button = document.getElementById('view-no-delete-button');
   no_button.addEventListener('click', function(event) {
     const deleteElement = document.getElementById('view-delete-button-box');
     deleteElement.style.display = 'none';
+    showing_alert_box = false;
   });
 }

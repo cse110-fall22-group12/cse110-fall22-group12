@@ -39,9 +39,14 @@ function construct_body(edit) {
  * @param {boolean}   edit  Whether the user is editing or adding a new recipe.
  */
 function construct_header(edit) {
-  // initialize the back button:
+  var showing_alert_box = false;
   const back = document.getElementById('edit-back');
+  const save = document.getElementById('edit-save');
+  // initialize the back button:
   back.addEventListener('click', function() {
+    if (showing_alert_box) {
+      return;
+    }
     // jump back to the correct page:
     if (get_selected_data_id() != NEW_DATA_INDEX) {
       window.location.href = 'view.html';
@@ -50,14 +55,24 @@ function construct_header(edit) {
     }
   });
   // initialize the save button:
-  const save = document.getElementById('edit-save');
   save.addEventListener('click', function() {
+    if (showing_alert_box) {
+      return;
+    }
     // check if name is blank, if so alert user and don't save
     if (document.getElementById('edit-name').value === '') {
       const editElement = document.getElementById('edit-button-box');
       editElement.style.display = 'block';
-      // create overwrite or create new:
-    } else if (get_selected_data_id() != new_data_index) {
+      const name = document.getElementById('edit-name');
+      const ingredients = document.getElementById('edit-ingredients');
+      const steps = document.getElementById('edit-steps');
+      const notes = document.getElementById('edit-notes');
+      name.setAttribute("disabled", "disabled");
+      ingredients.setAttribute("disabled", "disabled");
+      steps.setAttribute("disabled", "disabled");
+      notes.setAttribute("disabled", "disabled");
+      showing_alert_box = true;
+    } else if (get_selected_data_id() != NEW_DATA_INDEX) {
       const data = get_selected_data();
       data.name = document.getElementById('edit-name').value.trim();
       data.ingredients = document.getElementById('edit-ingredients').value;
@@ -79,5 +94,14 @@ function construct_header(edit) {
   ok_button.addEventListener('click', function(event) {
     const editElement = document.getElementById('edit-button-box');
     editElement.style.display = 'none';
+    const name = document.getElementById('edit-name');
+    const ingredients = document.getElementById('edit-ingredients');
+    const steps = document.getElementById('edit-steps');
+    const notes = document.getElementById('edit-notes');
+    name.removeAttribute("disabled");
+    ingredients.removeAttribute("disabled");
+    steps.removeAttribute("disabled");
+    notes.removeAttribute("disabled");
+    showing_alert_box = false;
   });
 }
