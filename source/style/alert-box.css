@@ -21,9 +21,9 @@
 
   /* position of the box on the screen*/
   position: fixed;
-  top: 50%;
   left: 50%;
-  margin: -250px 0 0 -380px;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
   width: 800px;
   height: 600px;
@@ -87,31 +87,9 @@ button:hover {
   background-color: #d3bfbf;
 }
 
-/* Yes button */
+/* No button */
 .view-yes-delete-button {
   background-color: #ef7f7f;
-}
-
-/* Resize the alert box based on screensize*/
-@media only screen and (max-width: 1000px) {
-  .view-delete-box {
-    /* display is changed in js file when clicked */
-    display: none;
-
-    /* position of the box on the screen*/
-    position: fixed;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    margin: -250px 0 0 -300px;
-
-    width: 600px;
-    height: 412px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-radius: 20px;
-    overflow: hidden;
-  }
 }
 
 /* cursor will become pointer when user hover over the buttons */
@@ -179,22 +157,9 @@ button:hover {
 
 /* Resize the alert box based on screensize*/
 @media only screen and (max-width: 1000px) {
-  .edit-box {
-    /* display is changed in js file when clicked */
-    display: none;
-
-    /* position of the box on the screen*/
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin: -250px 0 0 -300px;
-
-    z-index: 1;
+  .view-delete-box {
+    /* Resize alert box */
     width: 600px;
     height: 412px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-radius: 20px;
-    overflow: hidden;
   }
 }
