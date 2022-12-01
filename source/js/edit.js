@@ -67,10 +67,10 @@ function construct_header(edit) {
       const ingredients = document.getElementById('edit-ingredients');
       const steps = document.getElementById('edit-steps');
       const notes = document.getElementById('edit-notes');
-      name.setAttribute("disabled", "disabled");
-      ingredients.setAttribute("disabled", "disabled");
-      steps.setAttribute("disabled", "disabled");
-      notes.setAttribute("disabled", "disabled");
+      name.setAttribute('disabled', 'disabled');
+      ingredients.setAttribute('disabled', 'disabled');
+      steps.setAttribute('disabled', 'disabled');
+      notes.setAttribute('disabled', 'disabled');
       showing_alert_box = true;
     } else if (get_selected_data_id() != NEW_DATA_INDEX) {
       const data = get_selected_data();
@@ -98,10 +98,10 @@ function construct_header(edit) {
     const ingredients = document.getElementById('edit-ingredients');
     const steps = document.getElementById('edit-steps');
     const notes = document.getElementById('edit-notes');
-    name.removeAttribute("disabled");
-    ingredients.removeAttribute("disabled");
-    steps.removeAttribute("disabled");
-    notes.removeAttribute("disabled");
+    name.removeAttribute('disabled');
+    ingredients.removeAttribute('disabled');
+    steps.removeAttribute('disabled');
+    notes.removeAttribute('disabled');
     showing_alert_box = false;
   });
 }
