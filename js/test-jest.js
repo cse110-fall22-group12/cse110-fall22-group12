@@ -1,3 +1,6 @@
+/* global
+
+ */
 module.exports = sum;
 /**
  * Add to numbers
@@ -8,3 +11,4 @@ module.exports = sum;
 function sum(a, b) {
   return a + b;
 }
+sum();
