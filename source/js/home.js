@@ -2,13 +2,13 @@
     is_launched_for_the_first_time,
     select_data_by_id,
     create_new_data,
-    new_data_index,
+    NEW_DATA_INDEX,
     read_data_array
+    DEV_MODE
 */
 window.addEventListener('DOMContentLoaded', init);
 
-/* Turn this off for deployment, but keep on for testing */
-const DEV = true;
+
 
 /**
  * Initialization function that adds recipe cards from local storage to the html
@@ -17,7 +17,7 @@ const DEV = true;
  */
 function init() {
   
-  add_sample_data(DEV);
+  add_sample_data(DEV_MODE);
 
   const list = document.getElementsByClassName('recipe-list')[0];
 
@@ -30,7 +30,7 @@ function init() {
 
   const button = document.querySelector('#button-container > img');
   button.addEventListener('click', function(event) {
-    select_data_by_id(new_data_index);
+    select_data_by_id(NEW_DATA_INDEX);
     window.location.href = 'edit.html';
   });
 }
@@ -60,10 +60,10 @@ function append_recipe_as_child(parent, recipe_data) {
  * This function adds multiple pieces of sample data to our local storage for
  * development and testing
  * 
- * @param {boolean} is_dev specifies whether or not we are in development mode  
+ * @param {boolean} is_dev_mode specifies whether or not we are in development mode  
  */
-function add_sample_data(is_dev) {
-  if (is_launched_for_the_first_time() && is_dev) {
+function add_sample_data(is_dev_mode) {
+  if (is_launched_for_the_first_time() && is_dev_mode) {
     create_new_data(
         'mushroom killer',
         ['tag', 'another tag', 'the last tag'],
