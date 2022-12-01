@@ -49,9 +49,9 @@ function init() {
  * }
  */
 function append_recipe_as_child(parent, recipe_data) {
-  const recipeCell = document.createElement('recipe-cell');
-  recipeCell.recipeData = recipe_data;
-  parent.appendChild(recipeCell);
+  const recipe_cell = document.createElement('recipe-cell');
+  recipe_cell.recipe_data = recipe_data;
+  parent.appendChild(recipe_cell);
 }
 
 /**
