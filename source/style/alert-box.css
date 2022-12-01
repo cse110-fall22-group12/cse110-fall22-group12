@@ -9,7 +9,7 @@
  */
 @import "constants.css";
 
-/* make the button looks clickable when user put cursor on */
+/* make the nav bar buttons look clickable when hovered */
 .view-button {
   cursor: pointer;
 }
@@ -33,6 +33,7 @@
   overflow: hidden;
 }
 
+/* Form -- very outer box */
 .view-delete-box-content {
   background-color: white;
   margin: 5% auto 15% auto;
@@ -42,6 +43,7 @@
   width: 70%;
 }
 
+/* Div wrapping text and buttons container */
 .view-delete-container {
   padding: 16px;
   text-align: center;
@@ -55,12 +57,13 @@
   line-height: 27px;
 }
 
-/* display of the yes or no buttons*/
+/* display of the yes or no buttons */
 .view-delete-choose {
   display: flex;
   justify-content: center;
 }
 
+/* Yes and No buttons */
 .view-yes-delete-button,
 .view-no-delete-button {
   opacity: 0.9;
@@ -73,15 +76,18 @@
   color: white;
 }
 
+/* Yes and no button hover effects */
 button:hover {
   opacity: 1;
   cursor: pointer;
 }
 
+/* No button */
 .view-no-delete-button {
   background-color: #d3bfbf;
 }
 
+/* Yes button */
 .view-yes-delete-button {
   background-color: #ef7f7f;
 }
