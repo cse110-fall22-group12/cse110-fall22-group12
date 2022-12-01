@@ -18,7 +18,8 @@
 
 /* the input and textarea settings */
 #edit *:not(h2) {
-  width: 100%;
+  margin: 10px;
+  width: calc(100% - 20px);
   padding: 20px;
   border-radius: 20px;
   font-family: var(--primary-font);
