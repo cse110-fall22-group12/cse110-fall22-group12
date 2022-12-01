@@ -53,12 +53,8 @@ function construct_header(edit) {
   const save = document.getElementById('edit-save');
   save.addEventListener('click', function() {
     // TODO: check if name is blank, if so alert user and don't save
-
-    if (document.getElementById('edit-name').value === '') {
-      const editElement = document.getElementById('edit-button-box');
-      editElement.style.display = 'block';
-      // create overwrite or create new:
-    } else if (get_selected_data_id() != new_data_index) {
+    // create overwrite or create new:
+    if (get_selected_data_id() != new_data_index) {
       const data = get_selected_data();
       data.name = document.getElementById('edit-name').value.trim();
       data.ingredients = document.getElementById('edit-ingredients').value;
@@ -75,10 +71,4 @@ function construct_header(edit) {
       window.location.href = 'home.html';
     }
   });
-
-  document.getElementById('ok-edit-button').addEventListener('click',
-      function(event) {
-        const editElement = document.getElementById('edit-button-box');
-        editElement.style.display = 'none';
-      });
 }

@@ -7,14 +7,14 @@ body {
 }
 
 /* define dish-name style*/
-.recipe-name {
+.dish-name {
     margin-top: 41px;
     text-align: center;
     line-height: 59px;
 }
 
 /*define dish-name style*/
-.recipe-name h1 {
+.dish-name h1 {
     font-size: var(--h1-font-size);
     font-weight: 800px;
     font-weight:600;
@@ -25,6 +25,7 @@ body {
     padding-top: 20px;
 
 }
+
 
 /* define paragraph style, updated based on constant.css */
 p {
@@ -41,28 +42,29 @@ h2 {
     font-size: var(--h2-font-size);
     font-weight:600;
     line-height: 44px;
+
 }
 
 /* Delete pop-up box */
-.view-delete-box {
+.delete-box {
     /* display is changed in js file when clicked */
+    /* comment this line to see effect */
     display: none; 
     
     /* position of the box on the screen*/
     position: fixed;
-    top: 50%;
-    left: 50%;
-    margin: -250px 0 0 -380px;
     z-index: 1; 
-    width: 800px; 
-    height: 600px;
+    left: 25%;
+    top: 25%;
+    width: 50%; 
+    height: 50%;
     padding-top: 50px;
     padding-bottom: 50px;
     border-radius: 20px;
-    overflow: hidden;
 }
 
-.view-delete-box-content {
+
+.delete-box-content {
     background-color: white;
     margin: 5% auto 15% auto; 
     border: 5px solid #C30202;
@@ -71,13 +73,13 @@ h2 {
     width: 70%; 
 }
 
-.view-delete-container {
+.delete-container {
     padding: 16px;
     text-align: center;
 }
 
 /* font-size taken from figma design */
-.view-delete-text {
+.delete-text {
     margin: 10% auto 10% auto;
     font-weight: 700;
     font-size: 22px;
@@ -85,12 +87,12 @@ h2 {
 }
 
 /* display of the yes or no buttons*/
-.view-delete-choose {
+.delete-choose {
     display: flex;
     justify-content: center;
 }
 
-.view-yes-delete-button, .view-no-delete-button { 
+.yes-delete-button, .no-delete-button { 
     opacity: 0.9;
     width: 50%;
     border-radius: 20px;
@@ -105,34 +107,10 @@ button:hover {
     opacity: 1;
 }
 
-.view-no-delete-button {
+.no-delete-button {
     background-color: #D3BFBF;
 }
 
-.view-yes-delete-button {
+.yes-delete-button {
     background-color: #EF7F7F;
 }
-
-/* Resize the alert box based on screensize*/
-@media only screen and (max-width: 1000px) {
-
-    .view-delete-box {
-        /* display is changed in js file when clicked */
-        display: none; 
-        
-        /* position of the box on the screen*/
-        position: fixed;
-        z-index: 1; 
-        top: 50%;
-        left: 50%;
-        margin: -250px 0 0 -300px;
-        
-        width: 600px; 
-        height: 412px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        border-radius: 20px;
-        overflow: hidden;
-    }
-
-  }
