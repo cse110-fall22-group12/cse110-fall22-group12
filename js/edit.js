@@ -75,9 +75,9 @@ function construct_header(edit) {
     }
   });
 
-  document.getElementById('ok-edit-button').addEventListener('click',
-      function(event) {
-        const editElement = document.getElementById('edit-button-box');
-        editElement.style.display = 'none';
-      });
+  const ok_button = document.getElementById('ok-edit-button');
+  ok_button.addEventListener('click', function(event) {
+    const editElement = document.getElementById('edit-button-box');
+    editElement.style.display = 'none';
+  });
 }
