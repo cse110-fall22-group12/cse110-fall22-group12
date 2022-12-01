@@ -18,7 +18,8 @@
 
 /* the input and textarea settings */
 #edit *:not(h2) {
-  width: 100%;
+  margin: 10px;
+  width: calc(100% - 20px);
   padding: 20px;
   border-radius: 20px;
   font-family: var(--primary-font);
@@ -37,91 +38,4 @@
   resize: none;
   height: 200px;
   font-size: var(--user-input-font-size);
-}
-
-/* cursor will become pointer when user hover over the buttons */
-.edit-button {
-  cursor: pointer;
-}
-
-/* edit box */
-.edit-box {
-  /* display is changed in js file when clicked */
-  display: none; 
-  
-  /* position of the box on the screen*/
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin: -250px 0 0 -380px;
-
-  z-index: 1; 
-  width: 800px; 
-  height: 600px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.edit-box-content {
-  background-color: white;
-  margin: 5% auto 15% auto; 
-  border: 5px solid #743E0D;
-  border-radius: 20px;
-  box-sizing: border-box;
-  width: 70%; 
-}
-
-.edit-container {
-  padding: 16px;
-  text-align: center;
-}
-
-/* font-size taken from figma design */
-.edit-text {
-  margin: 10% auto 10% auto;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-}
-
-.ok-edit-button { 
-  opacity: 0.9;
-  width: 50%;
-  border-radius: 20px;
-  margin: 10px;
-  padding: 7%;
-  font-family: var(--primary-font);
-  font-weight: 700;
-  color: white;
-  background-color: #D3BFBF;
-}
-
-button:hover {
-  opacity: 1;
-}
-
-/* Resize the alert box based on screensize*/
-@media only screen and (max-width: 1000px) {
-  .edit-box {
-    /* display is changed in js file when clicked */
-    display: none; 
-    
-    /* position of the box on the screen*/
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin: -250px 0 0 -300px;
-  
-    z-index: 1; 
-    width: 600px; 
-    height: 412px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-radius: 20px;
-    overflow: hidden;
-  }
-  
-  
 }

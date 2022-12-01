@@ -4,14 +4,15 @@
     <!-- insert the browser tab name of your page -->
     <title>Edit Page</title>
     <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
     />
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="../style/constants.css" />
     <link rel="stylesheet" href="../style/global.css" />
 
     <!-- insert other style and script files below  -->
+    <link rel="stylesheet" href="../style/alert-box.css" />
     <link rel="stylesheet" href="../style/edit.css" />
     <script src="../js/data.js"></script>
     <script src="../js/edit.js"></script>
@@ -24,12 +25,22 @@
         <!-- remove the following div if you do not need buttons on the left -->
         <div>
           <!-- copy the following line and change the id to add more buttons -->
-          <img id="edit-back" class="edit-button" src="../assets/back-button.svg" alt="back" />
+          <img
+            id="edit-back"
+            class="edit-button"
+            src="../assets/back-button.svg"
+            alt="back"
+          />
         </div>
         <!-- remove the following div if you do not need buttons on the right -->
         <div>
           <!-- copy the following line and change the id to add more buttons -->
-          <img id="edit-save" class="edit-button" src="../assets/save-button.svg" alt="save" />
+          <img
+            id="edit-save"
+            class="edit-button"
+            src="../assets/save-button.svg"
+            alt="save"
+          />
         </div>
       </nav>
     </header>
@@ -52,12 +63,15 @@
     </div>
     <!-- edit warning, must fill in the name-->
     <div id="edit-button-box" class="edit-box">
-      <form class = "edit-box-content">
-        <div class = "edit-container">
-          <p class="edit-text">Please fill out the following required fields: Recipe Name</p>
+      <form class="edit-box-content">
+        <div class="edit-container">
+          <p class="edit-text">
+            Please fill out the following required fields: Recipe Name
+          </p>
           <div class="edit-choose">
-            <button type="button" id="ok-edit-button" class="ok-edit-button">OK</button>
-            
+            <button type="button" id="ok-edit-button" class="ok-edit-button">
+              OK
+            </button>
           </div>
         </div>
       </form>
