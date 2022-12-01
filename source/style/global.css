@@ -49,6 +49,7 @@ nav div {
 
 nav img {
   margin-left: var(--button-margin);
+  margin-right: var(--button-margin);
   block-size: var(--button-size);
 }
 
@@ -79,6 +80,7 @@ nav img {
 
   nav img {
     margin-left: var(--button-margin-mobile);
+    margin-right: var(--button-margin-mobile);
     block-size: var(--button-size-mobile);
   }
 }
