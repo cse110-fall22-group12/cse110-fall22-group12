@@ -79,3 +79,5 @@ function add_sample_data(is_dev_mode) {
     );
   }
 }
+
+module.exports = {add_sample_data, append_recipe_as_child, init};
