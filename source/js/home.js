@@ -9,14 +9,12 @@
 window.addEventListener('DOMContentLoaded', init);
 
 
-
 /**
  * Initialization function that adds recipe cards from local storage to the html
  * document. This function also has the ability to initialize our recipes to a
  * specific set if we are doing development and/or manual testing.
  */
 function init() {
-  
   add_sample_data(DEV_MODE);
 
   const list = document.getElementsByClassName('recipe-list')[0];
@@ -38,12 +36,12 @@ function init() {
 /**
  * This method adds the recipe data passed in as sa child to the parent. This
  * way it can be represented on the DOM.
- * 
+ *
  * @param {HTMLElement} parent the parent that we want to append our recipe to
- * @param {object} recipe_data the data that the recipe cell should be populated 
+ * @param {object} recipe_data the data that the recipe cell should be populated
  * with. each recipe_data object should look like:
  * {
- *    id: 0, 
+ *    id: 0,
  *    ingredients: "some ingredients",
  *    name: "mushroom killer",
  *    notes: "some notes",
@@ -59,8 +57,8 @@ function append_recipe_as_child(parent, recipe_data) {
 /**
  * This function adds multiple pieces of sample data to our local storage for
  * development and testing
- * 
- * @param {boolean} is_dev_mode specifies whether or not we are in development mode  
+ *
+ * @param {boolean} is_dev_mode specifies if we are in development mode
  */
 function add_sample_data(is_dev_mode) {
   if (is_launched_for_the_first_time() && is_dev_mode) {
