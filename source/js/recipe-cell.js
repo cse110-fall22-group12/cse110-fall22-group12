@@ -37,8 +37,16 @@ class RecipeCell extends HTMLElement {
    * Override the set operator here to add a span object to the shadow dom, when
    * a name is set for our recipe.
    *
-   * @param {String} data should be a string representing the name of the
-   *    recipe & should hbe less than a certain length as defined by other pages
+   * @param {Object} data should be an object represeting the recipe & should
+   * be less than a certain length as defined by other pages. The Schema for a
+   * recipe object looks like:
+   * {
+   *    id: 0,
+   *    ingredients: "some ingredients",
+   *    name: "mushroom killer",
+   *    notes: "some notes",
+   *    steps: "some preparation"
+   * }
    * */
   set recipeData(data) {
     if (!data.name) {

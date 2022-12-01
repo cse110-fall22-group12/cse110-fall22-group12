@@ -1,7 +1,7 @@
 
 /* global
     get_selected_data_id,
-    new_data_index,
+    NEW_DATA_INDEX,
     get_selected_data,
     overwrite_selected_data,
     create_new_data,
@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', init);
  * @global
  */
 function init() {
-  const edit = get_selected_data_id() != new_data_index;
+  const edit = get_selected_data_id() != NEW_DATA_INDEX;
   construct_header(edit);
   construct_body(edit);
 }
@@ -43,7 +43,7 @@ function construct_header(edit) {
   const back = document.getElementById('edit-back');
   back.addEventListener('click', function() {
     // jump back to the correct page:
-    if (get_selected_data_id() != new_data_index) {
+    if (get_selected_data_id() != NEW_DATA_INDEX) {
       window.location.href = 'view.html';
     } else {
       window.location.href = 'home.html';
@@ -54,7 +54,7 @@ function construct_header(edit) {
   save.addEventListener('click', function() {
     // TODO: check if name is blank, if so alert user and don't save
     // create overwrite or create new:
-    if (get_selected_data_id() != new_data_index) {
+    if (get_selected_data_id() != NEW_DATA_INDEX) {
       const data = get_selected_data();
       data.name = document.getElementById('edit-name').value.trim();
       data.ingredients = document.getElementById('edit-ingredients').value;
