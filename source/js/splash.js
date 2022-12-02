@@ -1,8 +1,8 @@
-let counter = document.getElementById('counter');
+const counter = document.getElementById('counter');
 let count = 2;
 
 /**
- * Will decrement a counter from the specified value above every second 
+ * Will decrement a counter from the specified value above every second
  * and will redirect to home.html once finished
  */
 setInterval(() => {
@@ -13,4 +13,4 @@ setInterval(() => {
     location.replace('home.html');
   }
   count--;
-},1000)
+}, 1000);
