@@ -152,14 +152,19 @@ function read_data_array() {
 }
 
 /**
- * Stores a notion of "selected recipe". This is so that in the future we can
- * get our selected recipe and perform view, edit, delete operations on it.
- * Selecting another data overwrites the previous one.
+ * Stores a notion of "selected recipe" in the form of keeping its ID. This is
+ * so that in the future we can get our selected recipe and perform view, edit,
+ * delete operations on it. Selecting another data overwrites the previous one.
+ * This functi=on will do nothing if the parameter is the wrong type (if NaN)
  * @global
  * @param {number} id The id of the data object to select.
  */
 function select_data_by_id(id) {
-  set_data(SELECTED_DATA_ID_KEY, parseInt(id));
+  const parsed_id = parseInt(id);
+  if (isNaN(parsed_id)) {
+    return;
+  }
+  set_data(SELECTED_DATA_ID_KEY, parsed_id);
 }
 
 /**
@@ -197,7 +202,8 @@ function get_selected_data() {
 }
 
 /**
- * This function overwrites the selected data object with a new one.
+ * This function overwrites the selected data object with a new one. The id of
+ * new_data will stay be the same id as the selected data that we are overriding
  * @global
  * @param {data} new_data The new data that will overwrite the
  * currently selected recipe. this data object should look like
@@ -219,6 +225,8 @@ function overwrite_selected_data(new_data) {
     const data = raw_data_array[i];
     // replace only the data element that has a matching id with the new recipe
     if (data.id == get_selected_data_id()) {
+      // make sure that the id of new_data stays the same
+      new_data.id = data.id;
       data_array.push(new_data);
     } else {
       data_array.push(data);
@@ -237,13 +245,20 @@ function delete_selected_data() {
   }
   const raw_data_array = JSON.parse(get_data(DATA_ARRAY_KEY));
   const data_array = [];
+  let deleted = false;
   for (let i = 0; i < raw_data_array.length; i += 1) {
     const data = raw_data_array[i];
     if (data.id != get_selected_data_id()) {
       data_array.push(data);
+    } else {
+      // this line only runs if we SKIP due to a matching id, therefore it
+      // means we deleted from our array
+      deleted = true;
     }
   }
-  set_data(DATA_ARRAY_KEY, JSON.stringify(data_array));
+  if (deleted) {
+    set_data(DATA_ARRAY_KEY, JSON.stringify(data_array));
+  }
 }
 
 /**
@@ -252,8 +267,19 @@ function delete_selected_data() {
  * NOTE: scripts should be imported as module types because of this
  */
 export {
-  get_data, set_data, is_launched_for_the_first_time,
-  create_new_data, read_data_array, select_data_by_id, get_selected_data_id,
-  get_selected_data, overwrite_selected_data, delete_selected_data,
-  DATA_ARRAY_KEY, ID_GENERATOR_KEY, DEV_MODE, NEW_DATA_INDEX,
+  get_data,
+  set_data,
+  is_launched_for_the_first_time,
+  create_new_data,
+  read_data_array,
+  select_data_by_id,
+  get_selected_data_id,
+  get_selected_data,
+  overwrite_selected_data,
+  delete_selected_data,
+  DATA_ARRAY_KEY,
+  ID_GENERATOR_KEY,
+  DEV_MODE,
+  NEW_DATA_INDEX,
+  SELECTED_DATA_ID_KEY,
 };
