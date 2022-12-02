@@ -5,11 +5,6 @@ on:
   push:
     branches: 
       - main
-      - team-dev
-  pull_request:
-    branches: 
-      - main
-      - team-dev
 permissions:
   contents: write
   pages: write
