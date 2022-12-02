@@ -10,7 +10,9 @@
         "puppeteer": "^11.0.0"
     },
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "lint": "eslint --config ./pipeline/.eslintrc.yml ./source/js",
+        "lint-fix": "eslint --config ./pipeline/.eslintrc.yml ./source/js --fix"
     },
     "jest": {
         "preset": "jest-puppeteer",
