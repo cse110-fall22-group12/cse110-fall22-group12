@@ -1,5 +1,5 @@
 import {
-  select_data_by_id
+  select_data_by_id,
 } from './data.js';
 
 /**

@@ -1,6 +1,6 @@
 import {
-    get_selected_data,
-    delete_selected_data,
+  get_selected_data,
+  delete_selected_data,
 } from './data.js';
 
 /**
