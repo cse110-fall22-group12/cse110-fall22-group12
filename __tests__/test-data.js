@@ -77,7 +77,7 @@ test('create_new_data() stores all created recipes', () => {
     create_new_data('name', 'ingredient', 'step', 'note');
     create_new_data('name2', 'ingredient2', 'step2', 'note2');
     // using read_data_array here bc we assume its correct; unit test it later
-    raw_recipe_array = read_data_array();
+    const raw_recipe_array = read_data_array();
     expect(raw_recipe_array.length).toBe(2);
     expect(raw_recipe_array[0].name).toBe('name');
     expect(raw_recipe_array[1].name).toBe('name2');
