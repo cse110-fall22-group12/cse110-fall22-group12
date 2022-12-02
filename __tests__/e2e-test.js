@@ -66,6 +66,7 @@ describe('Basic user flow for adding a new recipe', () => {
         // else {
         //     throw new Error("Link not found");
         // }
+        //testing
         const newPageName3 = await page.title();
         expect(newPageName3).toBe('View Page');  
 
