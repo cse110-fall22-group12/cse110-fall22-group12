@@ -590,7 +590,7 @@ development and testing
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="home.js.html">home.js</a>, <a href="home.js.html#line59">line 59</a>
+        <a href="home.js.html">home.js</a>, <a href="home.js.html#line63">line 63</a>
     </li></ul></dd>
     
 
@@ -759,7 +759,7 @@ with. each recipe_data object should look like:
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="home.js.html">home.js</a>, <a href="home.js.html#line48">line 48</a>
+        <a href="home.js.html">home.js</a>, <a href="home.js.html#line51">line 51</a>
     </li></ul></dd>
     
 
@@ -1158,7 +1158,7 @@ delete button.
     
 
     
-    <h4 class="name" id="create_new_data"><span class="type-signature"></span>create_new_data<span class="signature">(name, ingredients, steps, notes)</span><span class="type-signature"> &rarr; {object}</span></h4>
+    <h4 class="name" id="create_new_data"><span class="type-signature"></span>create_new_data<span class="signature">(name, tags, favorited, ingredients, steps, notes)</span><span class="type-signature"></span></h4>
     
 
     
@@ -1220,6 +1220,52 @@ After calling this function, the new data will automatically be selected.
             
 
             <td class="description last">The name of the new data object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tags</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The array of tags of the data object.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>favorited</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The boolean indicating favorited.</td>
         </tr>
 
     
@@ -1329,7 +1375,7 @@ After calling this function, the new data will automatically be selected.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="data.js.html">data.js</a>, <a href="data.js.html#line106">line 106</a>
+        <a href="data.js.html">data.js</a>, <a href="data.js.html#line102">line 102</a>
     </li></ul></dd>
     
 
@@ -1354,35 +1400,6 @@ After calling this function, the new data will automatically be selected.
 
 
 
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    the created recipe data object in the form:
-{
-   id: 0,
-   ingredients: "some ingredients",
-   name: "mushroom killer",
-   notes: "some notes",
-   steps: "some preparation"
-}
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">object</span>
-
-
-    </dd>
-</dl>
-
-    
 
 
 
@@ -1446,7 +1463,7 @@ After calling this function, the new data will automatically be selected.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="data.js.html">data.js</a>, <a href="data.js.html#line235">line 235</a>
+        <a href="data.js.html">data.js</a>, <a href="data.js.html#line255">line 255</a>
     </li></ul></dd>
     
 
@@ -1583,7 +1600,7 @@ After calling this function, the new data will automatically be selected.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="data.js.html">data.js</a>, <a href="data.js.html#line61">line 61</a>
+        <a href="data.js.html">data.js</a>, <a href="data.js.html#line63">line 63</a>
     </li></ul></dd>
     
 
@@ -1693,7 +1710,7 @@ After calling this function, the new data will automatically be selected.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="data.js.html">data.js</a>, <a href="data.js.html#line185">line 185</a>
+        <a href="data.js.html">data.js</a>, <a href="data.js.html#line215">line 215</a>
     </li></ul></dd>
     
 
@@ -1805,7 +1822,7 @@ If nothing has been selected, this function returns -1.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="data.js.html">data.js</a>, <a href="data.js.html#line173">line 173</a>
+        <a href="data.js.html">data.js</a>, <a href="data.js.html#line203">line 203</a>
     </li></ul></dd>
     
 
@@ -2005,7 +2022,7 @@ specific set if we are doing development and/or manual testing.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="home.js.html">home.js</a>, <a href="home.js.html#line16">line 16</a>
+        <a href="home.js.html">home.js</a>, <a href="home.js.html#line17">line 17</a>
     </li></ul></dd>
     
 
@@ -2183,7 +2200,7 @@ Calling this function marks that the program has been launched previously.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="data.js.html">data.js</a>, <a href="data.js.html#line81">line 81</a>
+        <a href="data.js.html">data.js</a>, <a href="data.js.html#line83">line 83</a>
     </li></ul></dd>
     
 
@@ -2301,15 +2318,7 @@ Calling this function marks that the program has been launched previously.
 
             
 
-            <td class="description last">The new data that will overwrite the
-currently selected recipe. this data object should look like
-{
-   id: 0,
-   ingredients: "some ingredients",
-   name: "mushroom killer",
-   notes: "some notes",
-   steps: "some preparation"
-}</td>
+            <td class="description last">The new data.</td>
         </tr>
 
     
@@ -2350,7 +2359,7 @@ currently selected recipe. this data object should look like
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="data.js.html">data.js</a>, <a href="data.js.html#line213">line 213</a>
+        <a href="data.js.html">data.js</a>, <a href="data.js.html#line234">line 234</a>
     </li></ul></dd>
     
 
@@ -2386,7 +2395,7 @@ currently selected recipe. this data object should look like
     
 
     
-    <h4 class="name" id="read_data_array"><span class="type-signature"></span>read_data_array<span class="signature">()</span><span class="type-signature"> &rarr; {array}</span></h4>
+    <h4 class="name" id="read_data_array"><span class="type-signature"></span>read_data_array<span class="signature">(search_keywords, show_favorited_only)</span><span class="type-signature"> &rarr; {array}</span></h4>
     
 
     
@@ -2395,6 +2404,7 @@ currently selected recipe. this data object should look like
 
 <div class="description">
     This function reads the array of data from the local storage.
+You can provide the following parameters to narrow the results.
 </div>
 
 
@@ -2403,6 +2413,78 @@ currently selected recipe. this data object should look like
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>search_keywords</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Very straightforward.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>show_favorited_only</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Very straightforward.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -2438,7 +2520,7 @@ currently selected recipe. this data object should look like
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="data.js.html">data.js</a>, <a href="data.js.html#line145">line 145</a>
+        <a href="data.js.html">data.js</a>, <a href="data.js.html#line135">line 135</a>
     </li></ul></dd>
     
 
@@ -2467,15 +2549,7 @@ currently selected recipe. this data object should look like
 
         
 <div class="param-desc">
-    The array of data stored in local storage, where
-each element is a recipe object that looks like:
-{
-   id: 0,
-   ingredients: "some ingredients",
-   name: "mushroom killer",
-   notes: "some notes",
-   steps: "some preparation"
-}
+    The array of data stored in local storage.
 </div>
 
 
@@ -2512,9 +2586,9 @@ each element is a recipe object that looks like:
 
 
 <div class="description">
-    Stores a notion of "selected recipe". This is so that in the future we can
-get our selected recipe and perform view, edit, delete operations on it.
-Selecting another data overwrites the previous one.
+    This function selects a data by its id so that we can perform
+operations to read, edit, and delete it. Selecting another
+data overwrites the previous one.
 </div>
 
 
@@ -2607,7 +2681,7 @@ Selecting another data overwrites the previous one.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="data.js.html">data.js</a>, <a href="data.js.html#line162">line 162</a>
+        <a href="data.js.html">data.js</a>, <a href="data.js.html#line192">line 192</a>
     </li></ul></dd>
     
 
@@ -2767,7 +2841,7 @@ Selecting another data overwrites the previous one.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="data.js.html">data.js</a>, <a href="data.js.html#line71">line 71</a>
+        <a href="data.js.html">data.js</a>, <a href="data.js.html#line73">line 73</a>
     </li></ul></dd>
     
 
@@ -3001,7 +3075,7 @@ Selecting another data overwrites the previous one.
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Fri Dec 02 2022 00:23:52 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Fri Dec 02 2022 02:00:37 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>
