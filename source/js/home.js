@@ -1,15 +1,10 @@
-/* global
-    is_launched_for_the_first_time,
-    select_data_by_id,
-    create_new_data,
-    NEW_DATA_INDEX,
-    read_data_array,
-    DEV_MODE
-*/
-
 import {
-  is_launched_for_the_first_time, create_new_data, select_data_by_id, 
-  NEW_DATA_INDEX, read_data_array, DEV_MODE
+  is_launched_for_the_first_time,
+  create_new_data,
+  select_data_by_id, 
+  NEW_DATA_INDEX,
+  read_data_array,
+  DEV_MODE
 } from './data.js';
 
 window.addEventListener('DOMContentLoaded', init);

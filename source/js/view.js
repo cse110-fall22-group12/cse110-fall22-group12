@@ -1,9 +1,8 @@
-/* global
-
+import {
     get_selected_data,
     delete_selected_data,
+} from './data.js';
 
-*/
 /**
  * set up all the functilnalities for home button, edit button and
  * delete button.

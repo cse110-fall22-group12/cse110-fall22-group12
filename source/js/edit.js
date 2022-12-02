@@ -1,11 +1,12 @@
 
-/* global
+import {
     get_selected_data_id,
     NEW_DATA_INDEX,
-    get_selected_data,
+    get_selected_data, 
     overwrite_selected_data,
     create_new_data,
-*/
+} from './data.js';
+
 window.addEventListener('DOMContentLoaded', init);
 
 /**
