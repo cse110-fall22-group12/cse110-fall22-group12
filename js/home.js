@@ -6,6 +6,12 @@
     read_data_array,
     DEV_MODE
 */
+
+import {
+  is_launched_for_the_first_time, create_new_data, select_data_by_id, 
+  NEW_DATA_INDEX, read_data_array, DEV_MODE
+} from './data.js';
+
 window.addEventListener('DOMContentLoaded', init);
 
 /**
@@ -79,4 +85,11 @@ function add_sample_data(is_dev_mode) {
   }
 }
 
-module.exports = {add_sample_data, append_recipe_as_child, init};
+/**
+ * Export declarations so that we can unit tests these functions, and use the 
+ * necessary variables. 
+ * NOTE: scripts should be imported as module types because of this
+ */
+ export {
+  add_sample_data, append_recipe_as_child, init
+};

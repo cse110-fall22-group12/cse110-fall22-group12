@@ -1,5 +1,4 @@
 /* eslint-disable
-    camelcase,
     no-unused-vars,
 */
 
@@ -247,9 +246,14 @@ function delete_selected_data() {
   set_data(DATA_ARRAY_KEY, JSON.stringify(data_array));
 }
 
-module.exports = {
+/**
+ * Export declarations so that we can unit tests these functions, and use the 
+ * necessary variables
+ * NOTE: scripts should be imported as module types because of this
+ */
+ export {
   get_data, set_data, is_launched_for_the_first_time,
   create_new_data, read_data_array, select_data_by_id, get_selected_data_id,
   get_selected_data, overwrite_selected_data, delete_selected_data,
-  DATA_ARRAY_KEY, ID_GENERATOR_KEY,
+  DATA_ARRAY_KEY, ID_GENERATOR_KEY, DEV_MODE, NEW_DATA_INDEX
 };
