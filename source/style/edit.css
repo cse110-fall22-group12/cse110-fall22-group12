@@ -1,0 +1,41 @@
+@import "constants.css";
+
+/* the edit container settings */
+#edit {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* the header settings */
+#edit h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  font-size: var(--h2-font-size);
+}
+
+/* the input and textarea settings */
+#edit *:not(h2) {
+  margin: 10px;
+  width: calc(100% - 20px);
+  padding: 20px;
+  border-radius: 20px;
+  font-family: var(--primary-font);
+  background-color: var(--secondary-color);
+}
+
+/* the input settings */
+#edit input {
+  height: 60px;
+  font-weight: bold;
+  font-size: var(--h1-font-size);
+}
+
+/* the textarea settings */
+#edit textarea {
+  resize: none;
+  height: 200px;
+  font-size: var(--user-input-font-size);
+}

@@ -1,12 +1,23 @@
-:root {
-	--theme-color:          #FF7A00;
-    --primary-color:        #FFFFFF;
-    --secondary-color:      #F8EAE0;
-    --nav-text-color:       #FFFFFF;
-    --body-text-color:      #000000;
-    --primary-font:         'Montserrat', sans-serif;
-    --nav-font-size:        30px;
-    --h1-font-size:         48px;
-    --h2-font-size:         36px;
-    --user-input-font-size: 30px;
+:root, :host {
+  --theme-color: #ff7a00;
+  --primary-color: #ffffff;
+  --secondary-color: #f8eae0;
+  --nav-text-color: #ffffff;
+  --body-text-color: #000000;
+  --primary-font: 'Montserrat', sans-serif;
+  --top-bar-font-size: 40px;
+  --top-bar-font-size-mobile: 30px;
+  --top-bar-side-margin: 60px;
+  --top-bar-side-margin-mobile: 20px;
+  --top-bar-height: 138px;
+  --top-bar-height-mobile: 90px;
+  --stage-side-margin: 60px;
+  --stage-side-margin-mobile: 20px;
+  --button-size: 100px;
+  --button-size-mobile: 64px;
+  --button-margin: 10px;
+  --button-margin-mobile: 5px;
+  --h1-font-size: 30px;
+  --h2-font-size: 25px;
+  --user-input-font-size: 20px;
 }
