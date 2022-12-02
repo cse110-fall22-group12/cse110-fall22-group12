@@ -103,7 +103,6 @@ function is_launched_for_the_first_time() {
  * }
  */
 function create_new_data(name, ingredients, steps, notes) {
-  console.log("BIG CHECK");
   const new_data = JSON.parse(JSON.stringify(template_data));
   if (get_data(ID_GENERATOR_KEY) === null) {
     set_data(ID_GENERATOR_KEY, 1);
