@@ -86,7 +86,7 @@ function construct_header(edit) {
       const ingredients = document.getElementById('edit-ingredients').value;
       const steps = document.getElementById('edit-steps').value;
       const notes = document.getElementById('edit-notes').value;
-      create_new_data(name, [], false, ingredients, steps, notes);
+      create_new_data(name, ingredients, steps, notes);
       window.location.href = 'home.html';
     }
   });
