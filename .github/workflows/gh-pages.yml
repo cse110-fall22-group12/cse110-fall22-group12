@@ -5,7 +5,10 @@ on:
   push:
     branches: 
       - main
-      - cd-github-pages
+      - team-dev
+  pull_request:
+    branches: 
+      - main
       - team-dev
 permissions:
   contents: write
@@ -17,6 +20,10 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1 # downloads repository
+      - name: Install npm
+        run: npm install --save-dev jsdoc
+      - name: Create JS Docs
+        run: npx jsdoc ./source/js -d ./source/out
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:

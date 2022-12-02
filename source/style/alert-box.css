@@ -9,7 +9,7 @@
  */
 @import "constants.css";
 
-/* make the button looks clickable when user put cursor on */
+/* make the nav bar buttons look clickable when hovered */
 .view-button {
   cursor: pointer;
 }
@@ -21,9 +21,9 @@
 
   /* position of the box on the screen*/
   position: fixed;
-  top: 50%;
   left: 50%;
-  margin: -250px 0 0 -380px;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
   width: 800px;
   height: 600px;
@@ -33,6 +33,7 @@
   overflow: hidden;
 }
 
+/* Form -- very outer box */
 .view-delete-box-content {
   background-color: white;
   margin: 5% auto 15% auto;
@@ -42,6 +43,7 @@
   width: 70%;
 }
 
+/* Div wrapping text and buttons container */
 .view-delete-container {
   padding: 16px;
   text-align: center;
@@ -55,12 +57,13 @@
   line-height: 27px;
 }
 
-/* display of the yes or no buttons*/
+/* display of the yes or no buttons */
 .view-delete-choose {
   display: flex;
   justify-content: center;
 }
 
+/* Yes and No buttons */
 .view-yes-delete-button,
 .view-no-delete-button {
   opacity: 0.9;
@@ -73,38 +76,20 @@
   color: white;
 }
 
+/* Yes and no button hover effects */
 button:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
+/* No button */
 .view-no-delete-button {
   background-color: #d3bfbf;
 }
 
+/* No button */
 .view-yes-delete-button {
   background-color: #ef7f7f;
-}
-
-/* Resize the alert box based on screensize*/
-@media only screen and (max-width: 1000px) {
-  .view-delete-box {
-    /* display is changed in js file when clicked */
-    display: none;
-
-    /* position of the box on the screen*/
-    position: fixed;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    margin: -250px 0 0 -300px;
-
-    width: 600px;
-    height: 412px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-radius: 20px;
-    overflow: hidden;
-  }
 }
 
 /* cursor will become pointer when user hover over the buttons */
@@ -172,22 +157,9 @@ button:hover {
 
 /* Resize the alert box based on screensize*/
 @media only screen and (max-width: 1000px) {
-  .edit-box {
-    /* display is changed in js file when clicked */
-    display: none;
-
-    /* position of the box on the screen*/
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin: -250px 0 0 -300px;
-
-    z-index: 1;
+  .view-delete-box {
+    /* Resize alert box */
     width: 600px;
     height: 412px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-radius: 20px;
-    overflow: hidden;
   }
 }
