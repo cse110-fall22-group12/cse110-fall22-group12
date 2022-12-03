@@ -39,3 +39,9 @@
   height: 200px;
   font-size: var(--user-input-font-size);
 }
+
+/* cursor will become pointer when user hover over the buttons */
+.edit-button:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}

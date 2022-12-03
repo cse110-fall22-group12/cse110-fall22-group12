@@ -17,8 +17,9 @@
   --card-margins: 1rem;
 }
 
-.home-button {
+.home-button:hover {
   cursor: pointer;
+  filter: brightness(90%);
 }
 
 .recipe-list {
@@ -61,6 +62,7 @@ card {
 
 card:hover {
   cursor: pointer;
+  filter: brightness(90%);
 }
 
 .recipe-name {

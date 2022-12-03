@@ -37,6 +37,13 @@ p {
 h2 {
   text-decoration: underline;     
   font-size: var(--h2-font-size);
-  font-weight:600;
+  font-weight: 600;
   line-height: 44px;
 }
+
+/* make the nav bar buttons look clickable when hovered */
+.view-button:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+

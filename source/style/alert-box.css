@@ -9,13 +9,9 @@
  */
 @import "constants.css";
 
-/* make the nav bar buttons look clickable when hovered */
-.view-button {
-  cursor: pointer;
-}
-
 /* Delete pop-up box */
 .view-delete-box {
+
   /* display is changed in js file when clicked */
   display: none;
 
@@ -49,7 +45,7 @@
   text-align: center;
 }
 
-/* font-size taken from figma design */
+/* Font-size */
 .view-delete-text {
   margin: 10% auto 10% auto;
   font-weight: 700;
@@ -87,22 +83,18 @@ button:hover {
   background-color: #d3bfbf;
 }
 
-/* No button */
+/* Yes button */
 .view-yes-delete-button {
   background-color: #ef7f7f;
 }
 
-/* cursor will become pointer when user hover over the buttons */
-.edit-button {
-  cursor: pointer;
-}
-
-/* edit box */
+/* Edit box */
 .edit-box {
-  /* display is changed in js file when clicked */
+
+  /* Display is changed in js file when clicked */
   display: none;
 
-  /* position of the box on the screen*/
+  /* Position of the box on the screen */
   position: fixed;
   top: 50%;
   left: 50%;
@@ -117,6 +109,7 @@ button:hover {
   overflow: hidden;
 }
 
+/* Form - very outside box */
 .edit-box-content {
   background-color: white;
   margin: 5% auto 15% auto;
@@ -126,12 +119,13 @@ button:hover {
   width: 70%;
 }
 
+/* Container of text and button */
 .edit-container {
   padding: 16px;
   text-align: center;
 }
 
-/* font-size taken from figma design */
+/* Font-size */
 .edit-text {
   margin: 10% auto 10% auto;
   font-weight: 700;
@@ -139,6 +133,7 @@ button:hover {
   line-height: 27px;
 }
 
+/* Display of the 'ok' button */
 .ok-edit-button {
   opacity: 0.9;
   width: 50%;
@@ -151,11 +146,12 @@ button:hover {
   background-color: #d3bfbf;
 }
 
+/* Change opacity of color when hovering */
 button:hover {
   opacity: 1;
 }
 
-/* Resize the alert box based on screensize*/
+/* Resize the alert box based on screensize */
 @media only screen and (max-width: 1000px) {
   .view-delete-box {
     /* Resize alert box */
