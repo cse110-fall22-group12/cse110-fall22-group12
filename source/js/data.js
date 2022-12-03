@@ -250,15 +250,9 @@ function delete_selected_data() {
     const data = raw_data_array[i];
     if (data.id != get_selected_data_id()) {
       data_array.push(data);
-    } else {
-      // this line only runs if we SKIP due to a matching id, therefore it
-      // means we deleted from our array
-      deleted = true;
     }
   }
-  if (deleted) {
-    set_data(DATA_ARRAY_KEY, JSON.stringify(data_array));
-  }
+  set_data(DATA_ARRAY_KEY, JSON.stringify(data_array));
 }
 
 /**
