@@ -2,16 +2,16 @@
 
 ## Context and Problem Statements
 
-* We needed to narrow the goal of our app since "food" is too wide of a user-set.
-* Who are the consumers that we want to target? 
-* Who and why would people want to use a food-related app?
+- We needed to narrow the goal of our app since "food" is too wide of a user-set.
+- Who are the consumers that we want to target?
+- Who and why would people want to use a food-related app?
 
 ## Considered Options
 
-* Recipe app focused on logging recipes
-* Restaurant app focused on rating restaurant dishes
-* Combination of recipes and restaurant dishes
-* Calorie tracker
+- Recipe app focused on logging recipes
+- Restaurant app focused on rating restaurant dishes
+- Combination of recipes and restaurant dishes
+- Calorie tracker
 
 ## Decision Outcome
 

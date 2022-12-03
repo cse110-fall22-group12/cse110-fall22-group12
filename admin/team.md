@@ -1,9 +1,11 @@
-# Team Mushroom Haters #
+# Team Mushroom Haters
+
 We protect humanity against **evil mushrooms**!
 
 ![Team Brand Logo](/admin/branding/Noshroom-Sebastian.png)
 
-## Our Mission ##
+## Our Mission
+
 Evil mushrooms are becoming a significant threat to humanity,
 imposing **taste, physical, and emotional damage** to innocent people.
 Our mission, therefore, is to identify and eradicate these horrible
@@ -13,7 +15,8 @@ and most importantly,
 
 We believe that our team functions best off of mutual respect for all of our members, and all problems are best addressed quickly and directly. Together, we will accomplish the research, design, development and deployment of a professionally engineered web application!
 
-## The Team ##
+## The Team
+
 Our team has been fighting against evil mushrooms since 2022.
 
 Please allow us to proudly introduce ourselves:

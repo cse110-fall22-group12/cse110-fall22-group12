@@ -4,11 +4,11 @@ name: CI - Unit Tests
 on: [push, pull_request]
 
 jobs:
-  lint:
+  Tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install npm
-        run: npm install --save-dev eslint eslint-config-google
+      - name: Install Jest and additional plugins
+        run: npm install --save-dev jest babel-jest @babel/core @babel/preset-env puppeteer jest-puppeteer
       - name: Run Jest
         run: npm run test
