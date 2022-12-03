@@ -1,29 +1,29 @@
 {
-    "devDependencies": {
-        "@babel/core": "^7.20.5",
-        "@babel/preset-env": "^7.20.2",
-        "babel-jest": "^27.5.1",
-        "eslint": "^8.28.0",
-        "eslint-config-google": "^0.14.0",
-        "jest": "^27.5.1",
-        "jest-puppeteer": "^6.1.1",
-        "puppeteer": "^11.0.0"
-    },
-    "scripts": {
-        "test": "jest",
-        "lint": "eslint --config ./pipeline/.eslintrc.yml ./source/js",
-        "lint-fix": "eslint --config ./pipeline/.eslintrc.yml ./source/js --fix"
-    },
-    "jest": {
-        "preset": "jest-puppeteer",
-        "verbose": true
-    },
-    "peerDependencies":  {
-        "jest": "^27.5.1",
-        "jest-runner": "^27.5.1",
-        "jest-environment-node": "27.5.1"
-    },
-    "dependencies": {
-        "@babel/plugin-transform-modules-commonjs": "^7.19.6"
-    }
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^27.5.1",
+    "eslint": "^8.28.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^27.5.1",
+    "jest-puppeteer": "^6.1.1",
+    "puppeteer": "^11.0.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint --config ./pipeline/.eslintrc.yml ./source/js",
+    "lint-fix": "eslint --config ./pipeline/.eslintrc.yml ./source/js --fix"
+  },
+  "jest": {
+    "preset": "jest-puppeteer",
+    "verbose": true
+  },
+  "peerDependencies": {
+    "jest": "^27.5.1",
+    "jest-runner": "^27.5.1",
+    "jest-environment-node": "27.5.1"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6"
+  }
 }

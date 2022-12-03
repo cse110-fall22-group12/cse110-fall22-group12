@@ -1,5 +1,5 @@
 @import "constants.css";
-@import "global.css"; 
+@import "global.css";
 
 /* set background color */
 body {
@@ -17,11 +17,11 @@ body {
 .recipe-name h1 {
   font-size: var(--h1-font-size);
   font-weight: 50rem;
-  font-weight:600;
+  font-weight: 600;
 }
 
 /* define padding for each block */
-.block{
+.block {
   padding-top: 1.25rem;
 }
 
@@ -31,12 +31,12 @@ p {
   font-size: var(--user-input-font-size);
   line-height: 2.313rem;
   white-space: pre-line;
-  overflow-wrap: break-word; 
+  overflow-wrap: break-word;
 }
 
 /* define subsection title style, updated based on constant.css */
 h2 {
-  text-decoration: underline;    
+  text-decoration: underline;
   font-size: var(--h2-font-size);
   font-weight: 600;
   line-height: 2.75rem;
@@ -47,4 +47,3 @@ h2 {
   cursor: pointer;
   filter: brightness(90%);
 }
-

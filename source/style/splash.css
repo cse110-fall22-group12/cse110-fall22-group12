@@ -11,7 +11,7 @@ body {
   margin-right: auto;
   text-align: center;
   margin-top: 12vw;
-  margin-bottom: 0.313rem
+  margin-bottom: 0.313rem;
 }
 
 .center-text {
@@ -20,8 +20,8 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.938rem; 
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.938rem;
 }
 
 #counter {
@@ -32,6 +32,6 @@ body {
   right: 6.25rem;
   margin-left: 5vw;
   margin-top: 5vw;
-  font-family: 'Lucida Console', 'Courier New', monospace;
-  font-size: 1.063rem; 
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 1.063rem;
 }

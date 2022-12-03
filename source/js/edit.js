@@ -1,4 +1,3 @@
-
 import {
   get_selected_data_id,
   NEW_DATA_INDEX,

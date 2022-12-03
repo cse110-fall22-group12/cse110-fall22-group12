@@ -85,8 +85,4 @@ function add_sample_data(is_dev_mode) {
  * necessary variables.
  * NOTE: scripts should be imported as module types because of this
  */
-export {
-  add_sample_data,
-  append_recipe_as_child,
-  init,
-};
+export {add_sample_data, append_recipe_as_child, init};

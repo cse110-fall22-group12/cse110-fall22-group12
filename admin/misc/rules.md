@@ -95,7 +95,3 @@
   
   <p align=right><b>Sign: ____________               </b></p>
   <p align=right><b>Date: ____________              </b></p>
-
-
-
-

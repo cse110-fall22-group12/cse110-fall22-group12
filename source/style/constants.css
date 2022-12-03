@@ -1,10 +1,11 @@
-:root, :host {
+:root,
+:host {
   --theme-color: #ff7a00;
   --primary-color: #ffffff;
   --secondary-color: #f8eae0;
   --nav-text-color: #ffffff;
   --body-text-color: #000000;
-  --primary-font: 'Montserrat', sans-serif;
+  --primary-font: "Montserrat", sans-serif;
   --top-bar-font-size: 2.5rem;
   --top-bar-font-size-mobile: 1.875rem;
   --top-bar-side-margin: 3.75rem;

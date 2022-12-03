@@ -11,4 +11,4 @@ jobs:
       - name: Install npm
         run: npm install --save-dev eslint eslint-config-google
       - name: Run ESlint
-        run: npx eslint --config ./pipeline/.eslintrc.yml ./source/js 
+        run: npx eslint --config ./pipeline/.eslintrc.yml ./source/js

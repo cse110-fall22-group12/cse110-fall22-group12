@@ -1,9 +1,9 @@
 # Source: https://github.com/marketplace/actions/deploy-to-github-pages
-      
+
 name: Deploy to GitHub Pages
 on:
   push:
-    branches: 
+    branches:
       - main
 permissions:
   contents: write

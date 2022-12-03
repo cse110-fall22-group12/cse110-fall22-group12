@@ -1,7 +1,4 @@
-import {
-  get_selected_data,
-  delete_selected_data,
-} from './data.js';
+import {get_selected_data, delete_selected_data} from './data.js';
 
 /**
  * set up all the functionalities for home button, edit button and
