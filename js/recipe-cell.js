@@ -1,6 +1,4 @@
-/* global
-    select_data_by_id
-*/
+import {select_data_by_id} from './data.js';
 
 /**
  * Recipe card component that will be used to represent each of the users

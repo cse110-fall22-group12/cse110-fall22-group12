@@ -1,4 +1,4 @@
-@import 'constants.css';
+@import "constants.css";
 
 /* please do not modify unless broken */
 /* the site settings */
@@ -32,11 +32,13 @@ nav {
   color: var(--primary-color);
   font-size: var(--top-bar-font-size);
   font-weight: bold;
+  z-index: 2;
 }
 
 /* the stage settings */
 #stage {
   margin: auto;
+  min-width: 60vw;
   padding-top: var(--top-bar-height);
   padding-left: var(--stage-side-margin);
   padding-right: var(--stage-side-margin);
@@ -56,7 +58,6 @@ nav img {
 /* the settings for mobile devices */
 /* the screen adapts when the max-width changes to 768px (could be modified) */
 @media only screen and (max-width: 1000px) {
-
   /* the top bar settings */
   nav {
     height: var(--top-bar-height-mobile);

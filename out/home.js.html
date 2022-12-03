@@ -26,16 +26,16 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/* global
-    is_launched_for_the_first_time,
-    select_data_by_id,
-    create_new_data,
-    NEW_DATA_INDEX,
-    read_data_array
-    DEV_MODE
-*/
-window.addEventListener('DOMContentLoaded', init);
+            <pre class="prettyprint source linenums"><code>import {
+  is_launched_for_the_first_time,
+  create_new_data,
+  select_data_by_id,
+  NEW_DATA_INDEX,
+  read_data_array,
+  DEV_MODE,
+} from './data.js';
 
+window.addEventListener('DOMContentLoaded', init);
 
 /**
  * Initialization function that adds recipe cards from local storage to the html
@@ -46,7 +46,6 @@ function init() {
   add_sample_data(DEV_MODE);
 
   const list = document.getElementsByClassName('recipe-list')[0];
-
   const data_array = read_data_array('', false);
 
   for (let i = 0; i &lt; data_array.length; i += 1) {
@@ -64,7 +63,6 @@ function init() {
 /**
  * This method adds the recipe data passed in as sa child to the parent. This
  * way it can be represented on the DOM.
- *
  * @param {HTMLElement} parent the parent that we want to append our recipe to
  * @param {object} recipe_data the data that the recipe cell should be populated
  * with. each recipe_data object should look like:
@@ -85,37 +83,37 @@ function append_recipe_as_child(parent, recipe_data) {
 /**
  * This function adds multiple pieces of sample data to our local storage for
  * development and testing
- *
  * @param {boolean} is_dev_mode specifies if we are in development mode
  */
 function add_sample_data(is_dev_mode) {
   if (is_launched_for_the_first_time() &amp;&amp; is_dev_mode) {
     create_new_data(
         'mushroom killer',
-        ['tag', 'another tag', 'the last tag'],
-        true,
         'some ingredients',
         'some preparation',
         'some notes',
     );
     create_new_data(
         'mushroom terminator',
-        ['tag'],
-        true,
         'some ingredients',
         'some preparation',
         'some notes',
     );
     create_new_data(
         'mushroom slayer',
-        ['another tag', 'the last tag'],
-        false,
         'some ingredients',
         'some preparation',
         'some notes',
     );
   }
 }
+
+/**
+ * Export declarations so that we can unit tests these functions, and use the
+ * necessary variables.
+ * NOTE: scripts should be imported as module types because of this
+ */
+export {add_sample_data, append_recipe_as_child, init};
 </code></pre>
         </article>
     </section>
@@ -126,13 +124,13 @@ function add_sample_data(is_dev_mode) {
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Recipe_Cell.html">Recipe_Cell</a></li></ul><h3>Global</h3><ul><li><a href="global.html#DATA_ARRAY_KEY">DATA_ARRAY_KEY</a></li><li><a href="global.html#DEV_MODE">DEV_MODE</a></li><li><a href="global.html#ID_GENERATOR_KEY">ID_GENERATOR_KEY</a></li><li><a href="global.html#NEW_DATA_INDEX">NEW_DATA_INDEX</a></li><li><a href="global.html#SELECTED_DATA_ID_KEY">SELECTED_DATA_ID_KEY</a></li><li><a href="global.html#add_sample_data">add_sample_data</a></li><li><a href="global.html#append_recipe_as_child">append_recipe_as_child</a></li><li><a href="global.html#construct_body">construct_body</a></li><li><a href="global.html#construct_header">construct_header</a></li><li><a href="global.html#create_new_data">create_new_data</a></li><li><a href="global.html#delete_selected_data">delete_selected_data</a></li><li><a href="global.html#get_data">get_data</a></li><li><a href="global.html#get_selected_data">get_selected_data</a></li><li><a href="global.html#get_selected_data_id">get_selected_data_id</a></li><li><a href="global.html#init">init</a></li><li><a href="global.html#is_launched_for_the_first_time">is_launched_for_the_first_time</a></li><li><a href="global.html#overwrite_selected_data">overwrite_selected_data</a></li><li><a href="global.html#read_data_array">read_data_array</a></li><li><a href="global.html#select_data_by_id">select_data_by_id</a></li><li><a href="global.html#set_data">set_data</a></li><li><a href="global.html#sum">sum</a></li><li><a href="global.html#template_data">template_data</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Recipe_Cell.html">Recipe_Cell</a></li></ul><h3>Global</h3><ul><li><a href="global.html#DATA_ARRAY_KEY">DATA_ARRAY_KEY</a></li><li><a href="global.html#DEV_MODE">DEV_MODE</a></li><li><a href="global.html#ID_GENERATOR_KEY">ID_GENERATOR_KEY</a></li><li><a href="global.html#NEW_DATA_INDEX">NEW_DATA_INDEX</a></li><li><a href="global.html#SELECTED_DATA_ID_KEY">SELECTED_DATA_ID_KEY</a></li><li><a href="global.html#add_sample_data">add_sample_data</a></li><li><a href="global.html#append_recipe_as_child">append_recipe_as_child</a></li><li><a href="global.html#construct_body">construct_body</a></li><li><a href="global.html#construct_header">construct_header</a></li><li><a href="global.html#create_new_data">create_new_data</a></li><li><a href="global.html#delete_selected_data">delete_selected_data</a></li><li><a href="global.html#get_data">get_data</a></li><li><a href="global.html#get_selected_data">get_selected_data</a></li><li><a href="global.html#get_selected_data_id">get_selected_data_id</a></li><li><a href="global.html#init">init</a></li><li><a href="global.html#is_launched_for_the_first_time">is_launched_for_the_first_time</a></li><li><a href="global.html#overwrite_selected_data">overwrite_selected_data</a></li><li><a href="global.html#read_data_array">read_data_array</a></li><li><a href="global.html#select_data_by_id">select_data_by_id</a></li><li><a href="global.html#set_data">set_data</a></li><li><a href="global.html#template_data">template_data</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Sat Dec 03 2022 03:15:33 GMT+0000 (Coordinated Universal Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Sat Dec 03 2022 06:54:02 GMT+0000 (Coordinated Universal Time)
 </footer>
 
 <script> prettyPrint(); </script>

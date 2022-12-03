@@ -1,32 +1,32 @@
 @import "constants.css";
 
-/* * {
-  background-color: var(--secondary-color);
-  color: var(--body-text-color);
-  border-radius: 1rem;
-} */
+/* define variables */
 :root {
-  --desktop-cell-height: 182px;
-  --tablet-cell-height: 140px;
-  --mobile-cell-height: 120px;
-  --desktop-list-margin-top: 150px;
-  --mobile-list-margin-top: 100px;
-  --max-cell-width: 900px;
-  --cell-left-margin: 0px;
-  --cell-top-margin: 60px;
+  --desktop-cell-height: 11.375rem;
+  --tablet-cell-height: 8.75rem;
+  --mobile-cell-height: 7.5rem;
+  --desktop-list-margin-top: 9.375rem;
+  --mobile-list-margin-top: 6.25rem;
+  --max-cell-width: 100%;
+  --cell-left-margin: 0rem;
+  --cell-top-margin: 3.75rem;
   --card-margins: 1rem;
 }
 
-.home-button {
+/* cursor will become pointer and button becomes darker when hovering */
+.home-button:hover {
   cursor: pointer;
+  filter: brightness(90%);
 }
 
+/* spacing between each recipe card */
 .recipe-list {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
+/* center the recipe cards */
 main {
   display: flex;
   flex-direction: column;
@@ -34,42 +34,47 @@ main {
 }
 
 /* class applied to an anchor tag */
-.recipe-cell-link { 
+.recipe-cell-link {
   text-decoration: none;
 }
 
+/* spacing between each recipe card */
 recipe-cell {
-  margin-top: 40px ;
+  margin-top: 40px;
 }
 
+/* display of each recipe card */
 card {
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  
-  /* This line adjusts the scaling of the cards as the view gets thinner */
-  width: min(var(--max-cell-width), 90vw);
+
+  /* this line adjusts the scaling of the cards as the view gets thinner */
+  /* width: max(500px, 90%); */
   height: var(--desktop-cell-height);
   margin-top: var(--card-margins);
   margin-bottom: var(--card-margins);
   padding: 1rem;
-  background: #F8EAE0;
-  border: 5px solid #FF7A00;
-  border-radius: 20px;
+  background: #f8eae0;
+  border: 0.313rem solid #ff7a00;
+  border-radius: 1.25rem;
 }
 
+/* darken recipe card when hovering */
 card:hover {
   cursor: pointer;
+  filter: brightness(90%);
 }
 
+/* text of recipe cards */
 .recipe-name {
   display: flex;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 59px;
   color: #000000;
 }
