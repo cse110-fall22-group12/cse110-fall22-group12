@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 const { expect } = require('@jest/globals');
 const {
     add_sample_data,
