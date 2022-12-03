@@ -245,7 +245,6 @@ function delete_selected_data() {
   }
   const raw_data_array = JSON.parse(get_data(DATA_ARRAY_KEY));
   const data_array = [];
-  let deleted = false;
   for (let i = 0; i < raw_data_array.length; i += 1) {
     const data = raw_data_array[i];
     if (data.id != get_selected_data_id()) {
