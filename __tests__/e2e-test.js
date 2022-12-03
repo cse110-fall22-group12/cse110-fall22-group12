@@ -18,7 +18,6 @@ describe('Basic user flow for adding a new recipe', () => {
     // Initial Home Page - Check for default 3 recipe items
     it('Initial Home Page - Check for default 3 recipe items', async () => {
         await page.goto('https://cse110-fall22-group12.github.io/cse110-fall22-group12/components/home.html');
-        console.log('checking for 3 recipe cells');
         const numRecipes = await page.$$eval('recipe-cell', (recipeItems) => {
             return recipeItems.length;
         });
@@ -60,7 +59,6 @@ describe('Basic user flow for adding a new recipe', () => {
         let value = await innertext.jsonValue();
         expect(value).toBe('UI test');
         // check recipe cards number correct
-        console.log('checking for 3 recipe cells');
         const numRecipes = await page.$$eval('recipe-cell', (recipeItems) => {
             return recipeItems.length;
         });
@@ -155,7 +153,6 @@ describe('Basic user flow for adding a new recipe', () => {
         const pagename2 = await page.title();
         expect(pagename2).toBe('Home Page');
         // check recipe number
-        console.log('checking for 3 recipe cells');
         const numRecipes = await page.$$eval('recipe-cell', (recipeItems) => {
             return recipeItems.length;
         });
