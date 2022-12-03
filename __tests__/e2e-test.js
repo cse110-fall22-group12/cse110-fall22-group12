@@ -1,3 +1,5 @@
+// noshroom website end2end testing
+
 describe('Basic user flow for adding a new recipe', () => {
     beforeAll(async() => {
         await page.goto('https://cse110-fall22-group12.github.io/cse110-fall22-group12/components/index.html');
@@ -159,7 +161,7 @@ describe('Basic user flow for adding a new recipe', () => {
         });
         expect(numRecipes).toBe(3);
     });
-    
+
     // On Edit Page - Check if the alertbox function is correct
     it('On Edit Page - Check if the alertbox function is correct', async () => {
         await page.goto('https://cse110-fall22-group12.github.io/cse110-fall22-group12/components/home.html');
