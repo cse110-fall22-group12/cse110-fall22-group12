@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install npm
+      - name: Install Jest and additional plugins
         run: npm install --save-dev jest babel-jest @babel/core @babel/preset-env puppeteer jest-puppeteer
       - name: Run Jest
         run: npm run test

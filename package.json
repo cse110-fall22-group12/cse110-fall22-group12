@@ -15,5 +15,10 @@
     "jest": {
         "preset": "jest-puppeteer",
         "verbose": true
+    },
+    "peerDependencies":  {
+        "jest": "^27.5.1",
+        "jest-runner": "^27.5.1",
+        "jest-environment-node": "27.5.1"
     }
 }
