@@ -3,7 +3,6 @@
 /* define variables */
 :root {
   --desktop-cell-height: 11.375rem;
-  --tablet-cell-height: 8.75rem;
   --mobile-cell-height: 7.5rem;
   --desktop-list-margin-top: 9.375rem;
   --mobile-list-margin-top: 6.25rem;
@@ -11,6 +10,7 @@
   --cell-left-margin: 0rem;
   --cell-top-margin: 3.75rem;
   --card-margins: 1rem;
+  --card-font-size: 3rem;
 }
 
 /* cursor will become pointer and button becomes darker when hovering */
@@ -50,8 +50,6 @@ card {
   align-items: center;
   box-sizing: border-box;
 
-  /* this line adjusts the scaling of the cards as the view gets thinner */
-  /* width: max(500px, 90%); */
   height: var(--desktop-cell-height);
   margin-top: var(--card-margins);
   margin-bottom: var(--card-margins);
@@ -74,7 +72,17 @@ card:hover {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: var(--card-font-size);
   line-height: 59px;
   color: #000000;
+}
+
+@media only screen and (max-width: 600px) {
+  .recipe-name {
+    font-size: 1.5rem;
+    word-wrap: break-word;
+  }
+  card {
+    height: var(--mobile-cell-height);
+  }
 }

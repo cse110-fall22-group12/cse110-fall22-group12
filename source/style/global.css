@@ -38,8 +38,7 @@ nav {
 /* the stage settings */
 #stage {
   margin: auto;
-  width: 80vw;
-  min-width: 60vw;
+  width: 60vw;
   padding-top: var(--top-bar-height);
   padding-left: var(--stage-side-margin);
   padding-right: var(--stage-side-margin);
@@ -57,7 +56,7 @@ nav img {
 }
 
 /* the settings for mobile devices */
-/* the screen adapts when the max-width changes to 768px (could be modified) */
+/* the screen adapts when the max-width changes to 1000px (could be modified) */
 @media only screen and (max-width: 1000px) {
   /* the top bar settings */
   nav {
@@ -84,5 +83,11 @@ nav img {
     margin-left: var(--button-margin-mobile);
     margin-right: var(--button-margin-mobile);
     block-size: var(--button-size-mobile);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #stage {
+    width: 90vw;
   }
 }
