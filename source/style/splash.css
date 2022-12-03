@@ -1,5 +1,6 @@
 @import "constants.css";
 
+/* set background color */
 body {
   background-color: var(--theme-color);
 }
@@ -14,6 +15,7 @@ body {
   margin-bottom: 0.313rem;
 }
 
+/* block of text under logo */
 .center-text {
   display: block;
   justify-content: center;
@@ -24,6 +26,7 @@ body {
   font-size: 0.938rem;
 }
 
+/* redirecting in.. notification on splash page */
 #counter {
   position: absolute;
   justify-content: center;
@@ -34,4 +37,18 @@ body {
   margin-top: 5vw;
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 1.063rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .splash-logo {
+    margin-top: 32vw;
+  }
+  .center-text {
+    font-size: .87rem;
+  }
+  #counter {
+    font-size: .65rem;
+    margin-left: 10vw;
+    right: 2rem;
+  }
 }
