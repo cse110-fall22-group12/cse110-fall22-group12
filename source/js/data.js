@@ -1,5 +1,4 @@
 /* eslint-disable
-    camelcase,
     no-unused-vars,
 */
 
@@ -47,8 +46,6 @@ const SELECTED_DATA_ID_KEY = 'selected_data_id';
 const template_data = {
   id: -1,
   name: '',
-  tags: [],
-  favorited: false,
   ingredients: '',
   steps: '',
   notes: '',
@@ -57,7 +54,7 @@ const template_data = {
 /**
  * This function is a wrapper for the getItem function of the localStorage.
  * @global
- * @param {string}    key   The key of the item.
+ * @param {string} key The key of the item.
  * @return {any} The data returned by calling the getItem function.
  */
 function get_data(key) {
@@ -67,8 +64,8 @@ function get_data(key) {
 /**
  * This function is a wrapper for the setItem function of the localStorage.
  * @global
- * @param {string}    key     The key of the item.
- * @param {any}       data    The item to save.
+ * @param {string} key The key of the item.
+ * @param {any} data The item to save.
  */
 function set_data(key, data) {
   window.localStorage.setItem(key, data);
@@ -92,14 +89,20 @@ function is_launched_for_the_first_time() {
  * This function creates a new data object and write to the local storage.
  * After calling this function, the new data will automatically be selected.
  * @global
- * @param {string}      name            The name of the new data object.
- * @param {array}       tags            The array of tags of the data object.
- * @param {boolean}     favorited       The boolean indicating favorited.
- * @param {string}      ingredients     The ingredients of the new data object.
- * @param {string}      steps           The steps of the new data object.
- * @param {string}      notes           The notes of the new data object.
+ * @param {string} name The name of the new data object.
+ * @param {string} ingredients The ingredients of the new data object.
+ * @param {string} steps The steps of the new data object.
+ * @param {string} notes The notes of the new data object.
+ * @return {object} the created recipe data object in the form:
+ * {
+ *    id: 0,
+ *    ingredients: "some ingredients",
+ *    name: "mushroom killer",
+ *    notes: "some notes",
+ *    steps: "some preparation"
+ * }
  */
-function create_new_data(name, tags, favorited, ingredients, steps, notes) {
+function create_new_data(name, ingredients, steps, notes) {
   const new_data = JSON.parse(JSON.stringify(template_data));
   if (get_data(ID_GENERATOR_KEY) === null) {
     set_data(ID_GENERATOR_KEY, 1);
@@ -109,11 +112,10 @@ function create_new_data(name, tags, favorited, ingredients, steps, notes) {
     set_data(ID_GENERATOR_KEY, new_data.id + 1);
   }
   new_data.name = name;
-  new_data.tags = tags;
-  new_data.favorited = favorited;
   new_data.ingredients = ingredients;
   new_data.steps = steps;
   new_data.notes = notes;
+  // add the new recipe to the total recipe string in local storage
   if (get_data(DATA_ARRAY_KEY) === null) {
     set_data(DATA_ARRAY_KEY, JSON.stringify([new_data]));
   } else {
@@ -121,76 +123,48 @@ function create_new_data(name, tags, favorited, ingredients, steps, notes) {
     data_array.push(new_data);
     set_data(DATA_ARRAY_KEY, JSON.stringify(data_array));
   }
+  // 'select' the most recent added data so that we can view it in another page
   select_data_by_id(new_data.id);
+  return new_data;
 }
 
 /**
  * This function reads the array of data from the local storage.
- * You can provide the following parameters to narrow the results.
  * @global
- * @param {string}      search_keywords       Very straightforward.
- * @param {boolean}     show_favorited_only   Very straightforward.
- * @return {array} The array of data stored in local storage.
+ * @return {array} The array of data stored in local storage, where
+ * each element is a recipe object that looks like:
+ * {
+ *    id: 0,
+ *    ingredients: "some ingredients",
+ *    name: "mushroom killer",
+ *    notes: "some notes",
+ *    steps: "some preparation"
+ * }
  */
-function read_data_array(search_keywords, show_favorited_only) {
+function read_data_array() {
   if (get_data(DATA_ARRAY_KEY) === null) {
     return [];
   }
-  const raw_data_array = JSON.parse(get_data(DATA_ARRAY_KEY));
-  const search_array = search_keywords.trim().split('#');
-  for (let i = 0; i < search_array.length; i += 1) {
-    search_array[i] = search_array[i].trim();
-  }
-  const data_array = [];
-  for (let i = 0; i < raw_data_array.length; i += 1) {
-    const data = raw_data_array[i];
-    if (search_array.length > 0) {
-      if (search_array[0]) {
-        if (!data.name.toLowerCase().includes(search_array[0].toLowerCase())) {
-          continue;
-        }
-      }
-      let all_tags_found = true;
-      for (
-        let search_index = 1;
-        search_index < search_array.length;
-        search_index += 1
-      ) {
-        let current_tag_found = false;
-        if (search_array[search_index]) {
-          for (const tag_index in data.tags) {
-            if (data.tags[tag_index] == search_array[search_index]) {
-              current_tag_found = true;
-              break;
-            }
-          }
-        }
-        if (!current_tag_found) {
-          all_tags_found = false;
-          break;
-        }
-      }
-      if (!all_tags_found) {
-        continue;
-      }
-    }
-    if (show_favorited_only && !data.favorited) {
-      continue;
-    }
-    data_array.push(data);
-  }
+  // read the full recipe data string and parse it into json
+  const data_array = JSON.parse(get_data(DATA_ARRAY_KEY));
+  // we can add in the tag/search term refining loop here in a future iteration
   return data_array;
 }
 
 /**
- * This function selects a data by its id so that we can perform
- * operations to read, edit, and delete it. Selecting another
- * data overwrites the previous one.
+ * Stores a notion of "selected recipe" in the form of keeping its ID. This is
+ * so that in the future we can get our selected recipe and perform view, edit,
+ * delete operations on it. Selecting another data overwrites the previous one.
+ * This functi=on will do nothing if the parameter is the wrong type (if NaN)
  * @global
- * @param {number}      id      The id of the data object to select.
+ * @param {number} id The id of the data object to select.
  */
 function select_data_by_id(id) {
-  set_data(SELECTED_DATA_ID_KEY, parseInt(id));
+  const parsed_id = parseInt(id);
+  if (isNaN(parsed_id)) {
+    return;
+  }
+  set_data(SELECTED_DATA_ID_KEY, parsed_id);
 }
 
 /**
@@ -204,7 +178,7 @@ function get_selected_data_id() {
   if (get_data(SELECTED_DATA_ID_KEY) === null) {
     return -1;
   }
-  return get_data(SELECTED_DATA_ID_KEY);
+  return Number(get_data(SELECTED_DATA_ID_KEY));
 }
 
 /**
@@ -223,13 +197,23 @@ function get_selected_data() {
       return data;
     }
   }
+  // if not found return the empty data
   return JSON.parse(JSON.stringify(template_data));
 }
 
 /**
- * This function overwrites the selected data object with a new one.
+ * This function overwrites the selected data object with a new one. The id of
+ * new_data will stay be the same id as the selected data that we are overriding
  * @global
- * @param {data}     new_data        The new data.
+ * @param {data} new_data The new data that will overwrite the
+ * currently selected recipe. this data object should look like
+ * {
+ *    id: 0,
+ *    ingredients: "some ingredients",
+ *    name: "mushroom killer",
+ *    notes: "some notes",
+ *    steps: "some preparation"
+ * }
  */
 function overwrite_selected_data(new_data) {
   if (get_data(DATA_ARRAY_KEY) === null) {
@@ -239,7 +223,10 @@ function overwrite_selected_data(new_data) {
   const data_array = [];
   for (let i = 0; i < raw_data_array.length; i += 1) {
     const data = raw_data_array[i];
+    // replace only the data element that has a matching id with the new recipe
     if (data.id == get_selected_data_id()) {
+      // make sure that the id of new_data stays the same
+      new_data.id = data.id;
       data_array.push(new_data);
     } else {
       data_array.push(data);
@@ -266,3 +253,26 @@ function delete_selected_data() {
   }
   set_data(DATA_ARRAY_KEY, JSON.stringify(data_array));
 }
+
+/**
+ * Export declarations so that we can unit tests these functions, and use the
+ * necessary variables
+ * NOTE: scripts should be imported as module types because of this
+ */
+export {
+  get_data,
+  set_data,
+  is_launched_for_the_first_time,
+  create_new_data,
+  read_data_array,
+  select_data_by_id,
+  get_selected_data_id,
+  get_selected_data,
+  overwrite_selected_data,
+  delete_selected_data,
+  DATA_ARRAY_KEY,
+  ID_GENERATOR_KEY,
+  DEV_MODE,
+  NEW_DATA_INDEX,
+  SELECTED_DATA_ID_KEY,
+};
