@@ -111,6 +111,9 @@ function create_new_data(name, ingredients, steps, notes) {
     new_data.id = parseInt(get_data(ID_GENERATOR_KEY));
     set_data(ID_GENERATOR_KEY, new_data.id + 1);
   }
+  if (name.length > 25) {
+    name = name.substring(0, 25);
+  }
   new_data.name = name;
   new_data.ingredients = ingredients;
   new_data.steps = steps;

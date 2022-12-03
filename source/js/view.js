@@ -4,13 +4,13 @@ import {
 } from './data.js';
 
 /**
- * set up all the functilnalities for home button, edit button and
+ * set up all the functionalities for home button, edit button and
  * delete button.
  */
 
 window.addEventListener('DOMContentLoaded', init);
 /**
- * set up all the functilnalities for home button, edit button and
+ * set up all the functionalities for home button, edit button and
  * delete button.
  */
 function construct_body() {

@@ -2,15 +2,15 @@
 
 /* the edit container settings */
 #edit {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 /* the header settings */
 #edit h2 {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  padding-left: 20px;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  padding-left: 1.25rem;
   font-weight: 600;
   font-family: var(--primary-font);
   font-size: var(--h2-font-size);
@@ -18,17 +18,17 @@
 
 /* the input and textarea settings */
 #edit *:not(h2) {
-  margin: 10px;
-  width: calc(100% - 20px);
-  padding: 20px;
-  border-radius: 20px;
+  margin: 0.625rem;
+  width: calc(100% - 1.25rem);
+  padding: 1.25rem;
+  border-radius: 1.25rem;
   font-family: var(--primary-font);
   background-color: var(--secondary-color);
 }
 
 /* the input settings */
 #edit input {
-  height: 60px;
+  height: 3.75rem;
   font-weight: bold;
   font-size: var(--h1-font-size);
 }
@@ -36,7 +36,7 @@
 /* the textarea settings */
 #edit textarea {
   resize: none;
-  height: 200px;
+  height: 12.5rem;
   font-size: var(--user-input-font-size);
 }
 

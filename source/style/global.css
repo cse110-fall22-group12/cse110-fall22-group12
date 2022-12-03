@@ -32,11 +32,13 @@ nav {
   color: var(--primary-color);
   font-size: var(--top-bar-font-size);
   font-weight: bold;
+  z-index: 2;
 }
 
 /* the stage settings */
 #stage {
   margin: auto;
+  min-width: 60vw;
   padding-top: var(--top-bar-height);
   padding-left: var(--stage-side-margin);
   padding-right: var(--stage-side-margin);

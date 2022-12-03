@@ -8,37 +8,38 @@ body {
 
 /* define dish-name style */
 .recipe-name {
-  margin-top: 41px;
+  margin-top: 2.563rem;
   text-align: center;
-  line-height: 59px;
+  line-height: 3.688rem;
 }
 
 /* define dish-name style */
 .recipe-name h1 {
   font-size: var(--h1-font-size);
-  font-weight: 800px;
+  font-weight: 50rem;
   font-weight:600;
 }
 
 /* define padding for each block */
 .block{
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 
 /* define paragraph style, updated based on constant.css */
 p {
-  font-weight:normal;
+  font-weight: normal;
   font-size: var(--user-input-font-size);
-  line-height: 37px;
+  line-height: 2.313rem;
+  white-space: pre-line;
   overflow-wrap: break-word; 
 }
 
 /* define subsection title style, updated based on constant.css */
 h2 {
-  text-decoration: underline;     
+  text-decoration: underline;    
   font-size: var(--h2-font-size);
   font-weight: 600;
-  line-height: 44px;
+  line-height: 2.75rem;
 }
 
 /* make the nav bar buttons look clickable when hovered */
