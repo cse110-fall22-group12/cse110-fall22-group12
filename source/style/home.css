@@ -1,10 +1,6 @@
 @import "constants.css";
 
-/* * {
-  background-color: var(--secondary-color);
-  color: var(--body-text-color);
-  border-radius: 1rem;
-} */
+/* define variables */
 :root {
   --desktop-cell-height: 182px;
   --tablet-cell-height: 140px;
@@ -17,39 +13,46 @@
   --card-margins: 1rem;
 }
 
+/* cursor will become pointer and button becomes darker when hovering */
 .home-button:hover {
   cursor: pointer;
   filter: brightness(90%);
 }
 
+/* spacing between each recipe card */
 .recipe-list {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
+/* center the recipe cards */
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+
 /* class applied to an anchor tag */
 .recipe-cell-link { 
   text-decoration: none;
 }
 
+/* spacing between each recipe card */
 recipe-cell {
   margin-top: 40px ;
 }
 
+
+/* display of each recipe card */
 card {
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   
-  /* This line adjusts the scaling of the cards as the view gets thinner */
+  /* this line adjusts the scaling of the cards as the view gets thinner */
   width: min(var(--max-cell-width), 90vw);
   height: var(--desktop-cell-height);
   margin-top: var(--card-margins);
@@ -60,11 +63,13 @@ card {
   border-radius: 20px;
 }
 
+/* darken recipe card when hovering */
 card:hover {
   cursor: pointer;
   filter: brightness(90%);
 }
 
+/* text of recipe cards */
 .recipe-name {
   display: flex;
   text-align: center;
