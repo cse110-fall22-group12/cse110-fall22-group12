@@ -1,4 +1,5 @@
-Deciding our projects...
+# My Recipe #
+An app to log all your rescipes :)
 
 Docs can be viewed [here](https://cse110-fall22-group12.github.io/cse110-fall22-group12/out/data.js.html)
 
