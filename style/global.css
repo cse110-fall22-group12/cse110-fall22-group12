@@ -38,6 +38,7 @@ nav {
 /* the stage settings */
 #stage {
   margin: auto;
+  width: 80vw;
   min-width: 60vw;
   padding-top: var(--top-bar-height);
   padding-left: var(--stage-side-margin);
