@@ -65,7 +65,7 @@ card:hover {
   filter: brightness(90%);
 }
 
-/* text of recipe cards */
+/* text for recipe cards */
 .recipe-name {
   display: flex;
   text-align: center;
@@ -77,11 +77,17 @@ card:hover {
   color: #000000;
 }
 
+/* the settings for mobile devices */
+/* the screen adapts when the max-width changes to 600px */
 @media only screen and (max-width: 600px) {
+
+  /* text for recipe cards */
   .recipe-name {
     font-size: 1.5rem;
     word-wrap: break-word;
   }
+
+  /* update height of recipe card */
   card {
     height: var(--mobile-cell-height);
   }
