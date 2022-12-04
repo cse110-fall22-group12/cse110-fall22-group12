@@ -71,13 +71,12 @@ describe('Basic user flow for adding a new recipe', () => {
     const numRecipes = await page.$$eval('recipe-cell', (recipeItems) => {
       return recipeItems.length;
     });
-    expect(numRecipes).toBe(4);
+    expect(numRecipes).toBe(2);
     // on the view page, check if the recipe has the correct content in
     // ingredients, steps, and notes
     await page.evaluate(() => {
       document.querySelectorAll('recipe-cell')[0].click();
     });
-    await page.$$eval('recipe-cell', (elements) => elements[3].click());
     await page.goto(
       'https://cse110-fall22-group12.github.io/cse110-fall22-group12/components/view.html'
     );
@@ -189,7 +188,7 @@ describe('Basic user flow for adding a new recipe', () => {
     const numRecipes = await page.$$eval('recipe-cell', (recipeItems) => {
       return recipeItems.length;
     });
-    expect(numRecipes).toBe(3);
+    expect(numRecipes).toBe(1);
   });
 
   // On Edit Page - Check if the alertbox function is correct
