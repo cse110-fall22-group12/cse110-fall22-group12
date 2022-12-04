@@ -62,7 +62,6 @@ function construct_header(edit) {
     if (showing_alert_box) {
       return;
     }
-    
     // check if name is blank, if so alert user and don't save
     if (document.getElementById('edit-name').value === '') {
       const editElement = document.getElementById('edit-button-box');

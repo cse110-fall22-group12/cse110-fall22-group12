@@ -7,7 +7,6 @@ window.addEventListener('DOMContentLoaded', init);
  * recipe from local storage.
  */
 function construct_body() {
-
   // get the selected food recipe
   const data = get_selected_data();
 
@@ -29,11 +28,10 @@ function construct_body() {
 }
 
 /**
- * Initialization function that sets up functionalities for the home, edit, 
+ * Initialization function that sets up functionalities for the home, edit,
  * and delete button. This function also displays the selected recipe.
  */
 function init() {
-
   // display the selected recipe
   construct_body();
   let showing_alert_box = false;
@@ -66,7 +64,7 @@ function init() {
     deleteElement.style.display = 'block';
     showing_alert_box = true;
   });
-  
+
   // when delete pop-up box's yes button is clicked, transit to home page
   const yes_button = document.getElementById('view-yes-delete-button');
   yes_button.addEventListener('click', function(event) {
