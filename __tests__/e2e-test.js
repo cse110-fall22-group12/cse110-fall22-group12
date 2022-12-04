@@ -103,7 +103,7 @@ describe('Basic user flow for adding a new recipe', () => {
   });
 
   // On View Page - Check if home button and edit button function correctly
-  it('On View Page - Check if home button and edit butotn function correctly', async () => {
+  it('On View Page - Check if home button and edit button function correctly', async () => {
     await page.goto(
       'https://cse110-fall22-group12.github.io/cse110-fall22-group12/components/view.html'
     );
