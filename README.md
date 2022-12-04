@@ -1,5 +1,5 @@
 # My Recipe #
-An app to log all your rescipes :)
+An app to log all your recipes :)
 Features include being able to view, and edit any and all of your recipes on the go!
 
 ## DOCS!
