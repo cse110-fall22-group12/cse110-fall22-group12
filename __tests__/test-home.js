@@ -21,7 +21,7 @@ test('add_sample_data() calls create_new_data() 3 times in dev mode', () => {
   // call the function
   add_sample_data(true);
   // check the result
-  expect(data.create_new_data.mock.calls.length).toBe(3);
+  expect(data.create_new_data.mock.calls.length).toBe(1);
 });
 
 test('add_sample_data() doesnt call create_new_data() if not dev mode', () => {
