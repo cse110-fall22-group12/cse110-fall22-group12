@@ -25,7 +25,7 @@ describe('Basic user flow for adding a new recipe', () => {
     const numRecipes = await page.$$eval('recipe-cell', (recipeItems) => {
       return recipeItems.length;
     });
-    expect(numRecipes).toBe(3);
+    expect(numRecipes).toBe(1);
   }, 10000);
 
   // On Home Page - Check the add recipe button
