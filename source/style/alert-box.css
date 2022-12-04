@@ -1,6 +1,6 @@
 @import "constants.css";
 
-/* view and edit alert box*/
+/* view and edit alert box */
 #view-delete-box, #edit-button-box {
 
   /* display is changed in js file when clicked */
@@ -99,18 +99,16 @@
   cursor: pointer;
 }
 
-
-/* resize the alert box based on screensize */
+/* resize the alert box based on screen size (1000px) */
 @media only screen and (max-width: 1000px) {
   #view-delete-box, #edit-button-box {
-    /* Resize alert box */
     top: 43%;
     width: 37.5rem;
     height: 25.75rem;
   }
 }
 
-/* resize the alert box based on screen size */
+/* resize the alert box based on screen size (600px) */
 @media only screen and (max-width: 600px) {
   #view-delete-box, #edit-button-box {
     top: 39%;
