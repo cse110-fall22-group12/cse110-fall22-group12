@@ -102,7 +102,7 @@ describe('Basic user flow for adding a new recipe', () => {
     expect(notes).toBe('UI test notes');
   });
 
-  // On View Page - Check if home button and edit butotn function correctly
+  // On View Page - Check if home button and edit button function correctly
   it('On View Page - Check if home button and edit butotn function correctly', async () => {
     await page.goto(
       'https://cse110-fall22-group12.github.io/cse110-fall22-group12/components/view.html'
@@ -154,7 +154,7 @@ describe('Basic user flow for adding a new recipe', () => {
     );
     // check prompt text
     await page.click('#view-page-delete-button');
-    const warning = await page.$('#view-delete-button-box');
+    const warning = await page.$('#view-delete-box');
     const form = await warning.$('form');
     const container = await form.$('.view-delete-container');
     const textcontainer = await container.$('.view-delete-text');
