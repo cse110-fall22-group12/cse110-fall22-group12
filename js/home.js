@@ -60,22 +60,15 @@ function append_recipe_as_child(parent, recipe_data) {
 function add_sample_data(is_dev_mode) {
   if (is_launched_for_the_first_time() && is_dev_mode) {
     create_new_data(
-        'mushroom killer',
-        'some ingredients',
-        'some preparation',
-        'some notes',
-    );
-    create_new_data(
-        'mushroom terminator',
-        'some ingredients',
-        'some preparation',
-        'some notes',
-    );
-    create_new_data(
-        'mushroom slayer',
-        'some ingredients',
-        'some preparation',
-        'some notes',
+        'Chicken Soup: Click Me',
+        'You can write the ingredients for your recipe here',
+        'You can write down the steps for your recipe here',
+        'This is the view page, but you can click the top left button (the' +
+      ' house button) to go back to the home page. There, you can select any' +
+      ' of your recipes or make new ones with the "+" button up top.\n\n' +
+      'You can also click the top right pencil button to edit this recipe ' +
+      ', or the top right trash button to delete this recipe.\n\n' +
+      'Please enjoy MemorEats!',
     );
   }
 }
