@@ -1,23 +1,15 @@
-/* 
- * I moved all the alert-box related CSS code
- * to this file because the alert-box should
- * be implemented similar to the top bar we
- * did last time. However, I am not modyfing
- * anything because we are running out of time.
- *
- *                                    ---- Lyu
- */
 @import "constants.css";
 
-/* Delete pop-up box */
-.view-delete-box {
+/* view and edit alert box*/
+#view-delete-box, #edit-button-box {
+
   /* display is changed in js file when clicked */
   display: none;
 
-  /* position of the box on the screen*/
+  /* position of the box on the screen */
   position: fixed;
   left: 50%;
-  top: 50%;
+  top: 60%;
   transform: translate(-50%, -50%);
   z-index: 1;
   width: 50rem;
@@ -28,39 +20,52 @@
   overflow: hidden;
 }
 
-/* Form -- very outer box */
-.view-delete-box-content {
+/* form -- very outer box */
+.view-delete-box-content, 
+.edit-box-content {
   background-color: white;
   margin: 5% auto 15% auto;
-  border: 5px solid #c30202;
   border-radius: 1.25rem;
   box-sizing: border-box;
   width: 70%;
 }
 
-/* Div wrapping text and buttons container */
-.view-delete-container {
+/* view outer box border */
+.view-delete-box-content {
+  border: 0.313rem solid #c30202;
+}
+
+/* edit outer box border */
+.edit-box-content {
+  border: 0.313rem solid #743e0d;
+}
+
+/* div wrapping text and buttons container */
+.view-delete-container,
+.edit-container {
   padding: 1rem;
   text-align: center;
 }
 
-/* Font-size */
-.view-delete-text {
+/* font-size */
+.view-delete-text,
+.edit-text {
   margin: 10% auto 10% auto;
   font-weight: 700;
   font-size: 1.375rem;
   line-height: 1.688rem;
 }
 
-/* display of the yes or no buttons */
+/* display of the 'yes' and 'no' buttons */
 .view-delete-choose {
   display: flex;
   justify-content: center;
 }
 
-/* Yes and No buttons */
-.view-yes-delete-button,
-.view-no-delete-button {
+/* style of clickable buttons */
+#view-yes-delete-button,
+#view-no-delete-button,
+#ok-edit-button {
   opacity: 0.9;
   width: 50%;
   border-radius: 1.25rem;
@@ -71,89 +76,45 @@
   color: white;
 }
 
-/* Yes and no button hover effects */
-button:hover {
+/* 'no' button color */
+#view-no-delete-button {
+  background-color: #d3bfbf;
+}
+
+/* 'yes' button color */
+#view-yes-delete-button {
+  background-color: #ef7f7f;
+}
+
+/* 'ok' button color */
+#ok-edit-button {
+  background-color: #d3bfbf;
+}
+
+/* button hover effects */
+#ok-edit-button:hover, 
+#view-yes-delete-button:hover,
+#view-no-delete-button:hover {
   opacity: 1;
   cursor: pointer;
 }
 
-/* No button */
-.view-no-delete-button {
-  background-color: #d3bfbf;
-}
 
-/* Yes button */
-.view-yes-delete-button {
-  background-color: #ef7f7f;
-}
-
-/* Edit box */
-.edit-box {
-  /* Display is changed in js file when clicked */
-  display: none;
-
-  /* Position of the box on the screen */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin: -15.625rem 0 0 -23.75rem;
-
-  z-index: 1;
-  width: 50rem;
-  height: 37.5rem;
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
-  border-radius: 1.25rem;
-  overflow: hidden;
-}
-
-/* Form - very outside box */
-.edit-box-content {
-  background-color: white;
-  margin: 5% auto 15% auto;
-  border: 0.313rem solid #743e0d;
-  border-radius: 1.25rem;
-  box-sizing: border-box;
-  width: 70%;
-}
-
-/* Container of text and button */
-.edit-container {
-  padding: 1rem;
-  text-align: center;
-}
-
-/* Font-size */
-.edit-text {
-  margin: 10% auto 10% auto;
-  font-weight: 700;
-  font-size: 1.375rem;
-  line-height: 1.688rem;
-}
-
-/* Display of the 'ok' button */
-.ok-edit-button {
-  opacity: 0.9;
-  width: 50%;
-  border-radius: 1.25rem;
-  margin: 10px;
-  padding: 7%;
-  font-family: var(--primary-font);
-  font-weight: 700;
-  color: white;
-  background-color: #d3bfbf;
-}
-
-/* Change opacity of color when hovering */
-button:hover {
-  opacity: 1;
-}
-
-/* Resize the alert box based on screensize */
-@media only screen and (max-width: 62.5rem) {
-  .view-delete-box {
+/* resize the alert box based on screensize */
+@media only screen and (max-width: 1000px) {
+  #view-delete-box, #edit-button-box {
     /* Resize alert box */
+    top: 43%;
     width: 37.5rem;
     height: 25.75rem;
+  }
+}
+
+/* resize the alert box based on screen size */
+@media only screen and (max-width: 600px) {
+  #view-delete-box, #edit-button-box {
+    top: 39%;
+    width: 30rem;
+    height: 21rem;
   }
 }

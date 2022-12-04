@@ -42,11 +42,13 @@ function construct_header(edit) {
   let showing_alert_box = false;
   const back = document.getElementById('edit-back');
   const save = document.getElementById('edit-save');
+
   // initialize the back button:
   back.addEventListener('click', function() {
     if (showing_alert_box) {
       return;
     }
+
     // jump back to the correct page:
     if (get_selected_data_id() != NEW_DATA_INDEX) {
       window.location.href = 'view.html';
@@ -54,11 +56,13 @@ function construct_header(edit) {
       window.location.href = 'home.html';
     }
   });
+
   // initialize the save button:
   save.addEventListener('click', function() {
     if (showing_alert_box) {
       return;
     }
+    
     // check if name is blank, if so alert user and don't save
     if (document.getElementById('edit-name').value === '') {
       const editElement = document.getElementById('edit-button-box');

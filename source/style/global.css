@@ -49,6 +49,7 @@ nav div {
   height: var(--button-size);
 }
 
+/* button margin settings */
 nav img {
   margin-left: var(--button-margin);
   margin-right: var(--button-margin);
@@ -56,7 +57,7 @@ nav img {
 }
 
 /* the settings for mobile devices */
-/* the screen adapts when the max-width changes to 1000px (could be modified) */
+/* the screen adapts when the max-width changes to 1000px */
 @media only screen and (max-width: 1000px) {
   /* the top bar settings */
   nav {
@@ -79,6 +80,7 @@ nav img {
     height: var(--button-size-mobile);
   }
 
+  /* button margin settings */
   nav img {
     margin-left: var(--button-margin-mobile);
     margin-right: var(--button-margin-mobile);
@@ -86,7 +88,10 @@ nav img {
   }
 }
 
+/* the settings for mobile devices */
+/* the screen adapts when the max-width changes to 600px */
 @media only screen and (max-width: 600px) {
+  /* the stage settings */
   #stage {
     width: 90vw;
   }
