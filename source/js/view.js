@@ -1,14 +1,10 @@
 import {get_selected_data, delete_selected_data} from './data.js';
 
-/**
- * set up all the functionalities for home button, edit button and
- * delete button.
- */
-
 window.addEventListener('DOMContentLoaded', init);
+
 /**
- * set up all the functionalities for home button, edit button and
- * delete button.
+ * This function constructs the body by reading in information about the
+ * recipe from local storage.
  */
 function construct_body() {
   // get the selected food recipe
@@ -32,13 +28,14 @@ function construct_body() {
 }
 
 /**
- * set up all the functilnalities for home button, edit button and
- * delete button.
+ * Initialization function that sets up functionalities for the home, edit,
+ * and delete button. This function also displays the selected recipe.
  */
 function init() {
-  // set up functilnalities for home button, edit button and delete button
+  // display the selected recipe
   construct_body();
   let showing_alert_box = false;
+
   // when home button is clicked,  transit to home page
   const home = document.getElementById('view-page-home-button');
   home.addEventListener('click', function(event) {
@@ -47,6 +44,7 @@ function init() {
     }
     window.location.href = 'home.html';
   });
+
   // when edit button is clicked, transit to edit page
   const edit = document.getElementById('view-page-edit-button');
   edit.addEventListener('click', function(event) {
@@ -56,13 +54,13 @@ function init() {
     window.location.href = 'edit.html';
   });
 
-  // when delete button is clicked, the warning box pop out
+  // when the delete button is clicked, the warning box pops out
   const view = document.getElementById('view-page-delete-button');
   view.addEventListener('click', function(event) {
     if (showing_alert_box) {
       return;
     }
-    const deleteElement = document.getElementById('view-delete-button-box');
+    const deleteElement = document.getElementById('view-delete-box');
     deleteElement.style.display = 'block';
     showing_alert_box = true;
   });
@@ -78,7 +76,7 @@ function init() {
   // when delete pop-up box's no button is clicked, stay at the edit page
   const no_button = document.getElementById('view-no-delete-button');
   no_button.addEventListener('click', function(event) {
-    const deleteElement = document.getElementById('view-delete-button-box');
+    const deleteElement = document.getElementById('view-delete-box');
     deleteElement.style.display = 'none';
     showing_alert_box = false;
   });

@@ -33,7 +33,7 @@ function init() {
 }
 
 /**
- * This method adds the recipe data passed in as sa child to the parent. This
+ * This method adds the recipe data passed in as a child to the parent. This
  * way it can be represented on the DOM.
  * @param {HTMLElement} parent the parent that we want to append our recipe to
  * @param {object} recipe_data the data that the recipe cell should be populated
