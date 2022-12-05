@@ -13,7 +13,18 @@ Wanna try out the app? Our app MemorEats can be found [here](https://cse110-fall
 ## DOCS!
 Our docs can be viewed [here](https://cse110-fall22-group12.github.io/cse110-fall22-group12/out/data.js.html)
 
-## ABOUT US
+Our Hi-Fi Figma design is [here](https://www.figma.com/file/1adnoZuKp08lEbgpTtvXdT/Cooking-App%3A-High-Fidelity-Design?node-id=0%3A1&t=wBG6ggfM31TBqFBa-0)
+
+Our miro boards are here: <br>
+[miro board 1](https://miro.com/app/board/uXjVPM2uOFg=/) <br>
+[miro board 2](https://miro.com/app/board/uXjVPPM7nGk=/) <br>
+[miro board 3](https://miro.com/app/board/uXjVPIqtcYA=/) <br>
+... <br>
+More can be found within within our Noshroom Miro organization.
+
+
+
+## About Us
 Our team memebers can be found [here](https://github.com/cse110-fall22-group12/cse110-fall22-group12/blob/main/admin/team.md)
 
 Our meeting notes can be found [here](https://github.com/cse110-fall22-group12/cse110-fall22-group12/tree/main/admin/meetings)
