@@ -9,6 +9,10 @@ It displays all the recipes that your have stored and it allows you to add, view
 
 Wanna try out the app? Our app MemorEats can be found [here](https://cse110-fall22-group12.github.io/cse110-fall22-group12/components/index.html)
 
+## VIDEOS
+
+Checkout out final project video (public version) [here](https://www.youtube.com/watch?v=9tJvCBvCLts) <br>
+Check out our final project video (private version) [wait to be added]()
 
 ## DOCS!
 Our docs can be viewed [here](https://cse110-fall22-group12.github.io/cse110-fall22-group12/out/data.js.html)
