@@ -1,4 +1,4 @@
-# CSE110 Team 12 Noshroom Project 
+# CSE110 Team 12 Noshroom Recipe App 
 
 ## Project Description
 This project is to build a CRUD web-based application within 10 weeks. Currently, the project is a CRUD web-based recipe app. It allows the users to add, store, view, and edit all the recipes that they input. In the future, we hope to implement the serach and custom tags functions in our app so it provides more convenient services to our users. This repository contains all the source files, meeting notes, documentations, ADRs for the CRUD application MemorEats. 
